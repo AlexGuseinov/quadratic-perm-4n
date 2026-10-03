@@ -1,0 +1,5 @@
+{'cube': '0000000001', 'status': 'TIMEOUT', 'seconds': 205.6, 'worker': 1, 'time': '2026-09-27 15:11:10'}
+{'cube': '0000000001000', 'status': 'TIMEOUT', 'seconds': 202.6, 'worker': 1, 'time': '2026-09-27 15:14:33'}
+{'cube': '0000000001000000', 'status': 'TIMEOUT', 'seconds': 193.5, 'worker': 1, 'time': '2026-09-27 15:17:47'}
+{'cube': '0000000001000000000', 'status': 'TIMEOUT', 'seconds': 213.4, 'worker': 1, 'time': '2026-09-27 15:21:20'}
+{'cube': '0000000001000000000000', 'status': 'UNSAT', 'seconds': 0.0, 'worker': 1, 'time': '2026-09-27 15:21:20'}

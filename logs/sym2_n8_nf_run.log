@@ -1,0 +1,5 @@
+case  61 p=7   A=f0+f1        B=f0+f1        bits= 24 betas=       0 UNSAT (15.6s + 0.0s)
+case  54 p=7   A=f0+f0        B=f0+f0        bits= 18 betas=       0 UNSAT (0.0s + 0.0s)
+case  40 p=5   A=f0           B=f0           bits= 24 betas=       0 UNSAT (19.3s + 0.0s)
+case  64 p=17  A=f0           B=f0           bits=  8 betas=       0 UNSAT (0.0s + 0.0s)
+case  65 p=17  A=f0           B=f1           bits= 16 betas=       0 UNSAT (0.1s + 0.0s)

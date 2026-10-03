@@ -1,0 +1,14 @@
+n=8 Desarguesian: lines=85 dim Sigma^perp=12 ranks={4: 1071, 8: 3024}
+after 1 random regulus switch(es), 12 trials:
+  dim Sigma^perp, ranks, closed pairs: (10, '{4: 303, 8: 720}', 2970) x 12
+after 2 random regulus switch(es), 12 trials:
+  dim Sigma^perp, ranks, closed pairs: (8, '{4: 111, 8: 144}', 2460) x 1
+  dim Sigma^perp, ranks, closed pairs: (8, '{4: 75, 8: 180}', 2460) x 11
+after 3 random regulus switch(es), 12 trials:
+  dim Sigma^perp, ranks, closed pairs: (6, '{4: 15, 8: 48}', 2020) x 4
+  dim Sigma^perp, ranks, closed pairs: (6, '{4: 15, 8: 48}', 2030) x 2
+  dim Sigma^perp, ranks, closed pairs: (6, '{4: 15, 8: 48}', 2040) x 2
+  dim Sigma^perp, ranks, closed pairs: (6, '{4: 27, 8: 36}', 1980) x 1
+  dim Sigma^perp, ranks, closed pairs: (6, '{4: 27, 8: 36}', 2000) x 1
+  dim Sigma^perp, ranks, closed pairs: (6, '{4: 27, 8: 36}', 2040) x 1
+  dim Sigma^perp, ranks, closed pairs: (6, '{4: 63}', 2040) x 1

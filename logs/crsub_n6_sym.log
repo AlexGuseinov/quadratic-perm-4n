@@ -1,0 +1,13 @@
+self-test passed
+n=6 NP=15 GOOD ready (0.1s)
+level 1: 5086 good cosets (0.1s)
+done in 0.1s, solutions (leaves passing (ii)): 27
+level  nodes      est.nodes     est.cands     est.reps      s/node    prune(dim,cov,size)
+  1          1             1           366             2   0.000605   0 0 0
+  2          2             2           144             6   0.000307   0 0 0
+  3          6             6            32            15   0.000136   0 2 0
+  4         15            15            27            27    0.00012   0 0 6
+  5         27            27            27            27   1.81e-06   0 0 0
+  6         27            27             0             0   3.05e-06   0 0 0
+COUNTS n1=1 n2=2 n3=6 n4=15 n5=27 n6=27 pd1=0 pc1=0 ps1=0 pd2=0 pc2=0 ps2=0 pd3=0 pc3=2 ps3=0 pd4=0 pc4=0 ps4=6 pd5=0 pc5=0 ps5=0 pd6=0 pc6=0 ps6=0
+estimated total node time: 0.003964 s (1.101e-06 CPU-hours)

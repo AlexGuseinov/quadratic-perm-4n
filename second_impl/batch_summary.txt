@@ -1,0 +1,7 @@
+roots: 486 of 486; total time 13.44 h
+nodes  by dimension 3..8: [486, 8604140, 1381518812, 0, 0, 0]
+pdim   by dimension 3..8: [0, 0, 0, 0, 0, 0]
+psize  by dimension 3..8: [0, 0, 1381416881, 0, 0, 0]
+pcov   by dimension 3..8: [0, 0, 101931, 0, 0, 0]
+counts compared with expected_counts.json
+PASS

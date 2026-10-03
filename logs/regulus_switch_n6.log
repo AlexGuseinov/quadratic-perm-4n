@@ -1,0 +1,26 @@
+n=6 Desarguesian: lines=21 dim Sigma^perp=6 ranks={4: 63}
+after 1 random regulus switch(es), 30 trials:
+  dim Sigma^perp, ranks, closed pairs: (4, '{4: 15}', 90) x 30
+after 2 random regulus switch(es), 30 trials:
+  dim Sigma^perp, ranks, closed pairs: (2, '{4: 3}', 30) x 22
+  dim Sigma^perp, ranks, closed pairs: (2, '{4: 3}', 60) x 7
+  dim Sigma^perp, ranks, closed pairs: (5, '{4: 31}', 50) x 1
+after 3 random regulus switch(es), 30 trials:
+  dim Sigma^perp, ranks, closed pairs: (0, '{}', 10) x 5
+  dim Sigma^perp, ranks, closed pairs: (0, '{}', 20) x 9
+  dim Sigma^perp, ranks, closed pairs: (0, '{}', 30) x 4
+  dim Sigma^perp, ranks, closed pairs: (2, '{4: 3}', 10) x 4
+  dim Sigma^perp, ranks, closed pairs: (2, '{4: 3}', 20) x 1
+  dim Sigma^perp, ranks, closed pairs: (2, '{4: 3}', 50) x 4
+  dim Sigma^perp, ranks, closed pairs: (3, '{4: 7}', 20) x 3
+after 4 random regulus switch(es), 30 trials:
+  dim Sigma^perp, ranks, closed pairs: (0, '{}', 10) x 10
+  dim Sigma^perp, ranks, closed pairs: (0, '{}', 20) x 2
+  dim Sigma^perp, ranks, closed pairs: (1, '{4: 1}', 10) x 5
+  dim Sigma^perp, ranks, closed pairs: (1, '{4: 1}', 20) x 3
+  dim Sigma^perp, ranks, closed pairs: (2, '{4: 3}', 10) x 5
+  dim Sigma^perp, ranks, closed pairs: (2, '{4: 3}', 20) x 1
+  dim Sigma^perp, ranks, closed pairs: (2, '{4: 3}', 50) x 1
+  dim Sigma^perp, ranks, closed pairs: (2, '{4: 3}', 60) x 1
+  dim Sigma^perp, ranks, closed pairs: (3, '{4: 7}', 50) x 1
+  dim Sigma^perp, ranks, closed pairs: (5, '{4: 31}', 50) x 1

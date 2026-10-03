@@ -1,0 +1,29 @@
+
+======================================================================
+1. Alternating matrices over F_2 by rank
+======================================================================
+n=4: brute={0: 1, 2: 35, 4: 28}
+      formula={0: 1, 2: 35, 4: 28}  match=True
+n=6: brute={0: 1, 2: 651, 4: 18228, 6: 13888}
+      formula={0: 1, 2: 651, 4: 18228, 6: 13888}  match=True
+n=8: formula={0: 1, 2: 10795, 4: 5622036, 6: 149920960, 8: 112881664}  total=268435456 (2^28=268435456)
+      fraction of rank-6 forms = 0.5585
+
+======================================================================
+2. x^5 on GF(2^6), modulus X^6+X+1
+======================================================================
+permutation: True
+degree <= 2: True
+DU: 4
+component ranks: {4: 63}
+|ker L_a| distribution: {4: 63}
+distinct radicals: 21  sizes: {4: 21}
+radicals pairwise meet only in 0: True  every nonzero point covered once: True
+each radical shared by exactly 3 components {b1, b2, b1+b2}: True
+sign: odd
+
+======================================================================
+3. n=4: max dim of constant-rank-2 subspaces of Alt(4,F_2)
+======================================================================
+rank-2 forms: 35
+maximal dimension: 3 (needed for a DU-4 permutation: 4)

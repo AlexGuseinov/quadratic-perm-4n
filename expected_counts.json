@@ -1,0 +1,23 @@
+{
+  "_comment": "Expected results of the n = 8 computation (paper, Section 5 and Appendix A.9). check_n8_logs.py and second_impl/summarize_batch.py compare their logs with these numbers.",
+  "rank6_forms": 149920960,
+  "certificate": {
+    "file": "second_impl/data/cert8.txt.xz",
+    "sha256_uncompressed": "9daf11f99c8fbfad84f75ca4f86022d0e5c34b207640a8db55fc8c4949b3e5e8",
+    "lines": 1468672,
+    "candidates": {"dimension_1": 740736, "dimension_2": 727936},
+    "orbits": {"dimension_1": 3, "dimension_2": 486}
+  },
+  "first_program": {
+    "nodes": {"1": 1, "2": 3, "3": 486, "4": 1466318, "5": 244686904, "6": 0, "7": 0, "8": 0},
+    "returned_in_step_2": {"3": 0, "4": 0, "5": 244668896},
+    "returned_in_step_3": {"3": 0, "4": 0, "5": 18008},
+    "solutions": 0
+  },
+  "second_program": {
+    "nodes": {"3": 486, "4": 8604140, "5": 1381518812, "6": 0, "7": 0, "8": 0},
+    "returned_in_step_2": {"3": 0, "4": 0, "5": 1381416881},
+    "returned_in_step_3": {"3": 0, "4": 0, "5": 101931},
+    "solutions": 0
+  }
+}

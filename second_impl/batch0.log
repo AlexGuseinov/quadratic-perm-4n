@@ -1,0 +1,973 @@
+batch: 486 roots in file, 243 with idx % 2 == 0, 0 already in /tmp/claude-0/sc/indep/batch_results_0.txt, 243 to do
+root idx=0: basis [4194965, 8852, 1085440]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 20]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254208  (15.9s)
+ROOT idx=0 basis=4194965,8852,1085440 nodes=1,16896,2045280,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2045120,0,0,0 pcov=0,0,160,0,0,0 expanded=1,16896,0,0,0,0 sols=0 secs=133.1
+batch progress: 1/243 done, elapsed 133s
+root idx=2: basis [4194965, 8852, 1087488]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 20]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254208  (15.0s)
+ROOT idx=2 basis=4194965,8852,1087488 nodes=1,16896,2045280,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2045120,0,0,0 pcov=0,0,160,0,0,0 expanded=1,16896,0,0,0,0 sols=0 secs=126.9
+batch progress: 2/243 done, elapsed 260s
+root idx=4: basis [4194965, 8852, 1179669]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 20]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (14.7s)
+ROOT idx=4 basis=4194965,8852,1179669 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598448,0,0,0 pcov=0,0,184,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=138.0
+batch progress: 3/243 done, elapsed 398s
+root idx=6: basis [4194965, 8852, 1246229]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 20]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (14.8s)
+ROOT idx=6 basis=4194965,8852,1246229 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598440,0,0,0 pcov=0,0,192,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=138.5
+batch progress: 4/243 done, elapsed 537s
+root idx=8: basis [4194965, 8852, 2131969]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 21]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254208  (15.1s)
+ROOT idx=8 basis=4194965,8852,2131969 nodes=1,16896,2045280,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2045120,0,0,0 pcov=0,0,160,0,0,0 expanded=1,16896,0,0,0,0 sols=0 secs=124.4
+batch progress: 5/243 done, elapsed 661s
+root idx=10: basis [4194965, 8852, 8458261]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (14.9s)
+ROOT idx=10 basis=4194965,8852,8458261 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598440,0,0,0 pcov=0,0,192,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=137.5
+batch progress: 6/243 done, elapsed 798s
+root idx=12: basis [4194965, 8852, 8460309]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (16.5s)
+ROOT idx=12 basis=4194965,8852,8460309 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598448,0,0,0 pcov=0,0,184,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=140.4
+batch progress: 7/243 done, elapsed 939s
+root idx=14: basis [4194965, 8852, 8525844]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (16.2s)
+ROOT idx=14 basis=4194965,8852,8525844 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598440,0,0,0 pcov=0,0,192,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=135.5
+batch progress: 8/243 done, elapsed 1074s
+root idx=16: basis [4194965, 8852, 8586496]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [240, 12, 3, 0]  |C(W)| = 252928  (15.0s)
+ROOT idx=16 basis=4194965,8852,8586496 nodes=1,14528,2030048,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2030000,0,0,0 pcov=0,0,48,0,0,0 expanded=1,14528,0,0,0,0 sols=0 secs=108.4
+batch progress: 9/243 done, elapsed 1183s
+root idx=18: basis [4194965, 8852, 8589333]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (15.1s)
+ROOT idx=18 basis=4194965,8852,8589333 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598440,0,0,0 pcov=0,0,192,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=133.7
+batch progress: 10/243 done, elapsed 1316s
+root idx=20: basis [4194965, 8852, 9569281]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (14.0s)
+ROOT idx=20 basis=4194965,8852,9569281 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598448,0,0,0 pcov=0,0,184,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=137.7
+batch progress: 11/243 done, elapsed 1454s
+root idx=22: basis [4194965, 8852, 9575681]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (14.7s)
+ROOT idx=22 basis=4194965,8852,9575681 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598440,0,0,0 pcov=0,0,192,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=134.2
+batch progress: 12/243 done, elapsed 1588s
+root idx=24: basis [4194965, 8852, 9634817]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (15.0s)
+ROOT idx=24 basis=4194965,8852,9634817 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598440,0,0,0 pcov=0,0,192,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=141.9
+batch progress: 13/243 done, elapsed 1730s
+root idx=26: basis [4194965, 8852, 9639169]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (13.8s)
+ROOT idx=26 basis=4194965,8852,9639169 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598440,0,0,0 pcov=0,0,192,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=140.4
+batch progress: 14/243 done, elapsed 1871s
+root idx=28: basis [4194965, 8852, 10486804]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (15.0s)
+ROOT idx=28 basis=4194965,8852,10486804 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598448,0,0,0 pcov=0,0,184,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=145.1
+batch progress: 15/243 done, elapsed 2016s
+root idx=30: basis [4194965, 8852, 10552321]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (15.4s)
+ROOT idx=30 basis=4194965,8852,10552321 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598440,0,0,0 pcov=0,0,192,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=141.8
+batch progress: 16/243 done, elapsed 2158s
+root idx=32: basis [4194965, 8852, 10556437]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (14.5s)
+ROOT idx=32 basis=4194965,8852,10556437 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598440,0,0,0 pcov=0,0,192,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=133.0
+batch progress: 17/243 done, elapsed 2291s
+root idx=34: basis [4194965, 8852, 16848916]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 24]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (15.0s)
+ROOT idx=34 basis=4194965,8852,16848916 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598440,0,0,0 pcov=0,0,192,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=141.7
+batch progress: 18/243 done, elapsed 2432s
+root idx=36: basis [4194965, 8852, 16910356]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 24]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (14.8s)
+ROOT idx=36 basis=4194965,8852,16910356 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598440,0,0,0 pcov=0,0,192,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=142.5
+batch progress: 19/243 done, elapsed 2575s
+root idx=38: basis [4194965, 8852, 17825812]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 24]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (15.0s)
+ROOT idx=38 basis=4194965,8852,17825812 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598448,0,0,0 pcov=0,0,184,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=147.5
+batch progress: 20/243 done, elapsed 2722s
+root idx=40: basis [4194965, 8852, 17958933]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 24]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (14.5s)
+ROOT idx=40 basis=4194965,8852,17958933 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598440,0,0,0 pcov=0,0,192,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=133.7
+batch progress: 21/243 done, elapsed 2856s
+root idx=42: basis [4194965, 8852, 18023553]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 24]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (15.5s)
+ROOT idx=42 basis=4194965,8852,18023553 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598440,0,0,0 pcov=0,0,192,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=146.8
+batch progress: 22/243 done, elapsed 3003s
+root idx=44: basis [4194965, 8852, 18025473]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 24]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (16.4s)
+ROOT idx=44 basis=4194965,8852,18025473 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598448,0,0,0 pcov=0,0,184,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=141.7
+batch progress: 23/243 done, elapsed 3144s
+root idx=46: basis [4194965, 8852, 33751060]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (15.2s)
+ROOT idx=46 basis=4194965,8852,33751060 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598448,0,0,0 pcov=0,0,184,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=143.0
+batch progress: 24/243 done, elapsed 3287s
+root idx=48: basis [4194965, 8852, 33820672]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254208  (14.3s)
+ROOT idx=48 basis=4194965,8852,33820672 nodes=1,16896,2045280,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2045120,0,0,0 pcov=0,0,160,0,0,0 expanded=1,16896,0,0,0,0 sols=0 secs=132.5
+batch progress: 25/243 done, elapsed 3420s
+root idx=50: basis [4194965, 8852, 33822720]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254208  (15.8s)
+ROOT idx=50 basis=4194965,8852,33822720 nodes=1,16896,2045280,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2045120,0,0,0 pcov=0,0,160,0,0,0 expanded=1,16896,0,0,0,0 sols=0 secs=132.4
+batch progress: 26/243 done, elapsed 3552s
+root idx=52: basis [4194965, 8852, 34623488]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [240, 12, 3, 0]  |C(W)| = 252928  (15.4s)
+ROOT idx=52 basis=4194965,8852,34623488 nodes=1,14528,2030048,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2030000,0,0,0 pcov=0,0,48,0,0,0 expanded=1,14528,0,0,0,0 sols=0 secs=119.7
+batch progress: 27/243 done, elapsed 3672s
+root idx=54: basis [4194965, 8852, 34734081]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (15.4s)
+ROOT idx=54 basis=4194965,8852,34734081 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598440,0,0,0 pcov=0,0,192,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=145.3
+batch progress: 28/243 done, elapsed 3817s
+root idx=56: basis [4194965, 8852, 34799617]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (17.8s)
+ROOT idx=56 basis=4194965,8852,34799617 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598440,0,0,0 pcov=0,0,192,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=144.0
+batch progress: 29/243 done, elapsed 3961s
+root idx=58: basis [4194965, 8852, 34799873]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (17.7s)
+ROOT idx=58 basis=4194965,8852,34799873 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598448,0,0,0 pcov=0,0,184,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=144.7
+batch progress: 30/243 done, elapsed 4106s
+root idx=60: basis [4194965, 8852, 35651712]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254208  (16.6s)
+ROOT idx=60 basis=4194965,8852,35651712 nodes=1,16896,2045280,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2045120,0,0,0 pcov=0,0,160,0,0,0 expanded=1,16896,0,0,0,0 sols=0 secs=138.3
+batch progress: 31/243 done, elapsed 4245s
+root idx=62: basis [4194965, 8852, 35653633]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254208  (17.1s)
+ROOT idx=62 basis=4194965,8852,35653633 nodes=1,16896,2045280,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2045120,0,0,0 pcov=0,0,160,0,0,0 expanded=1,16896,0,0,0,0 sols=0 secs=138.5
+batch progress: 32/243 done, elapsed 4383s
+root idx=64: basis [4194965, 8852, 35655681]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254208  (15.1s)
+ROOT idx=64 basis=4194965,8852,35655681 nodes=1,16896,2045280,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2045120,0,0,0 pcov=0,0,160,0,0,0 expanded=1,16896,0,0,0,0 sols=0 secs=132.9
+batch progress: 33/243 done, elapsed 4516s
+root idx=66: basis [4194965, 8852, 35657729]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254208  (15.2s)
+ROOT idx=66 basis=4194965,8852,35657729 nodes=1,16896,2045280,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2045120,0,0,0 pcov=0,0,160,0,0,0 expanded=1,16896,0,0,0,0 sols=0 secs=123.1
+batch progress: 34/243 done, elapsed 4639s
+root idx=68: basis [4194965, 8852, 36700288]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254208  (15.1s)
+ROOT idx=68 basis=4194965,8852,36700288 nodes=1,16896,2045280,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2045120,0,0,0 pcov=0,0,160,0,0,0 expanded=1,16896,0,0,0,0 sols=0 secs=128.6
+batch progress: 35/243 done, elapsed 4768s
+root idx=70: basis [4194965, 8852, 36702209]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254208  (15.2s)
+ROOT idx=70 basis=4194965,8852,36702209 nodes=1,16896,2045280,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2045120,0,0,0 pcov=0,0,160,0,0,0 expanded=1,16896,0,0,0,0 sols=0 secs=130.0
+batch progress: 36/243 done, elapsed 4898s
+root idx=72: basis [4194965, 8852, 36704257]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254208  (15.3s)
+ROOT idx=72 basis=4194965,8852,36704257 nodes=1,16896,2045280,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2045120,0,0,0 pcov=0,0,160,0,0,0 expanded=1,16896,0,0,0,0 sols=0 secs=121.3
+batch progress: 37/243 done, elapsed 5019s
+root idx=74: basis [4194965, 8852, 36706305]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254208  (14.8s)
+ROOT idx=74 basis=4194965,8852,36706305 nodes=1,16896,2045280,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2045120,0,0,0 pcov=0,0,160,0,0,0 expanded=1,16896,0,0,0,0 sols=0 secs=129.0
+batch progress: 38/243 done, elapsed 5148s
+root idx=76: basis [4194965, 8852, 50333716]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (14.8s)
+ROOT idx=76 basis=4194965,8852,50333716 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598448,0,0,0 pcov=0,0,184,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=135.9
+batch progress: 39/243 done, elapsed 5284s
+root idx=78: basis [4194965, 8852, 51382292]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (15.0s)
+ROOT idx=78 basis=4194965,8852,51382292 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598440,0,0,0 pcov=0,0,192,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=142.2
+batch progress: 40/243 done, elapsed 5426s
+root idx=80: basis [4194965, 8852, 58722580]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (14.6s)
+ROOT idx=80 basis=4194965,8852,58722580 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598440,0,0,0 pcov=0,0,192,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=131.2
+batch progress: 41/243 done, elapsed 5557s
+root idx=82: basis [4194965, 8852, 59770900]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (14.7s)
+ROOT idx=82 basis=4194965,8852,59770900 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598440,0,0,0 pcov=0,0,192,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=140.1
+batch progress: 42/243 done, elapsed 5697s
+root idx=84: basis [4194965, 8852, 59771156]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (14.7s)
+ROOT idx=84 basis=4194965,8852,59771156 nodes=1,16752,2598632,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598448,0,0,0 pcov=0,0,184,0,0,0 expanded=1,16752,0,0,0,0 sols=0 secs=139.4
+batch progress: 43/243 done, elapsed 5837s
+root idx=86: basis [4194965, 8852, 67373057]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254208  (14.7s)
+ROOT idx=86 basis=4194965,8852,67373057 nodes=1,16896,2045280,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2045120,0,0,0 pcov=0,0,160,0,0,0 expanded=1,16896,0,0,0,0 sols=0 secs=124.9
+batch progress: 44/243 done, elapsed 5962s
+root idx=88: basis [4194965, 8852, 68157588]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254208  (14.3s)
+ROOT idx=88 basis=4194965,8852,68157588 nodes=1,16896,2045280,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2045120,0,0,0 pcov=0,0,160,0,0,0 expanded=1,16896,0,0,0,0 sols=0 secs=127.9
+batch progress: 45/243 done, elapsed 6090s
+root idx=90: basis [4194965, 8852, 68159508]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254208  (14.2s)
+ROOT idx=90 basis=4194965,8852,68159508 nodes=1,16896,2045280,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2045120,0,0,0 pcov=0,0,160,0,0,0 expanded=1,16896,0,0,0,0 sols=0 secs=126.9
+batch progress: 46/243 done, elapsed 6217s
+root idx=92: basis [4194965, 8852, 68161556]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254208  (14.6s)
+ROOT idx=92 basis=4194965,8852,68161556 nodes=1,16896,2045280,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2045120,0,0,0 pcov=0,0,160,0,0,0 expanded=1,16896,0,0,0,0 sols=0 secs=130.5
+batch progress: 47/243 done, elapsed 6347s
+root idx=94: basis [4194965, 8852, 68163605]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254208  (14.9s)
+ROOT idx=94 basis=4194965,8852,68163605 nodes=1,16896,2045280,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2045120,0,0,0 pcov=0,0,160,0,0,0 expanded=1,16896,0,0,0,0 sols=0 secs=129.2
+batch progress: 48/243 done, elapsed 6476s
+root idx=96: basis [4194965, 8852, 134217876]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [240, 12, 3, 0]  |C(W)| = 253656  (14.7s)
+ROOT idx=96 basis=4194965,8852,134217876 nodes=1,17664,2444838,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2444748,0,0,0 pcov=0,0,90,0,0,0 expanded=1,17664,0,0,0,0 sols=0 secs=148.0
+batch progress: 49/243 done, elapsed 6624s
+root idx=98: basis [4194965, 8852, 134218645]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254160  (14.8s)
+ROOT idx=98 basis=4194965,8852,134218645 nodes=1,17724,2679732,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2679630,0,0,0 pcov=0,0,102,0,0,0 expanded=1,17724,0,0,0,0 sols=0 secs=155.8
+batch progress: 50/243 done, elapsed 6780s
+root idx=100: basis [4194965, 8852, 134234133]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254160  (16.7s)
+ROOT idx=100 basis=4194965,8852,134234133 nodes=1,17724,2679732,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2679630,0,0,0 pcov=0,0,102,0,0,0 expanded=1,17724,0,0,0,0 sols=0 secs=159.3
+batch progress: 51/243 done, elapsed 6939s
+root idx=102: basis [4194965, 8852, 134234369]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [240, 12, 3, 0]  |C(W)| = 253656  (15.0s)
+ROOT idx=102 basis=4194965,8852,134234369 nodes=1,17664,2444838,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2444748,0,0,0 pcov=0,0,90,0,0,0 expanded=1,17664,0,0,0,0 sols=0 secs=153.0
+batch progress: 52/243 done, elapsed 7092s
+root idx=104: basis [4194965, 8852, 134235137]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254160  (14.7s)
+ROOT idx=104 basis=4194965,8852,134235137 nodes=1,17724,2679732,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2679630,0,0,0 pcov=0,0,102,0,0,0 expanded=1,17724,0,0,0,0 sols=0 secs=158.6
+batch progress: 53/243 done, elapsed 7251s
+root idx=106: basis [4194965, 8852, 134236033]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [240, 12, 3, 0]  |C(W)| = 253656  (14.2s)
+ROOT idx=106 basis=4194965,8852,134236033 nodes=1,17664,2444838,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2444748,0,0,0 pcov=0,0,90,0,0,0 expanded=1,17664,0,0,0,0 sols=0 secs=148.9
+batch progress: 54/243 done, elapsed 7400s
+root idx=108: basis [4194965, 8852, 134250644]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [240, 12, 3, 0]  |C(W)| = 253656  (14.6s)
+ROOT idx=108 basis=4194965,8852,134250644 nodes=1,17664,2444838,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2444748,0,0,0 pcov=0,0,90,0,0,0 expanded=1,17664,0,0,0,0 sols=0 secs=146.7
+batch progress: 55/243 done, elapsed 7547s
+root idx=110: basis [4194965, 8852, 134251137]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [240, 12, 3, 0]  |C(W)| = 253656  (14.0s)
+ROOT idx=110 basis=4194965,8852,134251137 nodes=1,17664,2444838,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2444748,0,0,0 pcov=0,0,90,0,0,0 expanded=1,17664,0,0,0,0 sols=0 secs=141.7
+batch progress: 56/243 done, elapsed 7688s
+root idx=112: basis [4194965, 8852, 134479893]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [240, 12, 3, 0]  |C(W)| = 253656  (16.6s)
+ROOT idx=112 basis=4194965,8852,134479893 nodes=1,17664,2444838,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2444748,0,0,0 pcov=0,0,90,0,0,0 expanded=1,17664,0,0,0,0 sols=0 secs=143.2
+batch progress: 57/243 done, elapsed 7832s
+root idx=114: basis [4194965, 8852, 134480769]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254160  (14.1s)
+ROOT idx=114 basis=4194965,8852,134480769 nodes=1,17724,2679732,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2679630,0,0,0 pcov=0,0,102,0,0,0 expanded=1,17724,0,0,0,0 sols=0 secs=148.1
+batch progress: 58/243 done, elapsed 7980s
+root idx=116: basis [4194965, 8852, 134742657]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254160  (14.8s)
+ROOT idx=116 basis=4194965,8852,134742657 nodes=1,17724,2679732,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2679630,0,0,0 pcov=0,0,102,0,0,0 expanded=1,17724,0,0,0,0 sols=0 secs=142.6
+batch progress: 59/243 done, elapsed 8122s
+root idx=118: basis [4195009, 8896, 18448]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 14]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257480  (13.2s)
+ROOT idx=118 basis=4195009,8896,18448 nodes=1,17192,2603528,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2603472,0,0,0 pcov=0,0,56,0,0,0 expanded=1,17192,0,0,0,0 sols=0 secs=137.7
+batch progress: 60/243 done, elapsed 8260s
+root idx=120: basis [4195009, 8896, 34824]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 15]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257480  (16.3s)
+ROOT idx=120 basis=4195009,8896,34824 nodes=1,17192,2603528,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2603472,0,0,0 pcov=0,0,56,0,0,0 expanded=1,17192,0,0,0,0 sols=0 secs=147.6
+batch progress: 61/243 done, elapsed 8408s
+root idx=122: basis [4195009, 8896, 34840]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 15]  dimP histogram [240, 12, 3, 0]  |C(W)| = 259184  (15.3s)
+ROOT idx=122 basis=4195009,8896,34840 nodes=1,17736,2639704,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2639656,0,0,0 pcov=0,0,48,0,0,0 expanded=1,17736,0,0,0,0 sols=0 secs=155.3
+batch progress: 62/243 done, elapsed 8563s
+root idx=124: basis [4195009, 8896, 66569]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 16]  dimP histogram [242, 9, 4, 0]  |C(W)| = 240960  (15.4s)
+ROOT idx=124 basis=4195009,8896,66569 nodes=1,14592,1787008,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,1787008,0,0,0 pcov=0,0,0,0,0,0 expanded=1,14592,0,0,0,0 sols=0 secs=113.3
+batch progress: 63/243 done, elapsed 8676s
+root idx=126: basis [4195009, 8896, 69648]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 16]  dimP histogram [240, 12, 3, 0]  |C(W)| = 261408  (17.5s)
+ROOT idx=126 basis=4195009,8896,69648 nodes=1,17932,2730664,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2730512,0,0,0 pcov=0,0,152,0,0,0 expanded=1,17932,0,0,0,0 sols=0 secs=189.5
+batch progress: 64/243 done, elapsed 8866s
+root idx=128: basis [4195009, 8896, 69712]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 16]  dimP histogram [240, 12, 3, 0]  |C(W)| = 261504  (18.8s)
+ROOT idx=128 basis=4195009,8896,69712 nodes=1,18080,2708604,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2708508,0,0,0 pcov=0,0,96,0,0,0 expanded=1,18080,0,0,0,0 sols=0 secs=201.6
+batch progress: 65/243 done, elapsed 9067s
+root idx=130: basis [4195009, 8896, 70672]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 16]  dimP histogram [240, 12, 3, 0]  |C(W)| = 258880  (18.1s)
+ROOT idx=130 basis=4195009,8896,70672 nodes=1,17240,2456716,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2456684,0,0,0 pcov=0,0,32,0,0,0 expanded=1,17240,0,0,0,0 sols=0 secs=180.4
+batch progress: 66/243 done, elapsed 9248s
+root idx=132: basis [4195009, 8896, 71696]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 16]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279736  (18.0s)
+ROOT idx=132 basis=4195009,8896,71696 nodes=1,18820,3255192,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3254942,0,0,0 pcov=0,0,250,0,0,0 expanded=1,18820,0,0,0,0 sols=0 secs=221.4
+batch progress: 67/243 done, elapsed 9469s
+root idx=134: basis [4195009, 8896, 71792]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 16]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279640  (18.0s)
+ROOT idx=134 basis=4195009,8896,71792 nodes=1,18680,3667360,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3666992,0,0,0 pcov=0,0,368,0,0,0 expanded=1,18680,0,0,0,0 sols=0 secs=246.2
+batch progress: 68/243 done, elapsed 9715s
+root idx=136: basis [4195009, 8896, 72720]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 16]  dimP histogram [238, 15, 2, 0]  |C(W)| = 277432  (16.6s)
+ROOT idx=136 basis=4195009,8896,72720 nodes=1,18688,3124120,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3123884,0,0,0 pcov=0,0,236,0,0,0 expanded=1,18688,0,0,0,0 sols=0 secs=217.5
+batch progress: 69/243 done, elapsed 9933s
+root idx=138: basis [4195009, 8896, 132128]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 17]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279376  (17.6s)
+ROOT idx=138 basis=4195009,8896,132128 nodes=1,17776,2906200,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2905944,0,0,0 pcov=0,0,256,0,0,0 expanded=1,17776,0,0,0,0 sols=0 secs=189.1
+batch progress: 70/243 done, elapsed 10122s
+root idx=140: basis [4195009, 8896, 8392770]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [242, 9, 4, 0]  |C(W)| = 240960  (17.8s)
+ROOT idx=140 basis=4195009,8896,8392770 nodes=1,14592,1787008,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,1787008,0,0,0 pcov=0,0,0,0,0,0 expanded=1,14592,0,0,0,0 sols=0 secs=134.2
+batch progress: 71/243 done, elapsed 10256s
+root idx=142: basis [4195009, 8896, 8393824]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279168  (19.5s)
+ROOT idx=142 basis=4195009,8896,8393824 nodes=1,19008,3227064,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3226912,0,0,0 pcov=0,0,152,0,0,0 expanded=1,19008,0,0,0,0 sols=0 secs=212.9
+batch progress: 72/243 done, elapsed 10469s
+root idx=144: basis [4195009, 8896, 8394850]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257232  (16.7s)
+ROOT idx=144 basis=4195009,8896,8394850 nodes=1,17264,2541904,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2541832,0,0,0 pcov=0,0,72,0,0,0 expanded=1,17264,0,0,0,0 sols=0 secs=151.7
+batch progress: 73/243 done, elapsed 10621s
+root idx=146: basis [4195009, 8896, 8421395]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [240, 12, 3, 0]  |C(W)| = 267952  (8.3s)
+ROOT idx=146 basis=4195009,8896,8421395 nodes=1,16416,1799936,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,1799936,0,0,0 pcov=0,0,0,0,0,0 expanded=1,16416,0,0,0,0 sols=0 secs=68.2
+batch progress: 74/243 done, elapsed 10689s
+root idx=148: basis [4195009, 8896, 8421457]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [240, 12, 3, 0]  |C(W)| = 253488  (7.9s)
+ROOT idx=148 basis=4195009,8896,8421457 nodes=1,15648,1626048,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,1626048,0,0,0 pcov=0,0,0,0,0,0 expanded=1,15648,0,0,0,0 sols=0 secs=57.7
+batch progress: 75/243 done, elapsed 10746s
+root idx=150: basis [4195009, 8896, 8421489]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254640  (8.2s)
+ROOT idx=150 basis=4195009,8896,8421489 nodes=1,16032,2070848,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2070816,0,0,0 pcov=0,0,32,0,0,0 expanded=1,16032,0,0,0,0 sols=0 secs=63.9
+batch progress: 76/243 done, elapsed 10810s
+root idx=152: basis [4195009, 8896, 8425536]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278960  (8.4s)
+ROOT idx=152 basis=4195009,8896,8425536 nodes=1,17792,2893160,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2892928,0,0,0 pcov=0,0,232,0,0,0 expanded=1,17792,0,0,0,0 sols=0 secs=86.6
+batch progress: 77/243 done, elapsed 10897s
+root idx=154: basis [4195009, 8896, 8426592]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279264  (7.9s)
+ROOT idx=154 basis=4195009,8896,8426592 nodes=1,18632,3384288,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3384112,0,0,0 pcov=0,0,176,0,0,0 expanded=1,18632,0,0,0,0 sols=0 secs=96.5
+batch progress: 78/243 done, elapsed 10993s
+root idx=156: basis [4195009, 8896, 8427522]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279736  (7.6s)
+ROOT idx=156 basis=4195009,8896,8427522 nodes=1,18820,3255192,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3254944,0,0,0 pcov=0,0,248,0,0,0 expanded=1,18820,0,0,0,0 sols=0 secs=97.1
+batch progress: 79/243 done, elapsed 11090s
+root idx=158: basis [4195009, 8896, 8454289]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [240, 12, 3, 0]  |C(W)| = 253488  (6.7s)
+ROOT idx=158 basis=4195009,8896,8454289 nodes=1,15648,1626048,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,1626048,0,0,0 pcov=0,0,0,0,0,0 expanded=1,15648,0,0,0,0 sols=0 secs=55.7
+batch progress: 80/243 done, elapsed 11146s
+root idx=160: basis [4195009, 8896, 8454353]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254640  (6.9s)
+ROOT idx=160 basis=4195009,8896,8454353 nodes=1,16032,2070848,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2070816,0,0,0 pcov=0,0,32,0,0,0 expanded=1,16032,0,0,0,0 sols=0 secs=58.4
+batch progress: 81/243 done, elapsed 11205s
+root idx=162: basis [4195009, 8896, 8454385]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254640  (7.3s)
+ROOT idx=162 basis=4195009,8896,8454385 nodes=1,16032,2070848,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2070816,0,0,0 pcov=0,0,32,0,0,0 expanded=1,16032,0,0,0,0 sols=0 secs=60.1
+batch progress: 82/243 done, elapsed 11265s
+root idx=164: basis [4195009, 8896, 8459312]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279536  (7.1s)
+ROOT idx=164 basis=4195009,8896,8459312 nodes=1,18944,3427520,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3427228,0,0,0 pcov=0,0,292,0,0,0 expanded=1,18944,0,0,0,0 sols=0 secs=95.0
+batch progress: 83/243 done, elapsed 11360s
+root idx=166: basis [4195009, 8896, 8460418]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [240, 12, 3, 0]  |C(W)| = 259184  (7.4s)
+ROOT idx=166 basis=4195009,8896,8460418 nodes=1,17736,2639704,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2639648,0,0,0 pcov=0,0,56,0,0,0 expanded=1,17736,0,0,0,0 sols=0 secs=77.1
+batch progress: 84/243 done, elapsed 11437s
+root idx=168: basis [4195009, 8896, 8461362]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [238, 15, 2, 0]  |C(W)| = 277432  (7.0s)
+ROOT idx=168 basis=4195009,8896,8461362 nodes=1,18688,3124120,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3123888,0,0,0 pcov=0,0,232,0,0,0 expanded=1,18688,0,0,0,0 sols=0 secs=93.6
+batch progress: 85/243 done, elapsed 11530s
+root idx=170: basis [4195009, 8896, 8519697]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [238, 15, 2, 0]  |C(W)| = 288128  (7.1s)
+ROOT idx=170 basis=4195009,8896,8519697 nodes=1,17152,2142656,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2142176,0,0,0 pcov=0,0,480,0,0,0 expanded=1,17152,0,0,0,0 sols=0 secs=75.1
+batch progress: 86/243 done, elapsed 11605s
+root idx=172: basis [4195009, 8896, 8519728]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254640  (7.3s)
+ROOT idx=172 basis=4195009,8896,8519728 nodes=1,16032,2070848,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2070816,0,0,0 pcov=0,0,32,0,0,0 expanded=1,16032,0,0,0,0 sols=0 secs=59.0
+batch progress: 87/243 done, elapsed 11664s
+root idx=174: basis [4195009, 8896, 8519761]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [238, 15, 2, 0]  |C(W)| = 271872  (7.0s)
+ROOT idx=174 basis=4195009,8896,8519761 nodes=1,16896,2307200,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2307040,0,0,0 pcov=0,0,160,0,0,0 expanded=1,16896,0,0,0,0 sols=0 secs=67.5
+batch progress: 88/243 done, elapsed 11732s
+root idx=176: basis [4195009, 8896, 8552465]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [238, 15, 2, 0]  |C(W)| = 288128  (7.3s)
+ROOT idx=176 basis=4195009,8896,8552465 nodes=1,17152,2142656,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2142176,0,0,0 pcov=0,0,480,0,0,0 expanded=1,17152,0,0,0,0 sols=0 secs=74.0
+batch progress: 89/243 done, elapsed 11806s
+root idx=178: basis [4195009, 8896, 8552529]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [238, 15, 2, 0]  |C(W)| = 273536  (7.5s)
+ROOT idx=178 basis=4195009,8896,8552529 nodes=1,16768,2278080,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2278016,0,0,0 pcov=0,0,64,0,0,0 expanded=1,16768,0,0,0,0 sols=0 secs=68.4
+batch progress: 90/243 done, elapsed 11874s
+root idx=180: basis [4195009, 8896, 8552561]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [238, 15, 2, 0]  |C(W)| = 281856  (7.1s)
+ROOT idx=180 basis=4195009,8896,8552561 nodes=1,17024,2609856,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2609536,0,0,0 pcov=0,0,320,0,0,0 expanded=1,17024,0,0,0,0 sols=0 secs=73.9
+batch progress: 91/243 done, elapsed 11948s
+root idx=182: basis [4195009, 8896, 8585249]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254640  (6.7s)
+ROOT idx=182 basis=4195009,8896,8585249 nodes=1,16032,2070848,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2070816,0,0,0 pcov=0,0,32,0,0,0 expanded=1,16032,0,0,0,0 sols=0 secs=56.8
+batch progress: 92/243 done, elapsed 12005s
+root idx=184: basis [4195009, 8896, 8585296]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [238, 15, 2, 0]  |C(W)| = 271872  (6.3s)
+ROOT idx=184 basis=4195009,8896,8585296 nodes=1,16896,2307200,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2307040,0,0,0 pcov=0,0,160,0,0,0 expanded=1,16896,0,0,0,0 sols=0 secs=67.4
+batch progress: 93/243 done, elapsed 12072s
+root idx=186: basis [4195009, 8896, 8585329]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [238, 15, 2, 0]  |C(W)| = 275328  (7.0s)
+ROOT idx=186 basis=4195009,8896,8585329 nodes=1,17408,2542304,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2541888,0,0,0 pcov=0,0,416,0,0,0 expanded=1,17408,0,0,0,0 sols=0 secs=73.2
+batch progress: 94/243 done, elapsed 12146s
+root idx=188: basis [4195009, 8896, 8585392]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [238, 15, 2, 0]  |C(W)| = 276096  (7.4s)
+ROOT idx=188 basis=4195009,8896,8585392 nodes=1,18304,2598784,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2598560,0,0,0 pcov=0,0,224,0,0,0 expanded=1,18304,0,0,0,0 sols=0 secs=74.0
+batch progress: 95/243 done, elapsed 12220s
+root idx=190: basis [4195009, 8896, 8585425]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279808  (6.1s)
+ROOT idx=190 basis=4195009,8896,8585425 nodes=1,17216,2542976,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2542816,0,0,0 pcov=0,0,160,0,0,0 expanded=1,17216,0,0,0,0 sols=0 secs=71.3
+batch progress: 96/243 done, elapsed 12291s
+root idx=192: basis [4195009, 8896, 8585457]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [238, 15, 2, 0]  |C(W)| = 275328  (6.2s)
+ROOT idx=192 basis=4195009,8896,8585457 nodes=1,17408,2542304,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2541888,0,0,0 pcov=0,0,416,0,0,0 expanded=1,17408,0,0,0,0 sols=0 secs=73.4
+batch progress: 97/243 done, elapsed 12364s
+root idx=194: basis [4195009, 8896, 16810144]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 24]  dimP histogram [238, 15, 2, 0]  |C(W)| = 271872  (6.6s)
+ROOT idx=194 basis=4195009,8896,16810144 nodes=1,16896,2307200,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2307040,0,0,0 pcov=0,0,160,0,0,0 expanded=1,16896,0,0,0,0 sols=0 secs=64.9
+batch progress: 98/243 done, elapsed 12429s
+root idx=196: basis [4195009, 8896, 16810656]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 24]  dimP histogram [238, 15, 2, 0]  |C(W)| = 274176  (6.8s)
+ROOT idx=196 basis=4195009,8896,16810656 nodes=1,16704,2163008,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2162880,0,0,0 pcov=0,0,128,0,0,0 expanded=1,16704,0,0,0,0 sols=0 secs=60.9
+batch progress: 99/243 done, elapsed 12490s
+root idx=198: basis [4195009, 8896, 16842785]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 24]  dimP histogram [240, 12, 3, 0]  |C(W)| = 254640  (6.9s)
+ROOT idx=198 basis=4195009,8896,16842785 nodes=1,16032,2070848,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2070816,0,0,0 pcov=0,0,32,0,0,0 expanded=1,16032,0,0,0,0 sols=0 secs=58.1
+batch progress: 100/243 done, elapsed 12548s
+root idx=200: basis [4195009, 8896, 16842832]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 24]  dimP histogram [240, 12, 3, 0]  |C(W)| = 258608  (6.3s)
+ROOT idx=200 basis=4195009,8896,16842832 nodes=1,18576,1945120,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,1944992,0,0,0 pcov=0,0,128,0,0,0 expanded=1,18576,0,0,0,0 sols=0 secs=64.9
+batch progress: 101/243 done, elapsed 12613s
+root idx=202: basis [4195009, 8896, 16842864]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 24]  dimP histogram [238, 15, 2, 0]  |C(W)| = 275328  (7.1s)
+ROOT idx=202 basis=4195009,8896,16842864 nodes=1,17408,2542304,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2541888,0,0,0 pcov=0,0,416,0,0,0 expanded=1,17408,0,0,0,0 sols=0 secs=73.1
+batch progress: 102/243 done, elapsed 12686s
+root idx=204: basis [4195009, 8896, 16843280]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 24]  dimP histogram [240, 12, 3, 0]  |C(W)| = 258608  (6.5s)
+ROOT idx=204 basis=4195009,8896,16843280 nodes=1,18576,1945120,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,1944992,0,0,0 pcov=0,0,128,0,0,0 expanded=1,18576,0,0,0,0 sols=0 secs=65.1
+batch progress: 103/243 done, elapsed 12751s
+root idx=206: basis [4195009, 8896, 16843313]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 24]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278016  (6.9s)
+ROOT idx=206 basis=4195009,8896,16843313 nodes=1,17472,2226080,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2225696,0,0,0 pcov=0,0,384,0,0,0 expanded=1,17472,0,0,0,0 sols=0 secs=73.2
+batch progress: 104/243 done, elapsed 12824s
+root idx=208: basis [4195009, 8896, 16843376]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 24]  dimP histogram [238, 15, 2, 0]  |C(W)| = 271872  (7.0s)
+ROOT idx=208 basis=4195009,8896,16843376 nodes=1,16896,2307200,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2307040,0,0,0 pcov=0,0,160,0,0,0 expanded=1,16896,0,0,0,0 sols=0 secs=67.9
+batch progress: 105/243 done, elapsed 12892s
+root idx=210: basis [4195009, 8896, 16843776]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 24]  dimP histogram [240, 12, 3, 0]  |C(W)| = 261408  (6.7s)
+ROOT idx=210 basis=4195009,8896,16843776 nodes=1,17932,2730664,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2730512,0,0,0 pcov=0,0,152,0,0,0 expanded=1,17932,0,0,0,0 sols=0 secs=76.3
+batch progress: 106/243 done, elapsed 12969s
+root idx=212: basis [4195009, 8896, 16908448]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 24]  dimP histogram [240, 12, 3, 0]  |C(W)| = 253488  (7.2s)
+ROOT idx=212 basis=4195009,8896,16908448 nodes=1,15648,1626048,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,1626048,0,0,0 pcov=0,0,0,0,0,0 expanded=1,15648,0,0,0,0 sols=0 secs=51.9
+batch progress: 107/243 done, elapsed 13021s
+root idx=214: basis [4195009, 8896, 16925216]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 24]  dimP histogram [240, 12, 3, 0]  |C(W)| = 267952  (7.2s)
+ROOT idx=214 basis=4195009,8896,16925216 nodes=1,16416,1799936,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,1799936,0,0,0 pcov=0,0,0,0,0,0 expanded=1,16416,0,0,0,0 sols=0 secs=58.7
+batch progress: 108/243 done, elapsed 13079s
+root idx=216: basis [4195009, 8896, 16941600]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 24]  dimP histogram [238, 15, 2, 0]  |C(W)| = 288128  (6.6s)
+ROOT idx=216 basis=4195009,8896,16941600 nodes=1,17152,2142656,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2142176,0,0,0 pcov=0,0,480,0,0,0 expanded=1,17152,0,0,0,0 sols=0 secs=71.2
+batch progress: 109/243 done, elapsed 13151s
+root idx=218: basis [4195009, 8896, 33554627]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257232  (6.5s)
+ROOT idx=218 basis=4195009,8896,33554627 nodes=1,17264,2541904,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2541832,0,0,0 pcov=0,0,72,0,0,0 expanded=1,17264,0,0,0,0 sols=0 secs=68.6
+batch progress: 110/243 done, elapsed 13219s
+root idx=220: basis [4195009, 8896, 33554659]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [240, 12, 3, 0]  |C(W)| = 260160  (6.7s)
+ROOT idx=220 basis=4195009,8896,33554659 nodes=1,17688,2679512,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2679432,0,0,0 pcov=0,0,80,0,0,0 expanded=1,17688,0,0,0,0 sols=0 secs=70.6
+batch progress: 111/243 done, elapsed 13290s
+root idx=222: basis [4195009, 8896, 33557002]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [240, 12, 3, 0]  |C(W)| = 260160  (6.4s)
+ROOT idx=222 basis=4195009,8896,33557002 nodes=1,17688,2679512,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2679432,0,0,0 pcov=0,0,80,0,0,0 expanded=1,17688,0,0,0,0 sols=0 secs=68.0
+batch progress: 112/243 done, elapsed 13358s
+root idx=224: basis [4195009, 8896, 33557059]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257480  (6.4s)
+ROOT idx=224 basis=4195009,8896,33557059 nodes=1,17192,2603528,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2603468,0,0,0 pcov=0,0,60,0,0,0 expanded=1,17192,0,0,0,0 sols=0 secs=64.5
+batch progress: 113/243 done, elapsed 13422s
+root idx=226: basis [4195009, 8896, 33557065]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [240, 12, 3, 0]  |C(W)| = 259184  (6.3s)
+ROOT idx=226 basis=4195009,8896,33557065 nodes=1,17736,2639704,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2639648,0,0,0 pcov=0,0,56,0,0,0 expanded=1,17736,0,0,0,0 sols=0 secs=66.5
+batch progress: 114/243 done, elapsed 13489s
+root idx=228: basis [4195009, 8896, 33558594]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278888  (6.8s)
+ROOT idx=228 basis=4195009,8896,33558594 nodes=1,18548,3197032,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3196784,0,0,0 pcov=0,0,248,0,0,0 expanded=1,18548,0,0,0,0 sols=0 secs=86.5
+batch progress: 115/243 done, elapsed 13575s
+root idx=230: basis [4195009, 8896, 33558698]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 282720  (7.3s)
+ROOT idx=230 basis=4195009,8896,33558698 nodes=1,18192,3266064,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3265564,0,0,0 pcov=0,0,500,0,0,0 expanded=1,18192,0,0,0,0 sols=0 secs=90.6
+batch progress: 116/243 done, elapsed 13666s
+root idx=232: basis [4195009, 8896, 33560674]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278664  (6.4s)
+ROOT idx=232 basis=4195009,8896,33560674 nodes=1,18576,3118096,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3117908,0,0,0 pcov=0,0,188,0,0,0 expanded=1,18576,0,0,0,0 sols=0 secs=81.1
+batch progress: 117/243 done, elapsed 13747s
+root idx=234: basis [4195009, 8896, 33570883]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257232  (6.4s)
+ROOT idx=234 basis=4195009,8896,33570883 nodes=1,17264,2541904,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2541832,0,0,0 pcov=0,0,72,0,0,0 expanded=1,17264,0,0,0,0 sols=0 secs=64.9
+batch progress: 118/243 done, elapsed 13812s
+root idx=236: basis [4195009, 8896, 33574976]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279232  (6.4s)
+ROOT idx=236 basis=4195009,8896,33574976 nodes=1,18672,3597700,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3597352,0,0,0 pcov=0,0,348,0,0,0 expanded=1,18672,0,0,0,0 sols=0 secs=91.6
+batch progress: 119/243 done, elapsed 13904s
+root idx=238: basis [4195009, 8896, 33575080]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279688  (6.7s)
+ROOT idx=238 basis=4195009,8896,33575080 nodes=1,18344,3299232,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3298984,0,0,0 pcov=0,0,248,0,0,0 expanded=1,18344,0,0,0,0 sols=0 secs=86.8
+batch progress: 120/243 done, elapsed 13990s
+root idx=240: basis [4195009, 8896, 33575104]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279336  (7.1s)
+ROOT idx=240 basis=4195009,8896,33575104 nodes=1,18508,3614416,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3614050,0,0,0 pcov=0,0,366,0,0,0 expanded=1,18508,0,0,0,0 sols=0 secs=90.4
+batch progress: 121/243 done, elapsed 14081s
+root idx=242: basis [4195009, 8896, 33577002]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279016  (6.1s)
+ROOT idx=242 basis=4195009,8896,33577002 nodes=1,18472,3544552,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3544200,0,0,0 pcov=0,0,352,0,0,0 expanded=1,18472,0,0,0,0 sols=0 secs=86.0
+batch progress: 122/243 done, elapsed 14167s
+root idx=244: basis [4195009, 8896, 33577058]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278648  (6.1s)
+ROOT idx=244 basis=4195009,8896,33577058 nodes=1,18572,3571008,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3570756,0,0,0 pcov=0,0,252,0,0,0 expanded=1,18572,0,0,0,0 sols=0 secs=83.8
+batch progress: 123/243 done, elapsed 14251s
+root idx=246: basis [4195009, 8896, 33624106]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279824  (6.3s)
+ROOT idx=246 basis=4195009,8896,33624106 nodes=1,18508,3318044,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3317768,0,0,0 pcov=0,0,276,0,0,0 expanded=1,18508,0,0,0,0 sols=0 secs=87.4
+batch progress: 124/243 done, elapsed 14338s
+root idx=248: basis [4195009, 8896, 33624232]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278508  (6.3s)
+ROOT idx=248 basis=4195009,8896,33624232 nodes=1,18360,3198188,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3197958,0,0,0 pcov=0,0,230,0,0,0 expanded=1,18360,0,0,0,0 sols=0 secs=86.3
+batch progress: 125/243 done, elapsed 14424s
+root idx=250: basis [4195009, 8896, 33624256]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278496  (6.3s)
+ROOT idx=250 basis=4195009,8896,33624256 nodes=1,18828,3601680,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3601362,0,0,0 pcov=0,0,318,0,0,0 expanded=1,18828,0,0,0,0 sols=0 secs=91.5
+batch progress: 126/243 done, elapsed 14516s
+root idx=252: basis [4195009, 8896, 33626154]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278888  (6.4s)
+ROOT idx=252 basis=4195009,8896,33626154 nodes=1,19024,3580096,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3579816,0,0,0 pcov=0,0,280,0,0,0 expanded=1,19024,0,0,0,0 sols=0 secs=92.3
+batch progress: 127/243 done, elapsed 14608s
+root idx=254: basis [4195009, 8896, 33626280]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279072  (6.4s)
+ROOT idx=254 basis=4195009,8896,33626280 nodes=1,18900,3561704,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3561428,0,0,0 pcov=0,0,276,0,0,0 expanded=1,18900,0,0,0,0 sols=0 secs=92.3
+batch progress: 128/243 done, elapsed 14700s
+root idx=256: basis [4195009, 8896, 33626336]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279056  (6.6s)
+ROOT idx=256 basis=4195009,8896,33626336 nodes=1,18648,3540124,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3539890,0,0,0 pcov=0,0,234,0,0,0 expanded=1,18648,0,0,0,0 sols=0 secs=93.1
+batch progress: 129/243 done, elapsed 14793s
+root idx=258: basis [4195009, 8896, 33685576]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278712  (6.4s)
+ROOT idx=258 basis=4195009,8896,33685576 nodes=1,18636,3589940,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3589666,0,0,0 pcov=0,0,274,0,0,0 expanded=1,18636,0,0,0,0 sols=0 secs=91.3
+batch progress: 130/243 done, elapsed 14885s
+root idx=260: basis [4195009, 8896, 33685696]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279736  (6.3s)
+ROOT idx=260 basis=4195009,8896,33685696 nodes=1,18820,3255192,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3254948,0,0,0 pcov=0,0,244,0,0,0 expanded=1,18820,0,0,0,0 sols=0 secs=88.6
+batch progress: 131/243 done, elapsed 14973s
+root idx=262: basis [4195009, 8896, 33685705]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279656  (6.4s)
+ROOT idx=262 basis=4195009,8896,33685705 nodes=1,18712,3218492,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3218308,0,0,0 pcov=0,0,184,0,0,0 expanded=1,18712,0,0,0,0 sols=0 secs=83.9
+batch progress: 132/243 done, elapsed 15057s
+root idx=264: basis [4195009, 8896, 33688072]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279672  (6.1s)
+ROOT idx=264 basis=4195009,8896,33688072 nodes=1,18564,3195020,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3194716,0,0,0 pcov=0,0,304,0,0,0 expanded=1,18564,0,0,0,0 sols=0 secs=81.0
+batch progress: 133/243 done, elapsed 15138s
+root idx=266: basis [4195009, 8896, 33688129]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279552  (6.4s)
+ROOT idx=266 basis=4195009,8896,33688129 nodes=1,18884,3208668,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3208448,0,0,0 pcov=0,0,220,0,0,0 expanded=1,18884,0,0,0,0 sols=0 secs=80.2
+batch progress: 134/243 done, elapsed 15218s
+root idx=268: basis [4195009, 8896, 33688137]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279592  (6.5s)
+ROOT idx=268 basis=4195009,8896,33688137 nodes=1,18932,3222912,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3222706,0,0,0 pcov=0,0,206,0,0,0 expanded=1,18932,0,0,0,0 sols=0 secs=80.6
+batch progress: 135/243 done, elapsed 15299s
+root idx=270: basis [4195009, 8896, 50331651]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279500  (6.5s)
+ROOT idx=270 basis=4195009,8896,50331651 nodes=1,18364,3258824,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3258528,0,0,0 pcov=0,0,296,0,0,0 expanded=1,18364,0,0,0,0 sols=0 secs=85.7
+batch progress: 136/243 done, elapsed 15385s
+root idx=272: basis [4195009, 8896, 50331779]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279148  (6.0s)
+ROOT idx=272 basis=4195009,8896,50331779 nodes=1,18412,3234320,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3234060,0,0,0 pcov=0,0,260,0,0,0 expanded=1,18412,0,0,0,0 sols=0 secs=84.7
+batch progress: 137/243 done, elapsed 15469s
+root idx=274: basis [4195009, 8896, 50333699]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279256  (6.4s)
+ROOT idx=274 basis=4195009,8896,50333699 nodes=1,18612,3574872,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3574536,0,0,0 pcov=0,0,336,0,0,0 expanded=1,18612,0,0,0,0 sols=0 secs=92.0
+batch progress: 138/243 done, elapsed 15562s
+root idx=276: basis [4195009, 8896, 50462721]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 281328  (6.7s)
+ROOT idx=276 basis=4195009,8896,50462721 nodes=1,18208,3199864,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3199488,0,0,0 pcov=0,0,376,0,0,0 expanded=1,18208,0,0,0,0 sols=0 secs=83.7
+batch progress: 139/243 done, elapsed 15645s
+root idx=278: basis [4195009, 8896, 50462753]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278872  (6.5s)
+ROOT idx=278 basis=4195009,8896,50462753 nodes=1,18472,3271088,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3270800,0,0,0 pcov=0,0,288,0,0,0 expanded=1,18472,0,0,0,0 sols=0 secs=84.6
+batch progress: 140/243 done, elapsed 15730s
+root idx=280: basis [4195009, 8896, 50462849]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278584  (6.8s)
+ROOT idx=280 basis=4195009,8896,50462849 nodes=1,18284,3144524,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3144304,0,0,0 pcov=0,0,220,0,0,0 expanded=1,18284,0,0,0,0 sols=0 secs=84.1
+batch progress: 141/243 done, elapsed 15814s
+root idx=282: basis [4195009, 8896, 50464771]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279016  (6.8s)
+ROOT idx=282 basis=4195009,8896,50464771 nodes=1,18472,3544552,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3544200,0,0,0 pcov=0,0,352,0,0,0 expanded=1,18472,0,0,0,0 sols=0 secs=91.2
+batch progress: 142/243 done, elapsed 15905s
+root idx=284: basis [4195009, 8896, 50479233]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 25]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278976  (6.8s)
+ROOT idx=284 basis=4195009,8896,50479233 nodes=1,18360,3256600,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3256364,0,0,0 pcov=0,0,236,0,0,0 expanded=1,18360,0,0,0,0 sols=0 secs=86.1
+batch progress: 143/243 done, elapsed 15991s
+root idx=286: basis [4195009, 8896, 67111016]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279656  (6.6s)
+ROOT idx=286 basis=4195009,8896,67111016 nodes=1,18712,3218492,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3218304,0,0,0 pcov=0,0,188,0,0,0 expanded=1,18712,0,0,0,0 sols=0 secs=83.5
+batch progress: 144/243 done, elapsed 16075s
+root idx=288: basis [4195009, 8896, 67113632]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [238, 15, 2, 0]  |C(W)| = 277928  (6.5s)
+ROOT idx=288 basis=4195009,8896,67113632 nodes=1,17592,2915504,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2915352,0,0,0 pcov=0,0,152,0,0,0 expanded=1,17592,0,0,0,0 sols=0 secs=71.2
+batch progress: 145/243 done, elapsed 16146s
+root idx=290: basis [4195009, 8896, 67114656]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [238, 15, 2, 0]  |C(W)| = 276928  (6.4s)
+ROOT idx=290 basis=4195009,8896,67114656 nodes=1,16944,2789272,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2789120,0,0,0 pcov=0,0,152,0,0,0 expanded=1,16944,0,0,0,0 sols=0 secs=68.5
+batch progress: 146/243 done, elapsed 16214s
+root idx=292: basis [4195009, 8896, 67127298]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278544  (6.6s)
+ROOT idx=292 basis=4195009,8896,67127298 nodes=1,18584,3486820,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3486508,0,0,0 pcov=0,0,312,0,0,0 expanded=1,18584,0,0,0,0 sols=0 secs=91.7
+batch progress: 147/243 done, elapsed 16306s
+root idx=294: basis [4195009, 8896, 67127402]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279256  (6.6s)
+ROOT idx=294 basis=4195009,8896,67127402 nodes=1,18544,3592664,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3592274,0,0,0 pcov=0,0,390,0,0,0 expanded=1,18544,0,0,0,0 sols=0 secs=88.3
+batch progress: 148/243 done, elapsed 16394s
+root idx=296: basis [4195009, 8896, 67174409]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [240, 12, 3, 0]  |C(W)| = 258880  (6.3s)
+ROOT idx=296 basis=4195009,8896,67174409 nodes=1,17240,2456716,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2456676,0,0,0 pcov=0,0,40,0,0,0 expanded=1,17240,0,0,0,0 sols=0 secs=65.7
+batch progress: 149/243 done, elapsed 16460s
+root idx=298: basis [4195009, 8896, 67175433]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [240, 12, 3, 0]  |C(W)| = 261408  (6.1s)
+ROOT idx=298 basis=4195009,8896,67175433 nodes=1,17932,2730664,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2730516,0,0,0 pcov=0,0,148,0,0,0 expanded=1,17932,0,0,0,0 sols=0 secs=68.8
+batch progress: 150/243 done, elapsed 16529s
+root idx=300: basis [4195009, 8896, 67176552]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279656  (6.4s)
+ROOT idx=300 basis=4195009,8896,67176552 nodes=1,18712,3218492,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3218312,0,0,0 pcov=0,0,180,0,0,0 expanded=1,18712,0,0,0,0 sols=0 secs=83.3
+batch progress: 151/243 done, elapsed 16612s
+root idx=302: basis [4195009, 8896, 67176960]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279248  (6.2s)
+ROOT idx=302 basis=4195009,8896,67176960 nodes=1,18648,3139132,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3138872,0,0,0 pcov=0,0,260,0,0,0 expanded=1,18648,0,0,0,0 sols=0 secs=88.7
+batch progress: 152/243 done, elapsed 16701s
+root idx=304: basis [4195009, 8896, 67177057]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279256  (7.2s)
+ROOT idx=304 basis=4195009,8896,67177057 nodes=1,18544,3592664,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3592278,0,0,0 pcov=0,0,386,0,0,0 expanded=1,18544,0,0,0,0 sols=0 secs=93.1
+batch progress: 153/243 done, elapsed 16794s
+root idx=306: basis [4195009, 8896, 67179016]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [240, 12, 3, 0]  |C(W)| = 261408  (6.4s)
+ROOT idx=306 basis=4195009,8896,67179016 nodes=1,17932,2730664,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2730512,0,0,0 pcov=0,0,152,0,0,0 expanded=1,17932,0,0,0,0 sols=0 secs=76.4
+batch progress: 154/243 done, elapsed 16871s
+root idx=308: basis [4195009, 8896, 67179041]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [238, 15, 2, 0]  |C(W)| = 281488  (7.8s)
+ROOT idx=308 basis=4195009,8896,67179041 nodes=1,18568,3569304,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3568926,0,0,0 pcov=0,0,378,0,0,0 expanded=1,18568,0,0,0,0 sols=0 secs=96.1
+batch progress: 155/243 done, elapsed 16967s
+root idx=310: basis [4195009, 8896, 67179105]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [238, 15, 2, 0]  |C(W)| = 280304  (6.7s)
+ROOT idx=310 basis=4195009,8896,67179105 nodes=1,18512,3510416,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3510160,0,0,0 pcov=0,0,256,0,0,0 expanded=1,18512,0,0,0,0 sols=0 secs=87.8
+batch progress: 156/243 done, elapsed 17054s
+root idx=312: basis [4195009, 8896, 67179584]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [240, 12, 3, 0]  |C(W)| = 258880  (6.4s)
+ROOT idx=312 basis=4195009,8896,67179584 nodes=1,17240,2456716,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2456684,0,0,0 pcov=0,0,32,0,0,0 expanded=1,17240,0,0,0,0 sols=0 secs=69.9
+batch progress: 157/243 done, elapsed 17124s
+root idx=314: basis [4195009, 8896, 67180032]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [240, 12, 3, 0]  |C(W)| = 258880  (6.0s)
+ROOT idx=314 basis=4195009,8896,67180032 nodes=1,17240,2456716,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2456684,0,0,0 pcov=0,0,32,0,0,0 expanded=1,17240,0,0,0,0 sols=0 secs=65.1
+batch progress: 158/243 done, elapsed 17189s
+root idx=316: basis [4195009, 8896, 67180064]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279096  (6.1s)
+ROOT idx=316 basis=4195009,8896,67180064 nodes=1,17776,3161248,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3161006,0,0,0 pcov=0,0,242,0,0,0 expanded=1,17776,0,0,0,0 sols=0 secs=81.9
+batch progress: 159/243 done, elapsed 17271s
+root idx=318: basis [4195009, 8896, 75497505]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279696  (6.4s)
+ROOT idx=318 basis=4195009,8896,75497505 nodes=1,18864,3575968,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3575660,0,0,0 pcov=0,0,308,0,0,0 expanded=1,18864,0,0,0,0 sols=0 secs=90.4
+batch progress: 160/243 done, elapsed 17362s
+root idx=320: basis [4195009, 8896, 75498499]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [238, 15, 2, 0]  |C(W)| = 277928  (6.4s)
+ROOT idx=320 basis=4195009,8896,75498499 nodes=1,17592,2915504,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2915352,0,0,0 pcov=0,0,152,0,0,0 expanded=1,17592,0,0,0,0 sols=0 secs=77.6
+batch progress: 161/243 done, elapsed 17439s
+root idx=322: basis [4195009, 8896, 75502626]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279376  (6.5s)
+ROOT idx=322 basis=4195009,8896,75502626 nodes=1,17776,2906200,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2905936,0,0,0 pcov=0,0,264,0,0,0 expanded=1,17776,0,0,0,0 sols=0 secs=76.2
+batch progress: 162/243 done, elapsed 17515s
+root idx=324: basis [4195009, 8896, 75563041]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279504  (6.1s)
+ROOT idx=324 basis=4195009,8896,75563041 nodes=1,18592,3503728,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3503528,0,0,0 pcov=0,0,200,0,0,0 expanded=1,18592,0,0,0,0 sols=0 secs=85.4
+batch progress: 163/243 done, elapsed 17601s
+root idx=326: basis [4195009, 8896, 75563169]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279504  (6.1s)
+ROOT idx=326 basis=4195009,8896,75563169 nodes=1,18592,3503728,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3503528,0,0,0 pcov=0,0,200,0,0,0 expanded=1,18592,0,0,0,0 sols=0 secs=83.4
+batch progress: 164/243 done, elapsed 17684s
+root idx=328: basis [4195009, 8896, 75564033]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [238, 15, 2, 0]  |C(W)| = 282016  (6.3s)
+ROOT idx=328 basis=4195009,8896,75564033 nodes=1,19340,3711836,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3711528,0,0,0 pcov=0,0,308,0,0,0 expanded=1,19340,0,0,0,0 sols=0 secs=92.2
+batch progress: 165/243 done, elapsed 17776s
+root idx=330: basis [4195009, 8896, 75564161]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [238, 15, 2, 0]  |C(W)| = 281488  (6.6s)
+ROOT idx=330 basis=4195009,8896,75564161 nodes=1,18568,3569304,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3568926,0,0,0 pcov=0,0,378,0,0,0 expanded=1,18568,0,0,0,0 sols=0 secs=83.4
+batch progress: 166/243 done, elapsed 17860s
+root idx=332: basis [4195009, 8896, 75568129]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 26]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279096  (6.6s)
+ROOT idx=332 basis=4195009,8896,75568129 nodes=1,17776,3161248,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3161008,0,0,0 pcov=0,0,240,0,0,0 expanded=1,17776,0,0,0,0 sols=0 secs=80.1
+batch progress: 167/243 done, elapsed 17940s
+root idx=334: basis [4195009, 8896, 134217867]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257232  (6.4s)
+ROOT idx=334 basis=4195009,8896,134217867 nodes=1,17264,2541904,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2541832,0,0,0 pcov=0,0,72,0,0,0 expanded=1,17264,0,0,0,0 sols=0 secs=65.3
+batch progress: 168/243 done, elapsed 18005s
+root idx=336: basis [4195009, 8896, 134218256]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278812  (6.5s)
+ROOT idx=336 basis=4195009,8896,134218256 nodes=1,18320,3209476,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3209160,0,0,0 pcov=0,0,316,0,0,0 expanded=1,18320,0,0,0,0 sols=0 secs=85.7
+batch progress: 169/243 done, elapsed 18091s
+root idx=338: basis [4195009, 8896, 134218384]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279052  (6.6s)
+ROOT idx=338 basis=4195009,8896,134218384 nodes=1,18312,3165016,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3164760,0,0,0 pcov=0,0,256,0,0,0 expanded=1,18312,0,0,0,0 sols=0 secs=83.4
+batch progress: 170/243 done, elapsed 18174s
+root idx=340: basis [4195009, 8896, 134218755]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279336  (6.5s)
+ROOT idx=340 basis=4195009,8896,134218755 nodes=1,18508,3614416,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3614060,0,0,0 pcov=0,0,356,0,0,0 expanded=1,18508,0,0,0,0 sols=0 secs=91.9
+batch progress: 171/243 done, elapsed 18266s
+root idx=342: basis [4195009, 8896, 134218778]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279824  (6.8s)
+ROOT idx=342 basis=4195009,8896,134218778 nodes=1,18508,3318044,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3317764,0,0,0 pcov=0,0,280,0,0,0 expanded=1,18508,0,0,0,0 sols=0 secs=86.1
+batch progress: 172/243 done, elapsed 18352s
+root idx=344: basis [4195009, 8896, 134218904]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278508  (6.7s)
+ROOT idx=344 basis=4195009,8896,134218904 nodes=1,18360,3198188,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3197952,0,0,0 pcov=0,0,236,0,0,0 expanded=1,18360,0,0,0,0 sols=0 secs=85.8
+batch progress: 173/243 done, elapsed 18438s
+root idx=346: basis [4195009, 8896, 134220299]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257232  (7.0s)
+ROOT idx=346 basis=4195009,8896,134220299 nodes=1,17264,2541904,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2541832,0,0,0 pcov=0,0,72,0,0,0 expanded=1,17264,0,0,0,0 sols=0 secs=66.2
+batch progress: 174/243 done, elapsed 18504s
+root idx=348: basis [4195009, 8896, 134220306]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279256  (6.2s)
+ROOT idx=348 basis=4195009,8896,134220306 nodes=1,18612,3574872,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3574540,0,0,0 pcov=0,0,332,0,0,0 expanded=1,18612,0,0,0,0 sols=0 secs=92.0
+batch progress: 175/243 done, elapsed 18596s
+root idx=350: basis [4195009, 8896, 134220434]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278888  (6.3s)
+ROOT idx=350 basis=4195009,8896,134220434 nodes=1,18792,3145184,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3144968,0,0,0 pcov=0,0,216,0,0,0 expanded=1,18792,0,0,0,0 sols=0 secs=82.6
+batch progress: 176/243 done, elapsed 18679s
+root idx=352: basis [4195009, 8896, 134220824]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279672  (6.4s)
+ROOT idx=352 basis=4195009,8896,134220824 nodes=1,18564,3195020,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3194720,0,0,0 pcov=0,0,300,0,0,0 expanded=1,18564,0,0,0,0 sols=0 secs=83.8
+batch progress: 177/243 done, elapsed 18763s
+root idx=354: basis [4195009, 8896, 134220931]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279256  (6.5s)
+ROOT idx=354 basis=4195009,8896,134220931 nodes=1,18612,3574872,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3574536,0,0,0 pcov=0,0,336,0,0,0 expanded=1,18612,0,0,0,0 sols=0 secs=91.2
+batch progress: 178/243 done, elapsed 18854s
+root idx=356: basis [4195009, 8896, 134234113]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257232  (6.5s)
+ROOT idx=356 basis=4195009,8896,134234113 nodes=1,17264,2541904,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2541832,0,0,0 pcov=0,0,72,0,0,0 expanded=1,17264,0,0,0,0 sols=0 secs=66.8
+batch progress: 179/243 done, elapsed 18921s
+root idx=358: basis [4195009, 8896, 134234625]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257480  (6.4s)
+ROOT idx=358 basis=4195009,8896,134234625 nodes=1,17192,2603528,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2603472,0,0,0 pcov=0,0,56,0,0,0 expanded=1,17192,0,0,0,0 sols=0 secs=66.8
+batch progress: 180/243 done, elapsed 18987s
+root idx=360: basis [4195009, 8896, 134235265]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278888  (6.4s)
+ROOT idx=360 basis=4195009,8896,134235265 nodes=1,18548,3197032,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3196784,0,0,0 pcov=0,0,248,0,0,0 expanded=1,18548,0,0,0,0 sols=0 secs=85.5
+batch progress: 181/243 done, elapsed 19073s
+root idx=362: basis [4195009, 8896, 134235288]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279356  (6.0s)
+ROOT idx=362 basis=4195009,8896,134235288 nodes=1,18396,3279048,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3278736,0,0,0 pcov=0,0,312,0,0,0 expanded=1,18396,0,0,0,0 sols=0 secs=82.9
+batch progress: 182/243 done, elapsed 19156s
+root idx=364: basis [4195009, 8896, 134236169]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [240, 12, 3, 0]  |C(W)| = 260160  (6.6s)
+ROOT idx=364 basis=4195009,8896,134236169 nodes=1,17688,2679512,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2679432,0,0,0 pcov=0,0,80,0,0,0 expanded=1,17688,0,0,0,0 sols=0 secs=68.3
+batch progress: 183/243 done, elapsed 19224s
+root idx=366: basis [4195009, 8896, 134237185]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278888  (6.3s)
+ROOT idx=366 basis=4195009,8896,134237185 nodes=1,18792,3145184,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3144968,0,0,0 pcov=0,0,216,0,0,0 expanded=1,18792,0,0,0,0 sols=0 secs=85.4
+batch progress: 184/243 done, elapsed 19310s
+root idx=368: basis [4195009, 8896, 134237208]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278888  (7.2s)
+ROOT idx=368 basis=4195009,8896,134237208 nodes=1,19024,3580096,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3579812,0,0,0 pcov=0,0,284,0,0,0 expanded=1,19024,0,0,0,0 sols=0 secs=94.4
+batch progress: 185/243 done, elapsed 19404s
+root idx=370: basis [4195009, 8896, 134237315]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278648  (6.7s)
+ROOT idx=370 basis=4195009,8896,134237315 nodes=1,18572,3571008,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3570750,0,0,0 pcov=0,0,258,0,0,0 expanded=1,18572,0,0,0,0 sols=0 secs=88.5
+batch progress: 186/243 done, elapsed 19493s
+root idx=372: basis [4195009, 8896, 134237338]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279592  (6.1s)
+ROOT idx=372 basis=4195009,8896,134237338 nodes=1,18932,3222912,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3222700,0,0,0 pcov=0,0,212,0,0,0 expanded=1,18932,0,0,0,0 sols=0 secs=85.9
+batch progress: 187/243 done, elapsed 19578s
+root idx=374: basis [4195009, 8896, 134250625]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 277432  (6.9s)
+ROOT idx=374 basis=4195009,8896,134250625 nodes=1,18688,3124120,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3123880,0,0,0 pcov=0,0,240,0,0,0 expanded=1,18688,0,0,0,0 sols=0 secs=84.6
+batch progress: 188/243 done, elapsed 19663s
+root idx=376: basis [4195009, 8896, 134251009]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279736  (6.8s)
+ROOT idx=376 basis=4195009,8896,134251009 nodes=1,18820,3255192,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3254944,0,0,0 pcov=0,0,248,0,0,0 expanded=1,18820,0,0,0,0 sols=0 secs=89.9
+batch progress: 189/243 done, elapsed 19753s
+root idx=378: basis [4195009, 8896, 134251024]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 281328  (6.8s)
+ROOT idx=378 basis=4195009,8896,134251024 nodes=1,18208,3199864,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3199488,0,0,0 pcov=0,0,376,0,0,0 expanded=1,18208,0,0,0,0 sols=0 secs=87.1
+batch progress: 190/243 done, elapsed 19840s
+root idx=380: basis [4195009, 8896, 134251032]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 280240  (7.0s)
+ROOT idx=380 basis=4195009,8896,134251032 nodes=1,18552,3275604,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3275260,0,0,0 pcov=0,0,344,0,0,0 expanded=1,18552,0,0,0,0 sols=0 secs=89.3
+batch progress: 191/243 done, elapsed 19929s
+root idx=382: basis [4195009, 8896, 134251139]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278712  (6.4s)
+ROOT idx=382 basis=4195009,8896,134251139 nodes=1,18636,3589940,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3589676,0,0,0 pcov=0,0,264,0,0,0 expanded=1,18636,0,0,0,0 sols=0 secs=94.1
+batch progress: 192/243 done, elapsed 20023s
+root idx=384: basis [4195009, 8896, 134251154]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278976  (6.8s)
+ROOT idx=384 basis=4195009,8896,134251154 nodes=1,18360,3256600,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3256360,0,0,0 pcov=0,0,240,0,0,0 expanded=1,18360,0,0,0,0 sols=0 secs=88.7
+batch progress: 193/243 done, elapsed 20112s
+root idx=386: basis [4195009, 8896, 134251546]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279688  (6.8s)
+ROOT idx=386 basis=4195009,8896,134251546 nodes=1,18344,3299232,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3298980,0,0,0 pcov=0,0,252,0,0,0 expanded=1,18344,0,0,0,0 sols=0 secs=87.6
+batch progress: 194/243 done, elapsed 20200s
+root idx=388: basis [4195009, 8896, 134251672]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278172  (7.3s)
+ROOT idx=388 basis=4195009,8896,134251672 nodes=1,18340,3181036,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3180840,0,0,0 pcov=0,0,196,0,0,0 expanded=1,18340,0,0,0,0 sols=0 secs=87.5
+batch progress: 195/243 done, elapsed 20287s
+root idx=390: basis [4195009, 8896, 134252033]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279640  (5.9s)
+ROOT idx=390 basis=4195009,8896,134252033 nodes=1,18680,3667360,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3666996,0,0,0 pcov=0,0,364,0,0,0 expanded=1,18680,0,0,0,0 sols=0 secs=93.0
+batch progress: 196/243 done, elapsed 20380s
+root idx=392: basis [4195009, 8896, 134252050]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 277984  (6.3s)
+ROOT idx=392 basis=4195009,8896,134252050 nodes=1,18352,3284904,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3284722,0,0,0 pcov=0,0,182,0,0,0 expanded=1,18352,0,0,0,0 sols=0 secs=87.0
+batch progress: 197/243 done, elapsed 20467s
+root idx=394: basis [4195009, 8896, 134252553]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279672  (6.6s)
+ROOT idx=394 basis=4195009,8896,134252553 nodes=1,18564,3195020,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3194724,0,0,0 pcov=0,0,296,0,0,0 expanded=1,18564,0,0,0,0 sols=0 secs=85.8
+batch progress: 198/243 done, elapsed 20553s
+root idx=396: basis [4195009, 8896, 134252681]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279592  (6.6s)
+ROOT idx=396 basis=4195009,8896,134252681 nodes=1,18932,3222912,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3222710,0,0,0 pcov=0,0,202,0,0,0 expanded=1,18932,0,0,0,0 sols=0 secs=88.0
+batch progress: 199/243 done, elapsed 20641s
+root idx=398: basis [4195009, 8896, 134253072]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279552  (6.9s)
+ROOT idx=398 basis=4195009,8896,134253072 nodes=1,18884,3208668,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3208448,0,0,0 pcov=0,0,220,0,0,0 expanded=1,18884,0,0,0,0 sols=0 secs=91.4
+batch progress: 200/243 done, elapsed 20732s
+root idx=400: basis [4195009, 8896, 134253193]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279128  (6.9s)
+ROOT idx=400 basis=4195009,8896,134253193 nodes=1,18580,3590332,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3590068,0,0,0 pcov=0,0,264,0,0,0 expanded=1,18580,0,0,0,0 sols=0 secs=93.9
+batch progress: 201/243 done, elapsed 20826s
+root idx=402: basis [4195009, 8896, 167772307]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 276928  (6.4s)
+ROOT idx=402 basis=4195009,8896,167772307 nodes=1,16944,2789272,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2789120,0,0,0 pcov=0,0,152,0,0,0 expanded=1,16944,0,0,0,0 sols=0 secs=75.8
+batch progress: 202/243 done, elapsed 20902s
+root idx=404: basis [4195009, 8896, 167772675]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279632  (6.6s)
+ROOT idx=404 basis=4195009,8896,167772675 nodes=1,18576,3516872,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3516512,0,0,0 pcov=0,0,360,0,0,0 expanded=1,18576,0,0,0,0 sols=0 secs=92.4
+batch progress: 203/243 done, elapsed 20995s
+root idx=406: basis [4195009, 8896, 167772696]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 280824  (6.5s)
+ROOT idx=406 basis=4195009,8896,167772696 nodes=1,18624,3301028,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3300696,0,0,0 pcov=0,0,332,0,0,0 expanded=1,18624,0,0,0,0 sols=0 secs=89.9
+batch progress: 204/243 done, elapsed 21085s
+root idx=408: basis [4195009, 8896, 167772824]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 280824  (6.5s)
+ROOT idx=408 basis=4195009,8896,167772824 nodes=1,18624,3301028,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3300708,0,0,0 pcov=0,0,320,0,0,0 expanded=1,18624,0,0,0,0 sols=0 secs=87.3
+batch progress: 205/243 done, elapsed 21172s
+root idx=410: basis [4195009, 8896, 167773194]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279632  (6.4s)
+ROOT idx=410 basis=4195009,8896,167773194 nodes=1,19440,3371032,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3370656,0,0,0 pcov=0,0,376,0,0,0 expanded=1,19440,0,0,0,0 sols=0 secs=92.8
+batch progress: 206/243 done, elapsed 21265s
+root idx=412: basis [4195009, 8896, 167773320]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278592  (6.7s)
+ROOT idx=412 basis=4195009,8896,167773320 nodes=1,19392,3315392,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3314984,0,0,0 pcov=0,0,408,0,0,0 expanded=1,19392,0,0,0,0 sols=0 secs=90.6
+batch progress: 207/243 done, elapsed 21355s
+root idx=414: basis [4195009, 8896, 167773699]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279536  (6.7s)
+ROOT idx=414 basis=4195009,8896,167773699 nodes=1,18944,3427520,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3427224,0,0,0 pcov=0,0,296,0,0,0 expanded=1,18944,0,0,0,0 sols=0 secs=93.7
+batch progress: 208/243 done, elapsed 21449s
+root idx=416: basis [4195009, 8896, 167773714]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 281544  (6.5s)
+ROOT idx=416 basis=4195009,8896,167773714 nodes=1,18624,3323204,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3322860,0,0,0 pcov=0,0,344,0,0,0 expanded=1,18624,0,0,0,0 sols=0 secs=91.0
+batch progress: 209/243 done, elapsed 21540s
+root idx=418: basis [4195009, 8896, 167773840]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 280824  (7.1s)
+ROOT idx=418 basis=4195009,8896,167773840 nodes=1,18624,3301028,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3300698,0,0,0 pcov=0,0,330,0,0,0 expanded=1,18624,0,0,0,0 sols=0 secs=92.6
+batch progress: 210/243 done, elapsed 21632s
+root idx=420: basis [4195009, 8896, 167774355]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278508  (6.4s)
+ROOT idx=420 basis=4195009,8896,167774355 nodes=1,18360,3198188,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3197948,0,0,0 pcov=0,0,240,0,0,0 expanded=1,18360,0,0,0,0 sols=0 secs=86.2
+batch progress: 211/243 done, elapsed 21719s
+root idx=422: basis [4195009, 8896, 167774731]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 280240  (6.7s)
+ROOT idx=422 basis=4195009,8896,167774731 nodes=1,18552,3275604,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3275260,0,0,0 pcov=0,0,344,0,0,0 expanded=1,18552,0,0,0,0 sols=0 secs=89.2
+batch progress: 212/243 done, elapsed 21808s
+root idx=424: basis [4195009, 8896, 167774738]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278508  (7.0s)
+ROOT idx=424 basis=4195009,8896,167774738 nodes=1,18360,3198188,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3197960,0,0,0 pcov=0,0,228,0,0,0 expanded=1,18360,0,0,0,0 sols=0 secs=87.2
+batch progress: 213/243 done, elapsed 21895s
+root idx=426: basis [4195009, 8896, 167774866]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278368  (6.4s)
+ROOT idx=426 basis=4195009,8896,167774866 nodes=1,18384,3242644,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3242408,0,0,0 pcov=0,0,236,0,0,0 expanded=1,18384,0,0,0,0 sols=0 secs=87.8
+batch progress: 214/243 done, elapsed 21983s
+root idx=428: basis [4195009, 8896, 167775242]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279824  (6.1s)
+ROOT idx=428 basis=4195009,8896,167775242 nodes=1,18508,3318044,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3317768,0,0,0 pcov=0,0,276,0,0,0 expanded=1,18508,0,0,0,0 sols=0 secs=85.7
+batch progress: 215/243 done, elapsed 22069s
+root idx=430: basis [4195009, 8896, 167775370]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279500  (6.7s)
+ROOT idx=430 basis=4195009,8896,167775370 nodes=1,18364,3258824,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3258528,0,0,0 pcov=0,0,296,0,0,0 expanded=1,18364,0,0,0,0 sols=0 secs=85.8
+batch progress: 216/243 done, elapsed 22154s
+root idx=432: basis [4195009, 8896, 167775747]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279824  (6.1s)
+ROOT idx=432 basis=4195009,8896,167775747 nodes=1,18508,3318044,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3317760,0,0,0 pcov=0,0,284,0,0,0 expanded=1,18508,0,0,0,0 sols=0 secs=87.4
+batch progress: 217/243 done, elapsed 22242s
+root idx=434: basis [4195009, 8896, 167775762]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278976  (6.9s)
+ROOT idx=434 basis=4195009,8896,167775762 nodes=1,18360,3256600,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3256366,0,0,0 pcov=0,0,234,0,0,0 expanded=1,18360,0,0,0,0 sols=0 secs=84.7
+batch progress: 218/243 done, elapsed 22326s
+root idx=436: basis [4195009, 8896, 167788569]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 277928  (6.1s)
+ROOT idx=436 basis=4195009,8896,167788569 nodes=1,17592,2915504,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2915352,0,0,0 pcov=0,0,152,0,0,0 expanded=1,17592,0,0,0,0 sols=0 secs=76.4
+batch progress: 219/243 done, elapsed 22403s
+root idx=438: basis [4195009, 8896, 167789706]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278240  (6.0s)
+ROOT idx=438 basis=4195009,8896,167789706 nodes=1,19352,3832292,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3832118,0,0,0 pcov=0,0,174,0,0,0 expanded=1,19352,0,0,0,0 sols=0 secs=89.9
+batch progress: 220/243 done, elapsed 22493s
+root idx=440: basis [4195009, 8896, 167790209]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279696  (6.3s)
+ROOT idx=440 basis=4195009,8896,167790209 nodes=1,18864,3575968,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3575656,0,0,0 pcov=0,0,312,0,0,0 expanded=1,18864,0,0,0,0 sols=0 secs=87.4
+batch progress: 221/243 done, elapsed 22580s
+root idx=442: basis [4195009, 8896, 167790224]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 281544  (5.8s)
+ROOT idx=442 basis=4195009,8896,167790224 nodes=1,18624,3323204,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3322860,0,0,0 pcov=0,0,344,0,0,0 expanded=1,18624,0,0,0,0 sols=0 secs=84.6
+batch progress: 222/243 done, elapsed 22665s
+root idx=444: basis [4195009, 8896, 167791752]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279500  (5.9s)
+ROOT idx=444 basis=4195009,8896,167791752 nodes=1,18364,3258824,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3258540,0,0,0 pcov=0,0,284,0,0,0 expanded=1,18364,0,0,0,0 sols=0 secs=85.1
+batch progress: 223/243 done, elapsed 22750s
+root idx=446: basis [4195009, 8896, 167791761]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278976  (6.2s)
+ROOT idx=446 basis=4195009,8896,167791761 nodes=1,18360,3256600,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3256364,0,0,0 pcov=0,0,236,0,0,0 expanded=1,18360,0,0,0,0 sols=0 secs=83.5
+batch progress: 224/243 done, elapsed 22833s
+root idx=448: basis [4195009, 8896, 167804947]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278768  (6.2s)
+ROOT idx=448 basis=4195009,8896,167804947 nodes=1,17480,2939808,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2939584,0,0,0 pcov=0,0,224,0,0,0 expanded=1,17480,0,0,0,0 sols=0 secs=77.0
+batch progress: 225/243 done, elapsed 22910s
+root idx=450: basis [4195009, 8896, 167805081]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279224  (6.1s)
+ROOT idx=450 basis=4195009,8896,167805081 nodes=1,17664,2993592,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2993392,0,0,0 pcov=0,0,200,0,0,0 expanded=1,17664,0,0,0,0 sols=0 secs=78.2
+batch progress: 226/243 done, elapsed 22989s
+root idx=452: basis [4195009, 8896, 167805443]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279264  (6.6s)
+ROOT idx=452 basis=4195009,8896,167805443 nodes=1,18632,3384288,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3384110,0,0,0 pcov=0,0,178,0,0,0 expanded=1,18632,0,0,0,0 sols=0 secs=89.1
+batch progress: 227/243 done, elapsed 23078s
+root idx=454: basis [4195009, 8896, 167805451]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 281488  (6.5s)
+ROOT idx=454 basis=4195009,8896,167805451 nodes=1,18568,3569304,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3568928,0,0,0 pcov=0,0,376,0,0,0 expanded=1,18568,0,0,0,0 sols=0 secs=93.0
+batch progress: 228/243 done, elapsed 23171s
+root idx=456: basis [4195009, 8896, 167805571]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279504  (6.7s)
+ROOT idx=456 basis=4195009,8896,167805571 nodes=1,18592,3503728,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3503528,0,0,0 pcov=0,0,200,0,0,0 expanded=1,18592,0,0,0,0 sols=0 secs=92.0
+batch progress: 229/243 done, elapsed 23263s
+root idx=458: basis [4195009, 8896, 167805592]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 281544  (6.2s)
+ROOT idx=458 basis=4195009,8896,167805592 nodes=1,18624,3323204,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3322852,0,0,0 pcov=0,0,352,0,0,0 expanded=1,18624,0,0,0,0 sols=0 secs=91.8
+batch progress: 230/243 done, elapsed 23354s
+root idx=460: basis [4195009, 8896, 167806995]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279756  (6.5s)
+ROOT idx=460 basis=4195009,8896,167806995 nodes=1,18392,3266868,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3266572,0,0,0 pcov=0,0,296,0,0,0 expanded=1,18392,0,0,0,0 sols=0 secs=89.6
+batch progress: 231/243 done, elapsed 23444s
+root idx=462: basis [4195009, 8896, 167807131]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278872  (6.6s)
+ROOT idx=462 basis=4195009,8896,167807131 nodes=1,18472,3271088,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3270804,0,0,0 pcov=0,0,284,0,0,0 expanded=1,18472,0,0,0,0 sols=0 secs=88.6
+batch progress: 232/243 done, elapsed 23533s
+root idx=464: basis [4195009, 8896, 167807504]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278812  (6.3s)
+ROOT idx=464 basis=4195009,8896,167807504 nodes=1,18320,3209476,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3209152,0,0,0 pcov=0,0,324,0,0,0 expanded=1,18320,0,0,0,0 sols=0 secs=83.7
+batch progress: 233/243 done, elapsed 23616s
+root idx=466: basis [4195009, 8896, 167807619]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278172  (6.4s)
+ROOT idx=466 basis=4195009,8896,167807619 nodes=1,18340,3181036,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3180844,0,0,0 pcov=0,0,192,0,0,0 expanded=1,18340,0,0,0,0 sols=0 secs=83.7
+batch progress: 234/243 done, elapsed 23700s
+root idx=468: basis [4195009, 8896, 167807640]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279736  (6.7s)
+ROOT idx=468 basis=4195009,8896,167807640 nodes=1,18360,3242688,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3242424,0,0,0 pcov=0,0,264,0,0,0 expanded=1,18360,0,0,0,0 sols=0 secs=86.1
+batch progress: 235/243 done, elapsed 23786s
+root idx=470: basis [4195009, 8896, 167823873]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 278172  (6.2s)
+ROOT idx=470 basis=4195009,8896,167823873 nodes=1,18340,3181036,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3180844,0,0,0 pcov=0,0,192,0,0,0 expanded=1,18340,0,0,0,0 sols=0 secs=80.8
+batch progress: 236/243 done, elapsed 23867s
+root idx=472: basis [4195489, 131601, 9376]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 17, 13]  dimP histogram [242, 9, 4, 0]  |C(W)| = 240960  (6.4s)
+ROOT idx=472 basis=4195489,131601,9376 nodes=1,14592,1787008,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,1787008,0,0,0 pcov=0,0,0,0,0,0 expanded=1,14592,0,0,0,0 sols=0 secs=47.8
+batch progress: 237/243 done, elapsed 23915s
+root idx=474: basis [4196425, 131601, 10312]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 17, 13]  dimP histogram [238, 15, 2, 0]  |C(W)| = 284800  (7.0s)
+ROOT idx=474 basis=4196425,131601,10312 nodes=1,19296,3687480,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3686928,0,0,0 pcov=0,0,552,0,0,0 expanded=1,19296,0,0,0,0 sols=0 secs=93.6
+batch progress: 238/243 done, elapsed 24008s
+root idx=476: basis [4202497, 131601, 66624]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 17, 16]  dimP histogram [240, 12, 3, 0]  |C(W)| = 262272  (6.2s)
+ROOT idx=476 basis=4202497,131601,66624 nodes=1,15680,2229072,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2229040,0,0,0 pcov=0,0,32,0,0,0 expanded=1,15680,0,0,0,0 sols=0 secs=53.5
+batch progress: 239/243 done, elapsed 24062s
+root idx=478: basis [4202497, 131601, 8388801]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 17, 23]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279808  (5.6s)
+ROOT idx=478 basis=4202497,131601,8388801 nodes=1,17216,2542976,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2542816,0,0,0 pcov=0,0,160,0,0,0 expanded=1,17216,0,0,0,0 sols=0 secs=64.5
+batch progress: 240/243 done, elapsed 24126s
+root idx=480: basis [4202497, 131601, 8388833]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 17, 23]  dimP histogram [238, 15, 2, 0]  |C(W)| = 279808  (6.1s)
+ROOT idx=480 basis=4202497,131601,8388833 nodes=1,17216,2542976,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2542816,0,0,0 pcov=0,0,160,0,0,0 expanded=1,17216,0,0,0,0 sols=0 secs=66.1
+batch progress: 241/243 done, elapsed 24192s
+root idx=482: basis [4202497, 131601, 8421488]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 17, 23]  dimP histogram [238, 15, 2, 0]  |C(W)| = 281728  (6.1s)
+ROOT idx=482 basis=4202497,131601,8421488 nodes=1,16768,2718656,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,2718272,0,0,0 pcov=0,0,384,0,0,0 expanded=1,16768,0,0,0,0 sols=0 secs=69.2
+batch progress: 242/243 done, elapsed 24261s
+root idx=484: basis [4202497, 131601, 134225938]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 17, 27]  dimP histogram [238, 15, 2, 0]  |C(W)| = 281328  (6.4s)
+ROOT idx=484 basis=4202497,131601,134225938 nodes=1,18208,3199864,0,0,0 pdim=0,0,0,0,0,0 psize=0,0,3199488,0,0,0 pcov=0,0,376,0,0,0 expanded=1,18208,0,0,0,0 sols=0 secs=78.3
+batch progress: 243/243 done, elapsed 24340s

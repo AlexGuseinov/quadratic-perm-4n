@@ -1,0 +1,5 @@
+n=8 NP=28 ranks: r0=1 r2=10795 r4=5622036 r6=149920960 r8=112881664  p=0.55850
+trial 0: d=1 good=41891328 (heur 41865360, ratio 1.00) d=2 good=6551856 (heur 6529348, ratio 1.00) d=3 good=323831 (heur 317636, ratio 1.02) d=4 good=3143 (heur 1503, ratio 2.09) d=5 good=8 (heur 0, ratio 118.76) d=6 good=0 (heur 0, ratio 0.00)
+trial 1: d=1 good=41891328 (heur 41865360, ratio 1.00) d=2 good=6553416 (heur 6529348, ratio 1.00) d=3 good=323724 (heur 317636, ratio 1.02) d=4 good=3246 (heur 1503, ratio 2.16) d=5 good=6 (heur 0, ratio 89.07) d=6 good=0 (heur 0, ratio 0.00)
+trial 2: d=1 good=41891328 (heur 41865360, ratio 1.00) d=2 good=6553416 (heur 6529348, ratio 1.00) d=3 good=321910 (heur 317636, ratio 1.01) d=4 good=3174 (heur 1503, ratio 2.11) d=5 good=8 (heur 0, ratio 118.76) d=6 good=0 (heur 0, ratio 0.00)
+trial 3: d=1 good=41891328 (heur 41865360, ratio 1.00) d=2 good=6551856 (heur 6529348, ratio 1.00) d=3 good=321918 (heur 317636, ratio 1.01) d=4 good=3298 (heur 1503, ratio 2.19) d=5 good=8 (heur 0, ratio 118.76) d=6 good=0 (heur 0, ratio 0.00)

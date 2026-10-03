@@ -1,0 +1,253 @@
+% Material removed from main.tex on 2026-09-29 when Section 6 was shortened.
+% It is superseded for n = 8 by Theorem thm:n8 but proved independently; kept for reference
+% (not compiled; labels refer to main.tex). See also NOTES_lemmas.md and logs/sym_summary_n8.txt.
+
+\section{Further structure in dimension 8}\label{sec:n8}
+This section collects the approaches we used before the search of Section~\ref{sec:n8search}.
+For $n=8$ their conclusions are implied by Theorem~\ref{thm:n8}, but they were obtained with
+different methods and programs and so give independent confirmation of special cases; Lemma~\ref{lem:sym}
+and parts (a), (b) of Proposition~\ref{prop:local} hold for all even $n\ge6$.
+By Theorem~\ref{thm:constrank}, a quadratic DU-4 permutation of $\F_2^8$ needs all $255$
+components of rank $6$. Call a component \emph{bad} if its rank is not $6$.
+
+\subsection{Structured classes}
+Let $D=\{2^i+2^j:0\le i<j\le 7\}$ ($|D|=28$) and represent $\F_{2^8}$ with the modulus
+$X^8+X^4+X^3+X^2+1$; components are $\Tr(bF)$. Multiplying $F$ by a nonzero constant permutes
+the components, so the first coefficient can be taken to be $1$. We computed the ranks of all
+$255$ components of every polynomial in the following families (program \texttt{constrank8.c}):
+\begin{itemize}
+\item binomials $x^{d_1}+c\,x^{d_2}$ with $d_1<d_2$ in $D$ and $c\in\F_{2^8}^*$
+($\binom{28}{2}\cdot 255=96{,}390$ polynomials): the minimum number of bad components is $90$,
+attained for example by $x^3+x^{17}$;
+\item all $2^{28}$ polynomials $\sum_{d\in S}x^{d}$, $S\subseteq D$ (coefficients in $\F_2$): the
+minimum number of bad components is $3$, attained by $12{,}288$ polynomials, for example
+$x^{6}+x^{10}+x^{12}+x^{17}+x^{18}+x^{34}+x^{36}+x^{65}+x^{68}$, whose bad components are
+$\Tr(bF)$ with $b\in\F_4^*$, of ranks $0$, $4$, $4$ (we did not examine all minimisers);
+\item trinomials $x^{d_1}+c_2x^{d_2}+c_3x^{d_3}$ with $d_1<d_2<d_3$ in $D$ and
+$c_2,c_3\in\F_{2^8}^*$ ($\binom{28}{3}\cdot 255^2=213{,}021{,}900$ polynomials): none has $3$ or
+fewer bad components; the exact minimum was not computed.
+\end{itemize}
+
+\subsection{SAT model}
+Variables: the vectors $\beta(e_i,e_j)$ ($i<j$) and $F(e_i)$, so that
+$F(x)=\sum_ix_iF(e_i)+\sum_{i<j}x_ix_j\beta(e_i,e_j)$. Constraints: (a) every component has
+rank exactly $6$ (the $8\times 8$ Pfaffian vanishes and some $6\times 6$ principal Pfaffian
+does not); (b) for every $a\neq 0$ two distinct nonzero witnesses $w_1,w_2$ with
+$B_{w_i}(a,\cdot)=0$; since $\{b:B_b(a,\cdot)=0\}=(\mathrm{Im}\,\beta(a,\cdot))^\perp$ has
+dimension $s_a$, this says $s_a\ge 2$, and then $s_a=2$ by Lemma~\ref{lem:count} and (a), so
+$w_1,w_2$ span $(\mathrm{Im}\,\beta(a,\cdot))^\perp$; (c) $\langle w_1,F(a)\rangle=1$ or
+$\langle w_2,F(a)\rangle=1$, i.e.\ $F(a)\notin\mathrm{Im}\,\beta(a,\cdot)$, which is equivalent to
+$D_aF(x)=\beta(a,x)+F(a)$ having no zero. By (a)--(c) the solutions are exactly the quadratic
+DU-4 permutations with $F(0)=0$. XOR and AND gates are encoded with Tseitin variables.
+Symmetry breaking: SB1 and SB2 are Lemma~\ref{lem:normal}. SB3: $F(e_0)=e_6$; this is possible
+because $F(e_0)\notin\mathrm{Im}\,\beta(e_0,\cdot)=\langle e_0,\dots,e_5\rangle$ and the linear
+maps of the codomain fixing $e_0,\dots,e_5$ act transitively on the vectors outside
+$\langle e_0,\dots,e_5\rangle$. SB4: the coordinate $6$ of $F(e_1)$ is $0$; replacing $e_1$ by
+$e_0+e_1$ preserves SB1--SB3 and adds $\beta(e_0,e_1)+F(e_0)=e_6$ to $F(e_1)$.
+Validation: $n=4$ is UNSAT with a DRAT proof verified by \texttt{drat-trim} \cite{WHH14};
+$n=6$ is SAT and the returned map is independently checked to be a permutation with $\delta=4$.
+Instance sizes for $n=8$ (variables/clauses): SB1--SB2: $172{,}802/618{,}815$; SB1--SB4:
+$171{,}624/614{,}123$; SB1--SB2 without (c): $172{,}802/618{,}560$.
+
+\subsection{Results}
+Software: \texttt{kissat} 4.0.4 \cite{Kissat}; CaDiCaL 1.9.5 through PySAT; \texttt{drat-trim}
+\cite{WHH14}. Hardware: one core of an Intel Xeon processor at 2.80\,GHz.
+\begin{itemize}
+\item Desarguesian isotropic spread: with the basis of Lemma~\ref{lem:normal} chosen so that
+$e_{2i+1}=\omega e_{2i}$ (possible, since the lines $\F_4e_{2i}$ are spread lines forming a
+direct sum), the condition $\beta(x,\omega x)=0$ becomes linear constraints. SB3 and SB4 remain
+valid: for SB4, exchange $\omega$ and $\omega^2=\omega+1$ (same spread) and replace every
+$e_{2i+1}$ by $e_{2i}+e_{2i+1}$; SB2 is restored by the induced change of basis of
+$\langle e_0,\dots,e_5\rangle$, which does not change coordinate $6$. The instance
+($171{,}888$ variables, $615{,}371$ clauses) is UNSAT in about one second and its DRAT proof
+($15$\,MB) is verified by \texttt{drat-trim}. Since this case is already proved by
+Theorem~\ref{thm:desarg}, the certificate serves as a consistency check (it certifies the CNF,
+not the encoding).
+\item General case (settled by Theorem~\ref{thm:n8}). \texttt{kissat} was stopped without a verdict after $1.4$\,h on the
+SB1--SB2 instance, after $4.1$\,h on the SB1--SB4 instance, and after $3.3$\,h on the instance
+without condition (c) (which asks for a quadratic $(8,8)$-function with all components of rank
+$6$ and all $s_a=2$). In a cube-and-conquer attempt, three randomly chosen cubes fixing $12$
+entries of $\beta$ were not solved within $170$\,s each. We draw no conclusion about the
+running time of a complete search from these observations.
+\end{itemize}
+
+\subsection{Quadratic parts with a symmetry}\label{sec:sym}
+A \emph{symmetry} of $\beta$ is a pair $(A,B)\neq(I,I)$ in $GL(n,2)^2$ with
+$\beta(Ax,Ay)=B\beta(x,y)$ for all $x,y$. Since $\beta$ spans the codomain
+(Theorem~\ref{thm:constrank}), $A$ determines $B$, and $A=I$ forces $B=I$. If $F(Ax+c)=B'F(x)+C(x)$
+with $A,B'$ linear, $c\in V$ and $C$ affine (an EA-self-equivalence), comparing quadratic parts
+gives $\beta(Ax,Ay)=B'\beta(x,y)$, so $(A,B')$ is a symmetry of $\beta$ or equals $(I,I)$; the
+latter happens exactly for the $2^n$ translations $F(x+c)=F(x)+\beta(x,c)+F(c)$, which every
+quadratic map has.
+
+\paragraph{Motivation.} Fix $\beta$ with $s_a=2$ for all $a$ and all components of rank $n-2$,
+and a quadratic map $Q$ with polar map $\beta$. Then $F=Q+L$ ($L$ linear) is a permutation if
+and only if $Q(a)+L(a)\notin\mathrm{Im}\,\beta(a,\cdot)$ for every $a\neq0$; for fixed $a$ this
+excludes an affine subspace of codimension $2$ in the $n^2$-dimensional space of linear maps.
+If the $2^n-1$ conditions behaved independently, the expected number of admissible $L$ would be
+$2^{n^2}(3/4)^{2^n-1}$, about $2^{9.9}$ for $n=6$ and $2^{-41.8}$ for $n=8$. This heuristic
+proves nothing, but it suggests that a solution for $n=8$ would have to be special, and the
+known quadratic DU-4 permutations are highly symmetric (for $x^{2^k+1}$ every pair
+$(x\mapsto\lambda x,\ y\mapsto\lambda^{2^k+1}y)$ is a symmetry).
+
+Replacing a symmetry by a power, $A$ has prime order $p$, and then $B^p=I$. Write
+$V_1=\ker(A-I)$, $f=\dim V_1$, $W_1=\ker(B-I)$, $f_B=\dim W_1$.
+\begin{lemma}\label{lem:sym}
+Let $\beta$ have $s_a=2$ for all $a\neq0$ and all components of rank $n-2$, $n\ge 6$ even,
+and let $(A,B)$ be a symmetry with $A$ of prime order $p$.
+\begin{enumerate}
+\item[(a)] $K_{Aa}=AK_a$, $\mathrm{Im}\,\beta(Aa,\cdot)=B\,\mathrm{Im}\,\beta(a,\cdot)$,
+$R_{B^{\mathsf T}b}=A^{-1}R_b$, and $\beta(V_1,V_1)\subseteq W_1$.
+\item[(b)] If $B\neq I$ then $f\le (n+2)/2$.
+\item[(c)] Let $p$ be odd. Then $V_1$ is a union of kernel lines (so $f$ is even); $f\ge2$ implies
+$f-2\le f_B$ and that $\mathrm{Im}(A-I)$ embeds as an $\F_2\langle A\rangle$-module into
+$\mathrm{Im}(B-I)$ (identifying $A$ with $B$); $B=I$ implies $f=0$; $f=4$ implies $f_B=2$; if
+the multiplicative order of $2$ modulo $p$ is at least $3$, then $f=f_B$.
+\item[(d)] Let $p=3$ and $4\mid n$. If $f=0$ then $B=I$. If $f_B=0$, $m=(n-f)/2$ and $4m>n+2$,
+then $n\le m(m-1)$.
+\item[(e)] Let $p=2$, $k=\rk(A-I)$ and $k_B=\rk(B-I)$ (the numbers of Jordan blocks of size
+$2$). Then $B\neq I$; if $2k<n$ then $k-1\le k_B$; if $2k=n$ then $k-2\le k_B$, with equality
+only if $V_1$ is a union of kernel lines.
+\end{enumerate}
+\end{lemma}
+\begin{proof}[Proof sketch]
+(a) is immediate from $\beta(Aa,Av)=B\beta(a,v)$ and
+$B_b(Ax,Ay)=B_{B^{\mathsf T}b}(x,y)$; for $x,y\in V_1$, $\beta(x,y)=B\beta(x,y)$.
+(b) For $b\neq0$ orthogonal to $W_1$, $V_1$ is totally isotropic for $B_b$ by (a), and a form
+of rank $n-2$ has no totally isotropic subspace of dimension larger than $(n+2)/2$.
+(c) For $a\in V_1\setminus\{0\}$, $K_a=\{0,a,y,a+y\}$ is $A$-invariant, so $Ay\in\{y,a+y\}$;
+$Ay=a+y$ would give $A^2y=y$, impossible for odd $p$ unless $Ay=y$. Hence $K_a\subseteq V_1$,
+and $\beta(a,\cdot)$ restricted to $V_1$ has an image of dimension $f-2$ inside $W_1$. On
+$\mathrm{Im}(A-I)$ the map $\beta(a,\cdot)$ is injective and satisfies
+$\beta(a,Ay)=B\beta(a,y)$, which gives the embedding. If $B=I$, then
+$\beta(a,(A-I)y)=0$, so $\mathrm{Im}(A-I)\subseteq K_a\subseteq V_1$, forcing $A=I$. If
+$f=4$, the five kernel lines in $V_1$ form a regular spread of $PG(3,2)$, so every
+$B_b$ restricted to $V_1$ has rank $0$ or $4$ (as in Theorem~\ref{thm:desarg}), and
+Remark~\ref{rem:count-general} with $U=V_1$ gives $15(2^{n-2}-1)=15\cdot|\{b\neq0:B_b|_{V_1}=0\}|$,
+i.e.\ $\dim\langle\beta(V_1,V_1)\rangle=2$;
+a $B^{\mathsf T}$-fixed $b\ne0$ orthogonal to $\beta(V_1,V_1)$ would vanish on $V_1\times V$,
+so $f_B\le2$. If $\mathrm{ord}_p(2)\ge3$, every $A$- or $B^{\mathsf T}$-invariant plane lies in
+the fixed space; counting pairs $(a,b)$ with $a\in V_1$, $b$ fixed by $B^{\mathsf T}$ and
+$a\in R_b$ in two ways gives $3(2^f-1)=3(2^{f_B}-1)$.
+(d) For $x$ in the part of $V$ where $A$ acts as $\omega$ ($A^2=A+I$ there),
+$\beta(x,Ax)=\beta(Ax,A^2x)=B\beta(x,Ax)$, so $\beta(x,Ax)\in W_1$. If $f=0$ and $B\ne I$, every
+$b\neq0$ orthogonal to $W_1$ has $B_b(x,\omega x)=0$ for all $x$, and the proof of
+Theorem~\ref{thm:desarg} gives $\dim R_b\equiv0\pmod 4$. If $f_B=0$, every $B_b$ restricted
+to that part is the trace of an alternating $\F_4$-form; by the bound of (b) it is nonzero, so
+$b\mapsto C_b$ embeds $\F_2^n$ into $\Alt(m,\F_4)$, of $\F_2$-dimension $m(m-1)$.
+(e) If $B=I$, $\mathrm{Im}(A-I)$ lies in $K_a$ for every $a\in V_1\setminus\{0\}$, which is
+impossible as $\dim V_1\ge n/2\ge 3$ and distinct kernel lines meet in $0$. For $x\in V_1$ and
+$y=(A-I)y'$ we have $\beta(x,y)=(B-I)\beta(x,y')$, so $\beta(x,\mathrm{Im}(A-I))\subseteq
+\mathrm{Im}(B-I)$ and $k-\dim(K_x\cap\mathrm{Im}(A-I))\le k_B$. If $2k<n$, a point
+$x\in V_1\setminus\mathrm{Im}(A-I)$ has an $A$-invariant kernel line $K_x=\{0,x,y,x+y\}$; $Ay=x+y$
+would put $x$ in $\mathrm{Im}(A-I)$, so $K_x\subseteq V_1$, and $K_x$ meets $\mathrm{Im}(A-I)$ in
+dimension at most $1$. If $2k=n$ then $V_1=\mathrm{Im}(A-I)$ and $\dim(K_x\cap V_1)\le2$, with
+equality for all $x\in V_1$ only if $V_1$ is a union of kernel lines.
+\end{proof}
+
+\begin{theorem}[computer-assisted]\label{thm:sym8}
+If $F$ is a quadratic permutation of $\F_2^8$ with $\delta_F=4$, then its quadratic part $\beta$
+has no symmetry. Consequently the only EA-self-equivalences of $F$ are the $256$
+translations, and $F$ has no nontrivial affine self-equivalence.
+\end{theorem}
+\begin{proof}[Method]
+The primes dividing $|GL(8,2)|$ are $2,3,5,7,17,31,127$. For each $p$ we take one generator
+$A$ of each conjugacy class of subgroups of order $p$ in $GL(8,2)$ (the input basis is free)
+and, for each, every conjugacy class of $B$ with $B^p=I$ (the output basis is free): $93$ pairs.
+Lemma~\ref{lem:sym} excludes $79$ of them. For the remaining $14$ the condition
+$\beta(Ax,Ay)=B\beta(x,y)$ is linear in $\beta$; we add normalisations of $V_1$, of the kernel
+line through one chosen point and of $\beta(e,\cdot)$ for a chosen $e$ that are without loss of
+generality because they are realised by the centralisers of $A$ and $B$ (each is stated with
+its justification in the repository), and four cases are split into alternatives ($8$ for $p=5$
+with $A$ fixed-point-free, one for each of the $42$ conjugacy classes of matrices
+$M\in GL(3,4)$ with $M+I$ invertible for one case with $p=3$, and $2$ for each of two involution
+cases); the normalisations are proved in Appendix~\ref{app:norm}. Each resulting instance is
+decided either by enumerating all $\beta$ in the solution space (at most $2^{24}$ elements) and
+testing $s_a=2$ and the ranks (three cases, plus the $p=5$ alternatives; no admissible $\beta$
+exists, so the linear part never had to be examined), or by \texttt{kissat} on the model of
+Section~\ref{sec:n8} restricted to the solution space. All answers are UNSAT; every
+\texttt{kissat} UNSAT answer (the longest took $245$\,s) is certified by a DRAT proof checked
+with \texttt{drat-trim}. The table of all $93$ pairs and the way each is excluded is in the
+repository (\texttt{logs/sym\_summary\_n8.txt}).
+The DRAT certificates certify the CNF files, not the encoding or the normalisation rows; the
+enumeration program was checked against an independent implementation. Validation: for $n=6$
+there are $51$ pairs; on the $49$ pairs where a plain SAT search without lemmas and
+normalisations terminated within $50$ minutes, the lemmas, normalisations and search methods give
+the same verdict (the solutions found are checked to be permutations with $\delta=4$); on the
+other two the plain search did not terminate (one of them is excluded by (e)). This exercises (a)--(c), (e), the involution alternatives and the output
+normalisation of Appendix~\ref{app:norm}, but not (d), (A5), (A6), (A7) or the second half
+of (A8).
+\end{proof}
+Theorem~\ref{thm:n8} makes Theorem~\ref{thm:sym8} vacuous. We keep it because its proof uses
+different methods and programs (SAT solving with DRAT certificates and enumeration of
+equivariant maps instead of the search of Section~\ref{sec:n8search}), so it independently
+confirms Theorem~\ref{thm:n8} for all $\beta$ with a symmetry, and because Lemma~\ref{lem:sym}
+applies in every even dimension.
+
+
+
+% ---------------- Appendix A ----------------
+\section{Normalisations used in the proof of Theorem~\ref{thm:sym8}}\label{app:norm}
+$A$ and $B$ are in block form: companion matrices of irreducible factors of $x^p-1$ followed
+by an identity block (odd $p$), or blocks $J_2$ on $(e_{2i},e_{2i+1})$ with
+$Ae_{2i+1}=e_{2i}+e_{2i+1}$ followed by an identity block ($p=2$). Replacing $\beta$ by
+$h\circ\beta\circ(g\times g)$ with $g$ in the centraliser $C(A)$ and $h$ in $C(B)$ preserves the
+equation $\beta(Ax,Ay)=B\beta(x,y)$ and all other conditions (for the permutation, $F$ is
+replaced by $h\circ F\circ g$). Each item below is such a change of bases.
+\begin{enumerate}
+\item[(A1)] Odd $p$, $f\ge2$. $GL(V_1)\subseteq C(A)$. By Lemma~\ref{lem:sym}(c), $V_1$ is a
+union of kernel lines, and the argument of Lemma~\ref{lem:normal} inside $V_1$ gives $f/2$
+of them in direct sum; take a basis of $V_1$ adapted to them.
+\item[(A2)] Odd $p$, $f=4$. The five kernel lines in $V_1$ form a spread of $PG(3,2)$, which is
+regular; its stabiliser in $GL(4,2)$ is transitive on ordered pairs of its lines, so WLOG it is
+the spread of $\F_4$-points for $\omega:e_{n-4}\mapsto e_{n-3}\mapsto e_{n-4}+e_{n-3}$,
+$e_{n-2}\mapsto e_{n-1}\mapsto e_{n-2}+e_{n-1}$, i.e.\ $\beta(x,\omega x)=0$ on $V_1$.
+\item[(A3)] Odd $p$, $f\ge3$. $GL(W_1)\subseteq C(B)$. The $f-2$ vectors
+$\beta(e_{n-f},e_{n-f+j})$, $2\le j\le f-1$, lie in $W_1$ and are independent (the kernel of
+$\beta(e_{n-f},\cdot)$ is the kernel line $\langle e_{n-f},e_{n-f+1}\rangle$); map them to the
+first $f-2$ basis vectors of $W_1$.
+\item[(A4)] Odd $p$, $f\ge2$. $y\mapsto\beta(e_{n-f},y)$ on $\mathrm{Im}(A-I)$ is an injective
+module homomorphism into $\mathrm{Im}(B-I)$. On each isotypic component the centraliser of
+$B$ is $GL_m(\F_{2^d})$, which acts transitively on injective $\F_{2^d}$-linear maps; so WLOG
+the first basis vector of the $j$-th block of $A$ of a given type goes to the first basis vector
+of the $j$-th block of $B$ of that type.
+\item[(A5)] $p=3$, $f=0$, $B=I$. $\langle A\rangle$ permutes the $85$ kernel lines and
+$85\equiv1\pmod3$, so some kernel line is $A$-invariant, i.e.\ an $\F_4$-point for the
+$\F_4$-structure $A$; $GL_{\F_4}(V)=C(A)$ is transitive on $\F_4$-points, so WLOG
+$\beta(e_0,e_1)=0$; then $C(I)=GL(W)$ maps $\beta(e_0,e_j)$ ($2\le j\le7$) to $e_{j-2}$.
+\item[(A6)] $p=5$, $A,B$ fixed-point-free. $V=\F_{16}^2$ with $A$ the multiplication by an
+element of order $5$ and $C(A)=GL_{\F_{16}}(V)$, which is transitive on nonzero vectors, and the
+stabiliser of $e_0$ is transitive on $V\setminus\F_{16}e_0$. So WLOG $K_{e_0}=\langle e_0,v\rangle$
+with $v$ one of $7$ representatives of the lines through $e_0$ in $\F_{16}e_0=\langle
+e_0,\dots,e_3\rangle$, or $v=e_4$. On the output, $C(B)=GL_{\F_{16}}(W)$ is transitive on nonzero
+vectors, so WLOG $\beta(e_0,e_{j_0})=e_0$ for a basis vector $e_{j_0}\notin K_{e_0}$. The seven
+alternatives with $v\in\F_{16}e_0$ are inconsistent (linear algebra); the eighth has no
+admissible $\beta$.
+\item[(A7)] $p=3$, $A,B$ of type $f_0+f_0+f_0$. After (A1) and (A4), $V_1=\langle e_6,e_7\rangle$
+is a kernel line and, for $x\in V_1\setminus\{0\}$, $\varphi_x=\beta(x,\cdot)$ on
+$\mathrm{Im}(A-I)$ is an $\F_4$-linear bijection onto $\mathrm{Im}(B-I)$, with $\varphi_{e_6}$ the
+identity. The pairs $(g,g)$ with $g\in GL_{\F_4}(\F_4^3)$ acting on both sides preserve this and
+conjugate $M=\varphi_{e_6}^{-1}\varphi_{e_7}$; $M$ and $M+I=\varphi_{e_6}^{-1}\varphi_{e_6+e_7}$ are
+invertible. So WLOG $M$ is one of the $42$ class representatives, which fixes
+$\beta(e_7,e_{2i})$ for $i=0,1,2$.
+\item[(A8)] $p=2$, $n=8$. For $k=3$: $C(A)$ contains the lifts of $GL(3,2)$ acting on
+$\mathrm{Im}(A-I)=\langle e_0,e_2,e_4\rangle$, the maps $e_6\mapsto e_6+u$
+($u\in\mathrm{Im}(A-I)$) and $GL(\langle e_6,e_7\rangle)$, so it is transitive on
+$V_1\setminus\mathrm{Im}(A-I)$ and WLOG we look at $x=e_6$. By Lemma~\ref{lem:sym}(e),
+$K_{e_6}\subseteq V_1$ meets $\mathrm{Im}(A-I)$ in dimension at most $1$, so
+$K_{e_6}=\langle e_6,u\rangle$ with $u\in\mathrm{Im}(A-I)$ (WLOG $u=e_0$) or
+$K_{e_6}=\langle e_6,e_7+u\rangle$ (WLOG $u=0$, using $e_7\mapsto e_7+u$). For $k=4$ and $k_B=2$:
+$V_1$ is a union of kernel lines (Lemma~\ref{lem:sym}(e)), hence a regular spread of $PG(3,2)$,
+and $C(A)\cong GL_4(\F_2[t]/(t^2))$ maps onto $GL(V_1)$, so WLOG the spread is that of
+$e_0\mapsto e_2\mapsto e_0+e_2$, $e_4\mapsto e_6\mapsto e_4+e_6$.
+\item[(A9)] $p=2$, $k=k_B=3$ (output). With $\varepsilon=B-I$, $W\cong\F_2[\varepsilon]^3\oplus
+\F_2^2$ as an $\F_2[\varepsilon]$-module and $C(B)=\mathrm{Aut}(W)$. Put
+$w_i=\beta(e_6,e_{2i+1})$; then $\varepsilon w_i=\beta(e_6,e_{2i})$. If
+$K_{e_6}=\langle e_6,e_7\rangle$, the $\varepsilon w_i$ are independent, so $w_0,w_1,w_2$ generate a
+pure free submodule, which is a direct summand, and WLOG $w_i=e_{2i+1}$. If
+$K_{e_6}=\langle e_6,e_0\rangle$, then $\varepsilon w_1,\varepsilon w_2$ are independent and WLOG
+$w_1=e_1$, $w_2=e_3$.
+\end{enumerate}
+The remaining involution cases ($k=3$ with $k_B=4$, and $k=4$ with $k_B\in\{3,4\}$) were solved
+without normalisation.
+

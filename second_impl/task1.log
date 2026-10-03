@@ -1,0 +1,9 @@
+rank-8 forms: 112881664
+rank>=6 forms: 262802624  (rank-6 = 149920960)
+rank-6 forms: 149920960
+theoretical rank-6 count: 149920960, rank-8: 112881664
+time 7.1s
+good8.bin words: 4194305 (expected 4194305)
+differing bits vs good8.bin (first 2^22 words): 0
+IDENTICAL
+extra word good8[2^22] = 0

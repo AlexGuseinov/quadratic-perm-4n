@@ -1,0 +1,43 @@
+{"n": 8, "case": 75, "p": 127, "A": "f0", "B": "f1", "free_beta_bits": 0, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:53:37"}
+{"n": 8, "case": 77, "p": 127, "A": "f0", "B": "f3", "free_beta_bits": 0, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:53:37"}
+{"n": 8, "case": 78, "p": 127, "A": "f0", "B": "f4", "free_beta_bits": 0, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:53:37"}
+{"n": 8, "case": 79, "p": 127, "A": "f0", "B": "f5", "free_beta_bits": 0, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:53:37"}
+{"n": 8, "case": 82, "p": 127, "A": "f0", "B": "f8", "free_beta_bits": 0, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:53:37"}
+{"n": 8, "case": 83, "p": 127, "A": "f0", "B": "f9", "free_beta_bits": 0, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:53:38"}
+{"n": 8, "case": 84, "p": 127, "A": "f0", "B": "f10", "free_beta_bits": 0, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:53:38"}
+{"n": 8, "case": 85, "p": 127, "A": "f0", "B": "f11", "free_beta_bits": 0, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:53:38"}
+{"n": 8, "case": 86, "p": 127, "A": "f0", "B": "f12", "free_beta_bits": 0, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:53:38"}
+{"n": 8, "case": 87, "p": 127, "A": "f0", "B": "f13", "free_beta_bits": 0, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:53:38"}
+{"n": 8, "case": 88, "p": 127, "A": "f0", "B": "f14", "free_beta_bits": 0, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:53:38"}
+{"n": 8, "case": 89, "p": 127, "A": "f0", "B": "f15", "free_beta_bits": 0, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:53:38"}
+{"n": 8, "case": 90, "p": 127, "A": "f0", "B": "f16", "free_beta_bits": 0, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:53:38"}
+{"n": 8, "case": 91, "p": 127, "A": "f0", "B": "f17", "free_beta_bits": 0, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:53:38"}
+{"n": 8, "case": 92, "p": 127, "A": "f0", "B": "I", "free_beta_bits": 0, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:53:39"}
+{"n": 8, "case": 74, "p": 127, "A": "f0", "B": "f0", "free_beta_bits": 7, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:53:39"}
+{"n": 8, "case": 76, "p": 127, "A": "f0", "B": "f2", "free_beta_bits": 7, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:53:39"}
+{"n": 8, "case": 80, "p": 127, "A": "f0", "B": "f6", "free_beta_bits": 7, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:53:39"}
+{"n": 8, "case": 57, "p": 7, "A": "f0+f0", "B": "I", "free_beta_bits": 8, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:53:39"}
+{"n": 8, "case": 81, "p": 127, "A": "f0", "B": "f7", "free_beta_bits": 7, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:53:39"}
+{"n": 8, "case": 68, "p": 31, "A": "f0", "B": "f1", "free_beta_bits": 9, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:53:39"}
+{"n": 8, "case": 69, "p": 31, "A": "f0", "B": "f2", "free_beta_bits": 9, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:53:40"}
+{"n": 8, "case": 71, "p": 31, "A": "f0", "B": "f4", "free_beta_bits": 9, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:53:40"}
+{"n": 8, "case": 70, "p": 31, "A": "f0", "B": "f3", "free_beta_bits": 14, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:53:40"}
+{"n": 8, "case": 72, "p": 31, "A": "f0", "B": "f5", "free_beta_bits": 14, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:53:40"}
+{"n": 8, "case": 64, "p": 17, "A": "f0", "B": "f0", "free_beta_bits": 8, "vars": 270692, "clauses": 970902, "seconds": 11.4, "time_limit": 1800, "kissat": "4.0.4", "when": "2026-09-27 23:53:53", "status": "UNSAT", "drat": "VERIFIED"}
+{"n": 8, "case": 53, "p": 7, "A": "f0+f0", "B": "f1", "free_beta_bits": 17, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:54:11"}
+{"n": 8, "case": 52, "p": 7, "A": "f0+f0", "B": "f0", "free_beta_bits": 20, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:54:12"}
+{"n": 8, "case": 67, "p": 31, "A": "f0", "B": "f0", "free_beta_bits": 24, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:54:12"}
+{"n": 8, "case": 73, "p": 31, "A": "f0", "B": "I", "free_beta_bits": 24, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:54:12"}
+{"n": 8, "case": 50, "p": 7, "A": "f0", "B": "f1+f1", "free_beta_bits": 26, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:54:12"}
+{"n": 8, "case": 56, "p": 7, "A": "f0+f0", "B": "f1+f1", "free_beta_bits": 26, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:54:13"}
+{"n": 8, "case": 55, "p": 7, "A": "f0+f0", "B": "f0+f1", "free_beta_bits": 29, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:54:13"}
+{"n": 8, "case": 54, "p": 7, "A": "f0+f0", "B": "f0+f0", "free_beta_bits": 32, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-27 23:54:14"}
+{"n": 8, "case": 58, "p": 7, "A": "f0+f1", "B": "f0", "free_beta_bits": 32, "vars": 154532, "clauses": 540506, "seconds": 2.3, "time_limit": 1800, "kissat": "4.0.4", "when": "2026-09-27 23:54:17", "status": "UNSAT", "drat": "VERIFIED"}
+{"n": 8, "case": 59, "p": 7, "A": "f0+f1", "B": "f1", "free_beta_bits": 32, "vars": 151860, "clauses": 531372, "seconds": 2.6, "time_limit": 1800, "kissat": "4.0.4", "when": "2026-09-27 23:54:26", "status": "UNSAT", "drat": "VERIFIED"}
+{"n": 8, "case": 60, "p": 7, "A": "f0+f1", "B": "f0+f0", "free_beta_bits": 32, "vars": 170033, "clauses": 599290, "seconds": 624.3, "time_limit": 1800, "kissat": "4.0.4", "when": "2026-09-28 00:04:57", "status": "UNSAT"}
+{"n": 8, "case": 65, "p": 17, "A": "f0", "B": "f1", "free_beta_bits": 16, "vars": 270956, "clauses": 971926, "seconds": 1219.9, "time_limit": 1800, "kissat": "4.0.4", "when": "2026-09-28 00:14:02", "status": "UNSAT"}
+{"n": 8, "case": 62, "p": 7, "A": "f0+f1", "B": "f1+f1", "free_beta_bits": 32, "vars": 167139, "clauses": 589352, "seconds": 625.9, "time_limit": 1800, "kissat": "4.0.4", "when": "2026-09-28 00:24:30", "status": "UNSAT"}
+{"n": 8, "case": 63, "p": 7, "A": "f0+f1", "B": "I", "free_beta_bits": 32, "vars": 101792, "clauses": 356334, "seconds": 3.1, "time_limit": 1800, "kissat": "4.0.4", "when": "2026-09-28 00:24:35", "status": "UNSAT", "drat": "VERIFIED"}
+{"n": 8, "case": 66, "p": 17, "A": "f0", "B": "I", "free_beta_bits": 32, "vars": 270222, "clauses": 968926, "seconds": 11.3, "time_limit": 1800, "kissat": "4.0.4", "when": "2026-09-28 00:24:58", "status": "UNSAT", "drat": "VERIFIED"}
+{"n": 8, "case": 49, "p": 7, "A": "f0", "B": "f0+f1", "free_beta_bits": 38, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-28 00:25:23"}
+{"n": 8, "case": 61, "p": 7, "A": "f0+f1", "B": "f0+f1", "free_beta_bits": 32, "vars": 208981, "clauses": 734322, "seconds": 1800.0, "time_limit": 1800, "kissat": "4.0.4", "when": "2026-09-28 00:35:02", "status": "TIMEOUT"}

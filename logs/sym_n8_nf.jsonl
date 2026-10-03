@@ -1,0 +1,87 @@
+{"n": 8, "case": 1, "p": 2, "A": "J2^1", "B": "J2^2", "status": "UNSAT", "seconds": 0.0, "note": "N7: dim V1 = 7 > (n+2)/2 while B != I", "when": "2026-09-28 01:24:14"}
+{"n": 8, "case": 0, "p": 2, "A": "J2^1", "B": "J2^1", "status": "UNSAT", "seconds": 0.0, "note": "N7: dim V1 = 7 > (n+2)/2 while B != I", "when": "2026-09-28 01:24:15"}
+{"n": 8, "case": 3, "p": 2, "A": "J2^1", "B": "J2^4", "status": "UNSAT", "seconds": 0.0, "note": "N7: dim V1 = 7 > (n+2)/2 while B != I", "when": "2026-09-28 01:24:15"}
+{"n": 8, "case": 2, "p": 2, "A": "J2^1", "B": "J2^3", "status": "UNSAT", "seconds": 0.0, "note": "N7: dim V1 = 7 > (n+2)/2 while B != I", "when": "2026-09-28 01:24:15"}
+{"n": 8, "case": 4, "p": 2, "A": "J2^1", "B": "I", "status": "UNSAT", "seconds": 0.0, "note": "N4': B = I with A an involution", "when": "2026-09-28 01:24:15"}
+{"n": 8, "case": 5, "p": 2, "A": "J2^2", "B": "J2^1", "status": "UNSAT", "seconds": 0.0, "note": "N7: dim V1 = 6 > (n+2)/2 while B != I", "when": "2026-09-28 01:24:15"}
+{"n": 8, "case": 6, "p": 2, "A": "J2^2", "B": "J2^2", "status": "UNSAT", "seconds": 0.0, "note": "N7: dim V1 = 6 > (n+2)/2 while B != I", "when": "2026-09-28 01:24:15"}
+{"n": 8, "case": 7, "p": 2, "A": "J2^2", "B": "J2^3", "status": "UNSAT", "seconds": 0.0, "note": "N7: dim V1 = 6 > (n+2)/2 while B != I", "when": "2026-09-28 01:24:15"}
+{"n": 8, "case": 8, "p": 2, "A": "J2^2", "B": "J2^4", "status": "UNSAT", "seconds": 0.0, "note": "N7: dim V1 = 6 > (n+2)/2 while B != I", "when": "2026-09-28 01:24:15"}
+{"n": 8, "case": 9, "p": 2, "A": "J2^2", "B": "I", "status": "UNSAT", "seconds": 0.0, "note": "N4': B = I with A an involution", "when": "2026-09-28 01:24:15"}
+{"n": 8, "case": 14, "p": 2, "A": "J2^3", "B": "I", "status": "UNSAT", "seconds": 0.0, "note": "N4': B = I with A an involution", "when": "2026-09-28 01:24:16"}
+{"n": 8, "case": 19, "p": 2, "A": "J2^4", "B": "I", "status": "UNSAT", "seconds": 0.0, "note": "N4': B = I with A an involution", "when": "2026-09-28 01:24:16"}
+{"n": 8, "case": 20, "p": 3, "A": "f0", "B": "f0", "status": "UNSAT", "seconds": 0.0, "note": "N7: dim V1 = 6 > (n+2)/2 while B != I", "when": "2026-09-28 01:24:16"}
+{"n": 8, "case": 21, "p": 3, "A": "f0", "B": "f0+f0", "status": "UNSAT", "seconds": 0.0, "note": "N7: dim V1 = 6 > (n+2)/2 while B != I", "when": "2026-09-28 01:24:16"}
+{"n": 8, "case": 22, "p": 3, "A": "f0", "B": "f0+f0+f0", "status": "UNSAT", "seconds": 0.0, "note": "N7: dim V1 = 6 > (n+2)/2 while B != I", "when": "2026-09-28 01:24:16"}
+{"n": 8, "case": 23, "p": 3, "A": "f0", "B": "f0+f0+f0+f0", "status": "UNSAT", "seconds": 0.0, "note": "N7: dim V1 = 6 > (n+2)/2 while B != I", "when": "2026-09-28 01:24:16"}
+{"n": 8, "case": 24, "p": 3, "A": "f0", "B": "I", "status": "UNSAT", "seconds": 0.0, "note": "N5: A-module f0 does not embed in B-module I", "when": "2026-09-28 01:24:16"}
+{"n": 8, "case": 25, "p": 3, "A": "f0+f0", "B": "f0", "status": "UNSAT", "seconds": 0.0, "note": "N8: f = 4 forces fB = 2 (fB = 6)", "when": "2026-09-28 01:24:16"}
+{"n": 8, "case": 26, "p": 3, "A": "f0+f0", "B": "f0+f0", "status": "UNSAT", "seconds": 0.0, "note": "N8: f = 4 forces fB = 2 (fB = 4)", "when": "2026-09-28 01:24:16"}
+{"n": 8, "case": 28, "p": 3, "A": "f0+f0", "B": "f0+f0+f0+f0", "status": "UNSAT", "seconds": 0.0, "note": "N3: f - 2 = 2 > fB = 0", "when": "2026-09-28 01:24:16"}
+{"n": 8, "case": 29, "p": 3, "A": "f0+f0", "B": "I", "status": "UNSAT", "seconds": 0.0, "note": "N8: f = 4 forces fB = 2 (fB = 8)", "when": "2026-09-28 01:24:17"}
+{"n": 8, "case": 30, "p": 3, "A": "f0+f0+f0", "B": "f0", "status": "UNSAT", "seconds": 0.0, "note": "N5: A-module f0+f0+f0 does not embed in B-module f0", "when": "2026-09-28 01:24:17"}
+{"n": 8, "case": 31, "p": 3, "A": "f0+f0+f0", "B": "f0+f0", "status": "UNSAT", "seconds": 0.0, "note": "N5: A-module f0+f0+f0 does not embed in B-module f0+f0", "when": "2026-09-28 01:24:17"}
+{"n": 8, "case": 33, "p": 3, "A": "f0+f0+f0", "B": "f0+f0+f0+f0", "status": "UNSAT", "seconds": 0.0, "note": "N9: p = 3, B fixed-point-free, m_A = 3", "when": "2026-09-28 01:24:17"}
+{"n": 8, "case": 34, "p": 3, "A": "f0+f0+f0", "B": "I", "status": "UNSAT", "seconds": 0.0, "note": "N5: A-module f0+f0+f0 does not embed in B-module I", "when": "2026-09-28 01:24:17"}
+{"n": 8, "case": 35, "p": 3, "A": "f0+f0+f0+f0", "B": "f0", "status": "UNSAT", "seconds": 0.0, "note": "N6: p = 3, A fixed-point-free, B != I, 4 | n", "when": "2026-09-28 01:24:17"}
+{"n": 8, "case": 36, "p": 3, "A": "f0+f0+f0+f0", "B": "f0+f0", "status": "UNSAT", "seconds": 0.0, "note": "N6: p = 3, A fixed-point-free, B != I, 4 | n", "when": "2026-09-28 01:24:17"}
+{"n": 8, "case": 37, "p": 3, "A": "f0+f0+f0+f0", "B": "f0+f0+f0", "status": "UNSAT", "seconds": 0.0, "note": "N6: p = 3, A fixed-point-free, B != I, 4 | n", "when": "2026-09-28 01:24:17"}
+{"n": 8, "case": 38, "p": 3, "A": "f0+f0+f0+f0", "B": "f0+f0+f0+f0", "status": "UNSAT", "seconds": 0.0, "note": "N6: p = 3, A fixed-point-free, B != I, 4 | n", "when": "2026-09-28 01:24:17"}
+{"n": 8, "case": 40, "p": 5, "A": "f0", "B": "f0", "status": "UNSAT", "seconds": 0.0, "note": "N8: f = 4 forces fB = 2 (fB = 4)", "when": "2026-09-28 01:24:17"}
+{"n": 8, "case": 41, "p": 5, "A": "f0", "B": "f0+f0", "status": "UNSAT", "seconds": 0.0, "note": "N2: dim fixed spaces 4 != 0", "when": "2026-09-28 01:24:18"}
+{"n": 8, "case": 42, "p": 5, "A": "f0", "B": "I", "status": "UNSAT", "seconds": 0.0, "note": "N2: dim fixed spaces 4 != 8", "when": "2026-09-28 01:24:18"}
+{"n": 8, "case": 43, "p": 5, "A": "f0+f0", "B": "f0", "status": "UNSAT", "seconds": 0.0, "note": "N2: dim fixed spaces 0 != 4", "when": "2026-09-28 01:24:18"}
+{"n": 8, "case": 45, "p": 5, "A": "f0+f0", "B": "I", "status": "UNSAT", "seconds": 0.0, "note": "N2: dim fixed spaces 0 != 8", "when": "2026-09-28 01:24:18"}
+{"n": 8, "case": 46, "p": 7, "A": "f0", "B": "f0", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 5", "when": "2026-09-28 01:24:18"}
+{"n": 8, "case": 47, "p": 7, "A": "f0", "B": "f1", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 5", "when": "2026-09-28 01:24:18"}
+{"n": 8, "case": 48, "p": 7, "A": "f0", "B": "f0+f0", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 5", "when": "2026-09-28 01:24:19"}
+{"n": 8, "case": 49, "p": 7, "A": "f0", "B": "f0+f1", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 5", "when": "2026-09-28 01:24:19"}
+{"n": 8, "case": 50, "p": 7, "A": "f0", "B": "f1+f1", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 5", "when": "2026-09-28 01:24:19"}
+{"n": 8, "case": 51, "p": 7, "A": "f0", "B": "I", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 5", "when": "2026-09-28 01:24:19"}
+{"n": 8, "case": 52, "p": 7, "A": "f0+f0", "B": "f0", "status": "UNSAT", "seconds": 0.0, "note": "N2: dim fixed spaces 2 != 5", "when": "2026-09-28 01:24:19"}
+{"n": 8, "case": 53, "p": 7, "A": "f0+f0", "B": "f1", "status": "UNSAT", "seconds": 0.0, "note": "N2: dim fixed spaces 2 != 5", "when": "2026-09-28 01:24:20"}
+{"n": 8, "case": 54, "p": 7, "A": "f0+f0", "B": "f0+f0", "free_beta_bits": 32, "status": "UNSAT", "seconds": 0.0, "note": "empty clause during encoding", "when": "2026-09-28 01:24:20"}
+{"n": 8, "case": 55, "p": 7, "A": "f0+f0", "B": "f0+f1", "status": "UNSAT", "seconds": 0.0, "note": "N5: A-module f0+f0 does not embed in B-module f0+f1", "when": "2026-09-28 01:24:20"}
+{"n": 8, "case": 56, "p": 7, "A": "f0+f0", "B": "f1+f1", "status": "UNSAT", "seconds": 0.0, "note": "N5: A-module f0+f0 does not embed in B-module f1+f1", "when": "2026-09-28 01:24:20"}
+{"n": 8, "case": 57, "p": 7, "A": "f0+f0", "B": "I", "status": "UNSAT", "seconds": 0.0, "note": "N2: dim fixed spaces 2 != 8", "when": "2026-09-28 01:24:21"}
+{"n": 8, "case": 58, "p": 7, "A": "f0+f1", "B": "f0", "status": "UNSAT", "seconds": 0.0, "note": "N2: dim fixed spaces 2 != 5", "when": "2026-09-28 01:24:21"}
+{"n": 8, "case": 59, "p": 7, "A": "f0+f1", "B": "f1", "status": "UNSAT", "seconds": 0.0, "note": "N2: dim fixed spaces 2 != 5", "when": "2026-09-28 01:24:21"}
+{"n": 8, "case": 60, "p": 7, "A": "f0+f1", "B": "f0+f0", "status": "UNSAT", "seconds": 0.0, "note": "N5: A-module f0+f1 does not embed in B-module f0+f0", "when": "2026-09-28 01:24:21"}
+{"n": 8, "case": 61, "p": 7, "A": "f0+f1", "B": "f0+f1", "free_beta_bits": 24, "perm": true, "reduce": false, "nf": true, "vars": 165346, "clauses": 584804, "seconds": 107.6, "time_limit": 3600, "kissat": "4.0.4", "when": "2026-09-28 01:26:10", "status": "UNSAT", "drat": "VERIFIED"}
+{"n": 8, "case": 62, "p": 7, "A": "f0+f1", "B": "f1+f1", "status": "UNSAT", "seconds": 0.0, "note": "N5: A-module f0+f1 does not embed in B-module f1+f1", "when": "2026-09-28 01:29:30"}
+{"n": 8, "case": 63, "p": 7, "A": "f0+f1", "B": "I", "status": "UNSAT", "seconds": 0.0, "note": "N2: dim fixed spaces 2 != 8", "when": "2026-09-28 01:29:30"}
+{"n": 8, "case": 64, "p": 17, "A": "f0", "B": "f0", "free_beta_bits": 8, "perm": true, "reduce": false, "nf": true, "vars": 270692, "clauses": 970902, "seconds": 9.9, "time_limit": 3600, "kissat": "4.0.4", "when": "2026-09-28 01:29:43", "status": "UNSAT", "drat": "VERIFIED"}
+{"n": 8, "case": 65, "p": 17, "A": "f0", "B": "f1", "free_beta_bits": 16, "perm": true, "reduce": false, "nf": true, "vars": 270956, "clauses": 971926, "seconds": 369.7, "time_limit": 3600, "kissat": "4.0.4", "when": "2026-09-28 01:36:11", "status": "TIMEOUT"}
+{"n": 8, "case": 44, "p": 5, "A": "f0+f0", "B": "f0+f0", "free_beta_bits": 40, "perm": true, "reduce": false, "nf": true, "vars": 270540, "clauses": 970166, "seconds": 710.9, "time_limit": 3600, "kissat": "4.0.4", "when": "2026-09-28 01:36:11", "status": "TIMEOUT"}
+{"n": 8, "case": 67, "p": 31, "A": "f0", "B": "f0", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 3", "when": "2026-09-28 01:36:11"}
+{"n": 8, "case": 66, "p": 17, "A": "f0", "B": "I", "status": "UNSAT", "seconds": 0.0, "note": "N2: dim fixed spaces 0 != 8", "when": "2026-09-28 01:36:11"}
+{"n": 8, "case": 68, "p": 31, "A": "f0", "B": "f1", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 3", "when": "2026-09-28 01:36:11"}
+{"n": 8, "case": 69, "p": 31, "A": "f0", "B": "f2", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 3", "when": "2026-09-28 01:36:11"}
+{"n": 8, "case": 70, "p": 31, "A": "f0", "B": "f3", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 3", "when": "2026-09-28 01:36:11"}
+{"n": 8, "case": 71, "p": 31, "A": "f0", "B": "f4", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 3", "when": "2026-09-28 01:36:11"}
+{"n": 8, "case": 72, "p": 31, "A": "f0", "B": "f5", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 3", "when": "2026-09-28 01:36:11"}
+{"n": 8, "case": 73, "p": 31, "A": "f0", "B": "I", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 3", "when": "2026-09-28 01:36:12"}
+{"n": 8, "case": 75, "p": 127, "A": "f0", "B": "f1", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 1", "when": "2026-09-28 01:36:12"}
+{"n": 8, "case": 74, "p": 127, "A": "f0", "B": "f0", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 1", "when": "2026-09-28 01:36:12"}
+{"n": 8, "case": 77, "p": 127, "A": "f0", "B": "f3", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 1", "when": "2026-09-28 01:36:12"}
+{"n": 8, "case": 76, "p": 127, "A": "f0", "B": "f2", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 1", "when": "2026-09-28 01:36:12"}
+{"n": 8, "case": 78, "p": 127, "A": "f0", "B": "f4", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 1", "when": "2026-09-28 01:36:12"}
+{"n": 8, "case": 79, "p": 127, "A": "f0", "B": "f5", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 1", "when": "2026-09-28 01:36:12"}
+{"n": 8, "case": 80, "p": 127, "A": "f0", "B": "f6", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 1", "when": "2026-09-28 01:36:12"}
+{"n": 8, "case": 81, "p": 127, "A": "f0", "B": "f7", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 1", "when": "2026-09-28 01:36:12"}
+{"n": 8, "case": 82, "p": 127, "A": "f0", "B": "f8", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 1", "when": "2026-09-28 01:36:13"}
+{"n": 8, "case": 83, "p": 127, "A": "f0", "B": "f9", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 1", "when": "2026-09-28 01:36:13"}
+{"n": 8, "case": 84, "p": 127, "A": "f0", "B": "f10", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 1", "when": "2026-09-28 01:36:13"}
+{"n": 8, "case": 85, "p": 127, "A": "f0", "B": "f11", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 1", "when": "2026-09-28 01:36:13"}
+{"n": 8, "case": 87, "p": 127, "A": "f0", "B": "f13", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 1", "when": "2026-09-28 01:36:13"}
+{"n": 8, "case": 86, "p": 127, "A": "f0", "B": "f12", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 1", "when": "2026-09-28 01:36:13"}
+{"n": 8, "case": 88, "p": 127, "A": "f0", "B": "f14", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 1", "when": "2026-09-28 01:36:13"}
+{"n": 8, "case": 89, "p": 127, "A": "f0", "B": "f15", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 1", "when": "2026-09-28 01:36:13"}
+{"n": 8, "case": 90, "p": 127, "A": "f0", "B": "f16", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 1", "when": "2026-09-28 01:36:13"}
+{"n": 8, "case": 91, "p": 127, "A": "f0", "B": "f17", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 1", "when": "2026-09-28 01:36:13"}
+{"n": 8, "case": 92, "p": 127, "A": "f0", "B": "I", "status": "UNSAT", "seconds": 0.0, "note": "N1: fixed space of A has odd dimension 1", "when": "2026-09-28 01:36:14"}
+{"n": 8, "case": 27, "p": 3, "A": "f0+f0", "B": "f0+f0+f0", "free_beta_bits": 50, "perm": true, "reduce": false, "nf": true, "vars": 156021, "clauses": 554938, "seconds": 1.5, "time_limit": 3600, "kissat": "4.0.4", "when": "2026-09-28 01:36:17", "status": "UNSAT", "drat": "VERIFIED"}
+{"n": 8, "case": 39, "p": 3, "A": "f0+f0+f0+f0", "B": "I", "free_beta_bits": 72, "perm": true, "reduce": false, "nf": true, "vars": 138317, "clauses": 501349, "seconds": 1.6, "time_limit": 3600, "kissat": "4.0.4", "when": "2026-09-28 01:36:23", "status": "UNSAT", "drat": "VERIFIED"}
+{"n": 8, "case": 18, "p": 2, "A": "J2^4", "B": "J2^4", "free_beta_bits": 112, "perm": true, "reduce": false, "nf": true, "vars": 247026, "clauses": 878886, "seconds": 15.7, "time_limit": 3600, "kissat": "4.0.4", "when": "2026-09-28 01:36:45", "status": "UNSAT", "drat": "VERIFIED"}
+{"n": 8, "case": 13, "p": 2, "A": "J2^3", "B": "J2^4", "free_beta_bits": 112, "perm": true, "reduce": false, "nf": true, "vars": 238803, "clauses": 847826, "seconds": 2.5, "time_limit": 3600, "kissat": "4.0.4", "when": "2026-09-28 01:37:14", "status": "UNSAT", "drat": "VERIFIED"}
+{"n": 8, "case": 17, "p": 2, "A": "J2^4", "B": "J2^3", "free_beta_bits": 116, "perm": true, "reduce": false, "nf": true, "vars": 243866, "clauses": 867462, "seconds": 37.9, "time_limit": 3600, "kissat": "4.0.4", "when": "2026-09-28 01:38:00", "status": "UNSAT", "drat": "VERIFIED"}

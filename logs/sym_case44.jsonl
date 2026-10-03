@@ -1,0 +1,8 @@
+{"v": 2, "status": "UNSAT", "note": "inconsistent", "seconds": 0.0, "when": "2026-09-28 01:20:03"}
+{"v": 4, "status": "UNSAT", "note": "inconsistent", "seconds": 0.0, "when": "2026-09-28 01:20:03"}
+{"v": 6, "status": "UNSAT", "note": "inconsistent", "seconds": 0.0, "when": "2026-09-28 01:20:03"}
+{"v": 8, "status": "UNSAT", "note": "inconsistent", "seconds": 0.0, "when": "2026-09-28 01:20:03"}
+{"v": 10, "status": "UNSAT", "note": "inconsistent", "seconds": 0.0, "when": "2026-09-28 01:20:03"}
+{"v": 12, "status": "UNSAT", "note": "inconsistent", "seconds": 0.0, "when": "2026-09-28 01:20:03"}
+{"v": 14, "status": "UNSAT", "note": "inconsistent", "seconds": 0.0, "when": "2026-09-28 01:20:03"}
+{"v": 16, "j0": 1, "bits": 24, "betas": 0, "status": "UNSAT", "check": null, "seconds": 10.3, "when": "2026-09-28 01:20:13"}

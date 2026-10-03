@@ -1,0 +1,67 @@
+case  75 p=127 A=f0           B=f1           bits=  0 UNSAT        0.0s
+case  77 p=127 A=f0           B=f3           bits=  0 UNSAT        0.0s
+case  78 p=127 A=f0           B=f4           bits=  0 UNSAT        0.0s
+case  79 p=127 A=f0           B=f5           bits=  0 UNSAT        0.0s
+case  82 p=127 A=f0           B=f8           bits=  0 UNSAT        0.0s
+case  83 p=127 A=f0           B=f9           bits=  0 UNSAT        0.0s
+case  84 p=127 A=f0           B=f10          bits=  0 UNSAT        0.0s
+case  85 p=127 A=f0           B=f11          bits=  0 UNSAT        0.0s
+case  86 p=127 A=f0           B=f12          bits=  0 UNSAT        0.0s
+case  87 p=127 A=f0           B=f13          bits=  0 UNSAT        0.0s
+case  88 p=127 A=f0           B=f14          bits=  0 UNSAT        0.0s
+case  89 p=127 A=f0           B=f15          bits=  0 UNSAT        0.0s
+case  90 p=127 A=f0           B=f16          bits=  0 UNSAT        0.0s
+case  91 p=127 A=f0           B=f17          bits=  0 UNSAT        0.0s
+case  92 p=127 A=f0           B=I            bits=  0 UNSAT        0.0s
+case  74 p=127 A=f0           B=f0           bits=  7 UNSAT        0.0s
+case  76 p=127 A=f0           B=f2           bits=  7 UNSAT        0.0s
+case  80 p=127 A=f0           B=f6           bits=  7 UNSAT        0.0s
+case  57 p=7   A=f0+f0        B=I            bits=  8 UNSAT        0.0s
+case  81 p=127 A=f0           B=f7           bits=  7 UNSAT        0.0s
+case  68 p=31  A=f0           B=f1           bits=  9 UNSAT        0.0s
+case  69 p=31  A=f0           B=f2           bits=  9 UNSAT        0.0s
+case  71 p=31  A=f0           B=f4           bits=  9 UNSAT        0.0s
+case  70 p=31  A=f0           B=f3           bits= 14 UNSAT        0.0s
+case  72 p=31  A=f0           B=f5           bits= 14 UNSAT        0.0s
+case  64 p=17  A=f0           B=f0           bits=  8 UNSAT       11.4s drat=VERIFIED
+case  53 p=7   A=f0+f0        B=f1           bits= 17 UNSAT        0.0s
+case  52 p=7   A=f0+f0        B=f0           bits= 20 UNSAT        0.0s
+case  67 p=31  A=f0           B=f0           bits= 24 UNSAT        0.0s
+case  73 p=31  A=f0           B=I            bits= 24 UNSAT        0.0s
+case  50 p=7   A=f0           B=f1+f1        bits= 26 UNSAT        0.0s
+case  56 p=7   A=f0+f0        B=f1+f1        bits= 26 UNSAT        0.0s
+case  55 p=7   A=f0+f0        B=f0+f1        bits= 29 UNSAT        0.0s
+case  54 p=7   A=f0+f0        B=f0+f0        bits= 32 UNSAT        0.0s
+case  58 p=7   A=f0+f1        B=f0           bits= 32 UNSAT        2.3s drat=VERIFIED
+case  59 p=7   A=f0+f1        B=f1           bits= 32 UNSAT        2.6s drat=VERIFIED
+case  60 p=7   A=f0+f1        B=f0+f0        bits= 32 UNSAT      624.3s
+case  65 p=17  A=f0           B=f1           bits= 16 UNSAT     1219.9s
+case  62 p=7   A=f0+f1        B=f1+f1        bits= 32 UNSAT      625.9s
+case  63 p=7   A=f0+f1        B=I            bits= 32 UNSAT        3.1s drat=VERIFIED
+case  66 p=17  A=f0           B=I            bits= 32 UNSAT       11.3s drat=VERIFIED
+case  49 p=7   A=f0           B=f0+f1        bits= 38 UNSAT        0.0s
+case  61 p=7   A=f0+f1        B=f0+f1        bits= 32 TIMEOUT   1800.0s
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/quadratic-perm-4n/sym_runner.py", line 80, in run_case
+    except OSError:
+    ^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/claude-0/-home-claude/78ae053d-8b9c-598b-9d0e-64ec884ae7f3/scratchpad/sym/sym_8_41.cnf'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/claude/quadratic-perm-4n/sym_runner.py", line 113, in <module>
+    extra += f" drat={rec['drat']}"
+
+  File "/home/claude/quadratic-perm-4n/sym_runner.py", line 99, in main
+    # easiest first: fewest free beta bits
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/multiprocessing/pool.py", line 873, in next
+    raise value
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/claude-0/-home-claude/78ae053d-8b9c-598b-9d0e-64ec884ae7f3/scratchpad/sym/sym_8_41.cnf'

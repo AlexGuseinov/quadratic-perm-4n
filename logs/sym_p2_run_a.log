@@ -1,0 +1,1 @@
+{'case': 16, 'A': 'J2^4', 'B': 'J2^2', 'alt': 'V1 closed, F4-normalised', 'bits': 112, 'vars': 221395, 'clauses': 786295, 'status': 'UNSAT', 'drat': 'VERIFIED', 'seconds': 8.2, 'when': '2026-09-28 02:22:58'}

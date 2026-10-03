@@ -1,0 +1,38 @@
+selftest ok (act vs definition, rank)
+parsed 4 NODE entries, lines per node: [740736, 276480, 226816, 224640] (1.5s)
+
+== node 0: d=1 basis=[4202497] R=64 reps=3 lines=740736
+  all nonzero elements rank 6: True; dimP histogram [252, 3, 0]; full points []
+  (d) dimP(R)=1  rule gives R=64  -> OK
+  (a) |C(W)|=41891328  |Cand(W,R)|=740736  listed=740736  duplicates=0  in-W=0  missing=0  extra=0  -> OK
+  reps distinct mod W: True; reps in Cand: True; o range ok: True; orbit sizes: min 2880 max 725760
+  (b) U invertible: 740736/740736; W^U=W: 740736/740736; UR=R: 740736/740736; c_o^U = x mod W: 740736/740736  -> OK   (17.3s)
+
+== node 1: d=2 basis=[4194965, 8852] R=1 reps=117 lines=276480
+  all nonzero elements rank 6: True; dimP histogram [252, 0, 3]; full points [64, 128, 192]
+  (d) dimP(R)=0  rule gives R=1  -> OK
+  (a) |C(W)|=5806080  |Cand(W,R)|=276480  listed=276480  duplicates=0  in-W=0  missing=0  extra=0  -> OK
+  reps distinct mod W: True; reps in Cand: True; o range ok: True; orbit sizes: min 256 max 8192
+  (b) U invertible: 276480/276480; W^U=W: 276480/276480; UR=R: 276480/276480; c_o^U = x mod W: 276480/276480  -> OK   (11.7s)
+
+== node 2: d=2 basis=[4195009, 8896] R=8 reps=355 lines=226816
+  all nonzero elements rank 6: True; dimP histogram [248, 6, 1]; full points [64]
+  (d) dimP(R)=1  rule gives R=8  -> OK
+  (a) |C(W)|=6321664  |Cand(W,R)|=226816  listed=226816  duplicates=0  in-W=0  missing=0  extra=0  -> OK
+  reps distinct mod W: True; reps in Cand: True; o range ok: True; orbit sizes: min 32 max 1024
+  (b) U invertible: 226816/226816; W^U=W: 226816/226816; UR=R: 226816/226816; c_o^U = x mod W: 226816/226816  -> OK   (10.6s)
+
+== node 3: d=2 basis=[4202497, 131601] R=8 reps=14 lines=224640
+  all nonzero elements rank 6: True; dimP histogram [248, 6, 1]; full points [64]
+  (d) dimP(R)=1  rule gives R=8  -> OK
+  (a) |C(W)|=6347520  |Cand(W,R)|=224640  listed=224640  duplicates=0  in-W=0  missing=0  extra=0  -> OK
+  reps distinct mod W: True; reps in Cand: True; o range ok: True; orbit sizes: min 1920 max 61440
+  (b) U invertible: 224640/224640; W^U=W: 224640/224640; UR=R: 224640/224640; c_o^U = x mod W: 224640/224640  -> OK   (10.1s)
+
+W1 = <J>: True
+d=2 nodes == W1 + <c> for the d=1 reps (as subspaces): True
+(c) spaces W2+<c>: 486 (distinct 486); roots in list3: 486 (distinct 486); idx 0..485: True; equal as sets of subspaces: True  -> OK
+all 486 roots: every nonzero element rank 6: True
+
+SUMMARY (a) [True, True, True, True]  (b) [np.True_, np.True_, np.True_, np.True_]  (c) True  (d) [np.True_, np.True_, np.True_, np.True_]   total 51.2s
+wall 51.4s maxRSS 460 MB

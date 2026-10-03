@@ -1,0 +1,1 @@
+{'case': 12, 'A': 'J2^3', 'B': 'J2^3', 'alt': 'K_e6=<e6,e7>+out', 'bits': 87, 'vars': 177477, 'clauses': 631540, 'status': 'UNSAT', 'drat': 'VERIFIED', 'seconds': 55.1, 'when': '2026-09-28 02:47:55'}

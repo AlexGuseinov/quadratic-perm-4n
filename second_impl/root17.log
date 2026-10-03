@@ -1,0 +1,324 @@
+root 17: basis [4194965, 8852, 8589332]  dim=3  all 7 nonzero elements rank 6: True
+root: pivots [22, 13, 23]  dimP histogram [240, 12, 3, 0]  |C(W)| = 257600  (8.2s)
+VERIFY created#1 d=4 |C| inc=1395 brute=1395 S:True I:True dimP:True (6.9s)
+VERIFY created#1 d=5 |C| inc=0 brute=0 S:True I:True dimP:True (6.3s)
+VERIFY processed#1 d=5 |C| inc=2 brute=2 S:True I:True dimP:True (6.2s)
+VERIFY processed#50 d=5 |C| inc=0 brute=0 S:True I:True dimP:True (6.6s)
+VERIFY created#30000 d=5 |C| inc=2 brute=2 S:True I:True dimP:True (6.5s)
+[PARTIAL] root-children done 500/16752  elapsed 48.5s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0       500  (500)
+  5      62328          0       62328          0         0  (246)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+VERIFY reached-rule3#1 d=5 |C| inc=7 brute=7 S:True I:True dimP:True (7.0s)
+VERIFY reached-rule3#2 d=5 |C| inc=7 brute=7 S:True I:True dimP:True (6.1s)
+[PARTIAL] root-children done 1000/16752  elapsed 69.5s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0      1000  (1000)
+  5     144340          0      144336          4         0  (811)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 1500/16752  elapsed 78.0s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0      1500  (1500)
+  5     233267          0      233251         16         0  (1512)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+VERIFY reached-rule3#30 d=5 |C| inc=8 brute=8 S:True I:True dimP:True (6.5s)
+VERIFY processed#2000 d=5 |C| inc=5 brute=5 S:True I:True dimP:True (6.5s)
+VERIFY created#2000 d=4 |C| inc=1494 brute=1494 S:True I:True dimP:True (7.0s)
+[PARTIAL] root-children done 2000/16752  elapsed 106.3s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0      2000  (2000)
+  5     318766          0      318724         42         0  (2134)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+VERIFY created#400000 d=5 |C| inc=1 brute=1 S:True I:True dimP:True (6.4s)
+[PARTIAL] root-children done 2500/16752  elapsed 120.9s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0      2500  (2500)
+  5     407937          0      407875         62         0  (2851)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 3000/16752  elapsed 127.5s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0      3000  (3000)
+  5     469607          0      469543         64         0  (3170)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 3500/16752  elapsed 133.0s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0      3500  (3500)
+  5     529824          0      529760         64         0  (3341)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 4000/16752  elapsed 139.3s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0      4000  (4000)
+  5     598008          0      597924         84         0  (3680)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 4500/16752  elapsed 147.0s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0      4500  (4500)
+  5     683213          0      683113        100         0  (4353)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 5000/16752  elapsed 154.9s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0      5000  (5000)
+  5     769042          0      768938        104         0  (5100)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 5500/16752  elapsed 163.0s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0      5500  (5500)
+  5     855367          0      855253        114         0  (5818)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 6000/16752  elapsed 170.5s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0      6000  (6000)
+  5     942612          0      942488        124         0  (6442)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+VERIFY created#1000000 d=5 |C| inc=1 brute=1 S:True I:True dimP:True (6.2s)
+[PARTIAL] root-children done 6500/16752  elapsed 184.3s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0      6500  (6500)
+  5    1028554          0     1028426        128         0  (6994)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 7000/16752  elapsed 192.1s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0      7000  (7000)
+  5    1102528          0     1102398        130         0  (7178)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 7500/16752  elapsed 199.0s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0      7500  (7500)
+  5    1172040          0     1171908        132         0  (7557)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 8000/16752  elapsed 206.5s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0      8000  (8000)
+  5    1247445          0     1247313        132         0  (7984)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 8500/16752  elapsed 215.1s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0      8500  (8500)
+  5    1328913          0     1328777        136         0  (8477)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 9000/16752  elapsed 222.5s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0      9000  (9000)
+  5    1405720          0     1405584        136         0  (9000)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 9500/16752  elapsed 230.2s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0      9500  (9500)
+  5    1481900          0     1481761        139         0  (10278)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 10000/16752  elapsed 237.4s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0     10000  (10000)
+  5    1557696          0     1557554        142         0  (11723)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 10500/16752  elapsed 244.8s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0     10500  (10500)
+  5    1633965          0     1633818        147         0  (13194)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 11000/16752  elapsed 252.4s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0     11000  (11000)
+  5    1714104          0     1713954        150         0  (13752)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 11500/16752  elapsed 260.4s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0     11500  (11500)
+  5    1793980          0     1793824        156         0  (14361)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+VERIFY created#12000 d=4 |C| inc=1475 brute=1475 S:True I:True dimP:True (6.7s)
+[PARTIAL] root-children done 12000/16752  elapsed 274.6s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0     12000  (12000)
+  5    1868438          0     1868278        160         0  (14603)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 12500/16752  elapsed 282.1s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0     12500  (12500)
+  5    1940661          0     1940501        160         0  (14870)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 13000/16752  elapsed 289.5s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0     13000  (13000)
+  5    2010679          0     2010519        160         0  (15269)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 13500/16752  elapsed 296.6s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0     13500  (13500)
+  5    2088600          0     2088440        160         0  (15656)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 14000/16752  elapsed 304.3s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0     14000  (14000)
+  5    2170105          0     2169941        164         0  (16142)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 14500/16752  elapsed 312.6s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0     14500  (14500)
+  5    2246737          0     2246571        166         0  (17646)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 15000/16752  elapsed 320.5s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0     15000  (15000)
+  5    2322604          0     2322435        169         0  (18960)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 15500/16752  elapsed 327.8s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0     15500  (15500)
+  5    2398632          0     2398460        172         0  (20464)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 16000/16752  elapsed 335.5s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0     16000  (16000)
+  5    2478480          0     2478305        175         0  (21017)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[PARTIAL] root-children done 16500/16752  elapsed 343.8s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0     16500  (16500)
+  5    2558276          0     2558096        180         0  (21567)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+[FINAL] root-children done 16752/16752  elapsed 348.1s
+level   nodes   pruned-dim pruned-size pruned-cov  expanded  (processed)
+  3          1          0           0          0         1  (1)
+  4      16752          0           0          0     16752  (16752)
+  5    2598632          0     2598448        184         0  (21900)
+  6          0          0           0          0         0  (0)
+  7          0          0           0          0         0  (0)
+  8          0          0           0          0         0  (0)
+  solutions: 0
+verifications: 13/13 passed
+total time 348.1s
+wall 348.2s  maxRSS 579 MB

@@ -1,0 +1,3 @@
+n=8 rank=6: t.i. lines=5419 vars=21421 clauses=48006
+  s SATISFIABLE
+  spread with 85 lines; independent check: True

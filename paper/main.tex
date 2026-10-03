@@ -1,0 +1,1116 @@
+\documentclass[11pt]{article}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\F}{\mathbb{F}}
+\DeclareMathOperator{\Alt}{Alt}
+\DeclareMathOperator{\rad}{rad}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\rk}{rank}
+
+\title{Quadratic Differentially 4-Uniform Permutations\\ in Dimensions Divisible by Four:\\
+A Desarguesian Obstruction and Non-Existence in Dimension 8}
+\author{Ali Huseynli\\ \small Azerbaijan Technical University, Baku, Azerbaijan}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Quadratic S-boxes are attractive for masked implementations because they admit three-share
+threshold implementations without decomposition into several stages, and differential
+uniformity~$4$ is the best possible value
+for a quadratic permutation of even dimension. By a result of Charpin and Peng, a quadratic
+differentially 4-uniform permutation of $\F_2^n$ is differentially two-valued and all its
+components have rank $n-2$. All known examples of such permutations live in dimensions
+$n\equiv 2\pmod 4$. We study
+the case $4\mid n$. We observe that the kernels of the derivatives of such a permutation form a
+line spread of $\F_2^n$ which is totally isotropic for all components and is mapped onto a line
+spread of the codomain. We show that this spread cannot be Desarguesian when
+$4\mid n$; more generally, a quadratic permutation whose derivative kernels form a Desarguesian
+$t$-spread exists only if $n/t$ is odd, which contains the classical fact that quadratic APN
+permutations exist only in odd dimension. As a consequence no $\F_4$-quadratic map, for instance
+no map $x^{2^k+1}+\ell(x)$ with $k$ even and $\ell$ linear, is a differentially 4-uniform permutation
+when $4\mid n$ (for power maps alone this is classical). For
+$n=8$ we settle the question: by an exhaustive computer search over the possible spaces of
+components, cross-checked by a second, separately written implementation, there is no quadratic differentially
+4-uniform permutation of $\F_2^8$; more generally every quadratic $(8,8)$-function whose
+nonzero derivatives are all $4$-to-$1$ has a bent component. The search rests on a simple
+closure property of the radicals of the components.
+\end{abstract}
+
+\noindent\textbf{Keywords:} differential uniformity, quadratic permutation, S-box, spread,
+alternating bilinear form, constant-rank subspace, computer-assisted proof.
+
+\noindent\textbf{MSC (2020):} 94A60, 94D10, 11T71, 15A63, 51E23.
+
+\section{Introduction}
+Masked implementations of block ciphers pay for every non-linear operation. A threshold
+implementation of a function of algebraic degree $d$ needs at least $d+1$ shares
+\cite{NRR06}; for a quadratic S-box three shares suffice for a correct and non-complete sharing
+computed in one stage, whereas S-boxes of higher degree need more shares or a decomposition
+into several stages of lower degree separated by registers \cite{BNNRS15}. (Uniformity of the
+shared function is a separate requirement, which may need fresh randomness or a particular
+sharing; a low algebraic degree alone does not make an implementation secure.) So the
+cryptographic quality achievable by quadratic permutations is a natural design limit. For a permutation of $\F_2^n$ with $n$ even
+the differential uniformity is at least $4$ when the permutation is quadratic
+(Remark~\ref{rem:du-at-least-4}); the value $4$ is attained by the Gold permutations
+$x^{2^k+1}$ with $\gcd(k,n)=2$ precisely when $n\equiv 2\pmod 4$ \cite{Gold68,Nyb93}, and
+other known quadratic examples, such as the binomials of Bracken, Tan and Tan \cite{BTT12}
+and the Dembowski--Ostrom quadrinomials over $\F_{2^{2m}}$ with $m$ odd studied in
+\cite{KMCLLJ22}, also live in dimensions $n\equiv 2\pmod 4$. For $n\le6$ all quadratic
+permutations are classified up to affine equivalence \cite{DMB19}; for $n=6$ eight of the
+classes have differential uniformity $4$. For $4\mid n$ differentially
+4-uniform permutations do exist, for instance the inverse map \cite{Nyb93} and the cubic power
+map $x^{2^{2k}+2^k+1}$ for $n=4k$ with $k$ odd \cite{BL10}, but no quadratic one is known. We
+show that none exists for $n=8$.
+
+The same dichotomy between $n\equiv 2$ and $n\equiv 0\pmod 4$ appears in the decomposition
+problem for permutations into quadratic ones \cite{NNR19}: if $4\nmid n$, every permutation of
+$\F_{2^n}$ is a composition of quadratic power permutations and affine permutations $x\mapsto
+ax+b$, whereas if $4\mid n$, no power permutation with differential uniformity below $16$ is a
+composition of quadratic and linear power permutations \cite{ACPBSN25}. Quadratic
+permutations with differential uniformity $4$ in dimension $4\mid n$ are therefore of interest
+both as candidate S-boxes and as building blocks of such decompositions.
+
+\paragraph{Question.} Does $\F_2^n$ with $4\mid n$ admit a quadratic permutation with
+differential uniformity $4$? The first open case was $n=8$, the dimension of the AES S-box
+(which is based on the inverse map and is not quadratic); we answer it negatively (Theorem~\ref{thm:n8}).
+
+\paragraph{Known structure.} Charpin and Peng \cite[Theorems~1 and~7]{CP19} proved that a
+quadratic differentially 4-uniform permutation of $\F_2^n$ ($n$ even) is differentially
+two-valued $\{0,4\}$, has no bent component and has nonlinearity $2^{n-1}-2^{n/2}$ with a
+single Walsh amplitude; in the language of alternating forms, every component has rank exactly
+$n-2$ and every derivative kernel has dimension $2$ (Theorem~\ref{thm:constrank} below). Their
+proof rests on the identity \cite[Theorem~5]{CP19} which we recall as
+Lemma~\ref{lem:count}.
+
+\paragraph{Contributions.}
+\begin{enumerate}
+\item Kernel spreads (Section~\ref{sec:structure}): the derivative kernels of a quadratic DU-4
+permutation form a line spread that is totally isotropic for all components; the restriction
+of the permutation to each kernel line is linear, and the images form a line spread of the
+codomain. This gives a partial normal form. (Isotropy of each single kernel is \cite[Lemma~1]{MTX19}.)
+\item The Desarguesian obstruction (Section~\ref{sec:f4}), our first main result: a quadratic
+permutation all of whose derivative kernels have dimension $t$ and form a Desarguesian
+$t$-spread exists only if $n/t$ is odd (Theorem~\ref{thm:general-t}). For $t=1$ this is the
+classical fact that quadratic APN permutations exist only in odd dimension; for $t=2$ it shows
+that, if $4\mid n$, the kernel spread of a quadratic DU-4 permutation is not Desarguesian. This
+excludes all $\F_4$-quadratic maps, for example Gold maps $x^{2^k+1}$ with $k$ even plus
+arbitrary linear maps (for the power maps themselves the conclusion is classical), and
+covers the case $n=4$.
+\item Non-existence for $n=8$ (Section~\ref{sec:n8search}), our second main result: there is no
+quadratic DU-4 permutation of $\F_2^8$ (Theorem~\ref{thm:n8}). By the result of Charpin and
+Peng it suffices to show that $\Alt(8,\F_2)$ has no $8$-dimensional subspace of constant rank
+$6$ in which every point lies in exactly three radicals. We prove this by an exhaustive search
+built on a radical-closure lemma (Lemma~\ref{lem:closure}), whose completeness is proved in
+Appendix~\ref{app:search}; the search takes a few CPU-hours and was cross-checked by a second,
+separately written implementation and a certificate for its symmetry reductions.
+\item Local structure of kernel spreads (Section~\ref{sec:local}): for every even $n\ge6$, two kernel
+lines span a $4$-space containing $2$, $3$ or $5$ kernel lines, and the dimension of
+$\langle\beta(L,M)\rangle$ is determined by this number (Proposition~\ref{prop:local}). We also
+summarise earlier partial results for $n=8$ obtained with other methods, among them that the
+quadratic part of such a permutation could have no symmetry.
+\item A necessary condition in terms of constant-rank subspaces of alternating forms, and a
+stronger conjecture that would settle the question (Section~\ref{sec:constrank}).
+\end{enumerate}
+
+\section{Preliminaries}\label{sec:prelim}
+Let $V=\F_2^n$. For $F:V\to V$ and $b\in V\setminus\{0\}$ we write
+$F_b(x)=\langle b,F(x)\rangle$ for the components of $F$. $F$ is quadratic if its algebraic
+degree is at most $2$, that is, if all its second-order derivatives are constant (affine maps
+are included); we normalise $F(0)=0$ and write
+\[
+\beta(u,v)=F(u+v)+F(u)+F(v),
+\]
+a symmetric bi-additive map with $\beta(u,u)=0$. For each $b\neq 0$,
+$B_b(u,v)=\langle b,\beta(u,v)\rangle$ is an alternating bilinear form with radical
+$R_b=\rad B_b$; $\rk B_b$ is even. For $a\neq 0$ put
+$K_a=\{v:\beta(a,v)=0\}\ni a$ and $s_a=\dim K_a\ge 1$. Since
+$D_aF(x)=F(x+a)+F(x)=\beta(a,x)+F(a)$, the differential uniformity is
+$\delta_F=\max_{a\neq 0}2^{s_a}$. A Boolean function is \emph{bent} if its Walsh transform
+has constant absolute value $2^{n/2}$; a quadratic component is bent iff $\rk B_b=n$, and
+semi-bent (Walsh values in $\{0,\pm 2^{(n+2)/2}\}$, $n$ even) iff $\rk B_b=n-2$. Bent functions
+are never balanced \cite{Carlet21}, while every component of a permutation is balanced.
+Composing $F$ with affine permutations on either side and adding affine maps (EA-equivalence)
+preserves $\delta_F$ and the ranks of the components; composing with affine permutations
+preserves bijectivity. When we identify $V$ with $\F_{2^n}$ (Section~\ref{sec:f4}), components
+are indexed through the absolute trace pairing: $F_b(x)=\Tr_{\F_{2^n}/\F_2}(bF(x))$ and
+$B_b(u,v)=\Tr_{\F_{2^n}/\F_2}(b\,\beta(u,v))$.
+
+\section{Structure of quadratic differentially 4-uniform permutations}\label{sec:structure}
+
+\begin{lemma}[Counting identity {\cite[Theorem~5]{CP19}}]\label{lem:count}
+For every quadratic $F$,
+\[\sum_{a\neq 0}\bigl(2^{s_a}-1\bigr)=\sum_{b\neq 0}\bigl(2^{\,n-\rk B_b}-1\bigr).\]
+\end{lemma}
+\begin{proof}
+Both sides count the pairs $(a,b)$ of nonzero vectors with $B_b(a,\cdot)=0$: for fixed
+$a$ these $b$ form $\{b:\langle b,\beta(a,v)\rangle=0\ \forall v\}=(\mathrm{Im}\,\beta(a,\cdot))^{\perp}$,
+of dimension $n-(n-s_a)=s_a$; for fixed $b$ these $a$ form $R_b\setminus\{0\}$.
+\end{proof}
+\begin{remark}\label{rem:du-at-least-4}
+If $n$ is even and $F$ is a quadratic permutation then no component is bent (bent
+functions are not balanced), so $\rk B_b\le n-2$ and $|R_b|\ge 4$ for all $b$;
+Lemma~\ref{lem:count} then gives $\sum_a (2^{s_a}-1)\ge 3(2^n-1)$, hence $\delta_F\ge 4$
+(cf.\ \cite[Theorem~1]{CP19}).
+\end{remark}
+
+\begin{remark}\label{rem:count-general}
+The same double count applies to the restriction of $\beta$ to $U\times U$ for any subspace $U$:
+$\sum_{a\in U\setminus\{0\}}(2^{\,n-\dim\beta(a,U)}-1)=\sum_{b\neq0}(2^{\,\dim U-\rk(B_b|_U)}-1)$.
+\end{remark}
+\begin{remark}
+In \cite{CP19} the identity is written as $\sum_{\lambda\neq0}2^{\ell(\lambda)}=\sum_{a\neq0}2^{d(a)}$,
+where $\ell(\lambda)=\dim R_\lambda$ and $d(a)=s_a$; subtracting $2^n-1$ from both sides gives
+the form above. For quadratic APN functions ($s_a=1$) it gives the classical fact that in even
+dimension such functions have bent components \cite[Remark~3]{CP19}.
+\end{remark}
+
+The following theorem is due to Charpin and Peng \cite[Theorem~1, Lemma~4 and
+Theorem~7]{CP19}. We include the short derivation from Lemma~\ref{lem:count} because the
+equality case is used repeatedly below.
+\begin{theorem}[\cite{CP19}]\label{thm:constrank}
+Let $n$ be even and $F$ a quadratic permutation of $\F_2^n$ with $\delta_F=4$. Then
+$\rk B_b=n-2$ for every $b\neq 0$ and $s_a=2$ for every $a\neq 0$.
+\end{theorem}
+\begin{proof}
+By Remark~\ref{rem:du-at-least-4} the right-hand side of Lemma~\ref{lem:count} is at least
+$3(2^n-1)$, with equality iff all ranks equal $n-2$; $\delta_F=4$ gives $s_a\le 2$, so the
+left-hand side is at most $3(2^n-1)$, with equality iff all $s_a=2$.
+\end{proof}
+\begin{remark}
+In the terminology of \cite{CP19}, $F$ is differentially two-valued $\{0,4\}$ and plateaued with
+single amplitude $2^{(n+2)/2}$ \cite[Theorem~7]{CP19}. For a quadratic function without bent
+components, Lemma~\ref{lem:count} shows that the first property implies the second (every term
+on the right is at least $3$ and the left-hand side is $3(2^n-1)$), and that the second implies
+the first if $\delta_F\le4$. Whether the single amplitude alone forces $\delta_F=4$ is the
+question discussed in Section~\ref{sec:constrank}. For general (not necessarily quadratic)
+plateaued functions, related relations between amplitudes and differential uniformity are
+studied in \cite{KP} (e.g.\ \cite[Theorem~5.6]{KP}); we do not need them.
+\end{remark}
+
+\begin{remark}
+The permutation hypothesis is needed: $x^5$ on $\F_{2^8}$ is quadratic with
+$\delta=4$ but has components of ranks $4$ and $8$.
+\end{remark}
+
+\begin{proposition}[Isotropic spread]\label{prop:spread}
+If $s_a=2$ for all $a\neq 0$, then $\Sigma=\{K_a:a\neq 0\}$ is a line spread of $V$
+(a partition of $V\setminus\{0\}$ into 2-dimensional subspaces minus $0$), and
+$\beta(L,L)=0$ for every $L\in\Sigma$.
+\end{proposition}
+\begin{proof}
+If $u\in K_a\setminus\{0,a\}$ then $a\in K_u$ by symmetry of $\beta$, and $u\in K_u$, so
+$K_u\supseteq\langle a,u\rangle=K_a$ and equality holds by dimension. Hence every
+$x\neq 0$ lies in $K_x$, and if $x\neq 0$ lies in $K_a\cap K_b$ then $K_a=K_x=K_b$: the
+$K_a$ partition $V\setminus\{0\}$. Finally, for $L=K_a$ and $y\in L\setminus\{0\}$ we have
+$K_y=L$, so $\beta(y,L)=0$; thus $\beta(L,L)=0$.
+\end{proof}
+\begin{remark}
+The isotropy of the kernels (elements of $K_a$ are pairwise $\beta$-orthogonal) appears in
+\cite[Lemma~1]{MTX19} for quadratic functions with $\delta_F=4$; what is added here is the
+spread structure and its consequences below.
+\end{remark}
+
+\begin{corollary}[Spread correspondence]\label{cor:spread-map}
+Under the hypotheses of Theorem~\ref{thm:constrank}, the restriction $F|_L$ is $\F_2$-linear for
+every $L\in\Sigma$, and $\{F(L):L\in\Sigma\}$ is a line spread of the codomain.
+\end{corollary}
+\begin{proof}
+$\beta$ vanishes on $L\times L$ and $F(0)=0$, so $F|_L$ is additive; injectivity of $F$
+makes $F(L)$ a 2-dimensional subspace and distinct images meet only in $0$. The images
+cover the codomain because $F$ is bijective with $F(0)=0$.
+\end{proof}
+
+\begin{lemma}[Partial normal form]\label{lem:normal}
+Under the hypotheses of Theorem~\ref{thm:constrank} there are bases of the domain and the
+codomain such that $\beta(e_{2i},e_{2i+1})=0$ for $0\le i<n/2$ and
+$\beta(e_0,e_j)=e_{j-2}$ for $2\le j\le n-1$.
+\end{lemma}
+\begin{proof}
+Spread lines $L_1,\dots,L_{n/2}$ with $V=L_1\oplus\cdots\oplus L_{n/2}$ exist. Let $U$ be a
+direct sum of $k/2$ spread lines ($k\le n-2$, $\dim U=k$). A spread line either lies in $U$,
+or meets $U$ in exactly one point and has two points outside $U$, or is skew to $U$; and
+distinct spread lines meet $U$ in distinct points. If no spread line were skew to $U$, every
+one of the $2^n-2^k$ points outside $U$ would lie on a spread line of the second kind, and
+there are at most $2^k-1$ such lines, carrying at most $2(2^k-1)<2^n-2^k$ outside points. So
+some spread line is skew to $U$, and induction gives the decomposition. Take $e_{2i},e_{2i+1}$ a
+basis of $L_{i+1}$. As $K_{e_0}=L_1=\langle e_0,e_1\rangle$, the linear map $\beta(e_0,\cdot)$ has
+kernel $\langle e_0,e_1\rangle$ and rank $n-2$, so the vectors $\beta(e_0,e_j)$, $2\le j\le n-1$,
+are linearly independent; compose $F$ with a linear permutation of the codomain mapping them to
+$e_0,\dots,e_{n-3}$.
+\end{proof}
+
+\section{Desarguesian kernel spreads}\label{sec:f4}
+A quadratic map is \emph{$\F_{2^t}$-quadratic} if its polar map $\beta$ is $\F_{2^t}$-bilinear for
+some structures of $\F_{2^t}$-vector space on the domain and the codomain. For example, over
+$\F_{2^n}$ with $t\mid n$ every map $\sum_{i<j}c_{ij}x^{2^{ti}+2^{tj}}+\ell(x)$ with
+$c_{ij}\in\F_{2^n}$ and $\ell$ an $\F_2$-linear map is $\F_{2^t}$-quadratic; this includes the Gold
+maps $x^{2^k+1}$ with $t\mid k$ plus arbitrary linear maps. All proofs in this section rest on
+the following elementary fact.
+\begin{lemma}\label{lem:trace-rad}
+Let $E=\F_{2^t}$, let $X$ be an $E$-vector space of dimension $m$ and let $C:X\times X\to E$ be
+an alternating $E$-bilinear form. Then $B=\Tr_{E/\F_2}\circ C$ is an alternating $\F_2$-bilinear
+form with $\rad B=\rad C$. In particular $\dim_{\F_2}\rad B=t(m-\rk_EC)$, where $\rk_EC$ is even.
+\end{lemma}
+\begin{proof}
+Clearly $B$ is alternating and $\rad C\subseteq\rad B$. If $u\notin\rad C$, then $C(u,\cdot)$ is
+a nonzero $E$-linear map $X\to E$, hence surjective; as $\Tr_{E/\F_2}$ is not identically zero on
+$E$, there is $y$ with $B(u,y)=\Tr_{E/\F_2}(C(u,y))\neq0$, so $u\notin\rad B$. Finally $\rad C$ is
+an $E$-subspace of $E$-dimension $m-\rk_EC$, and alternating forms have even rank.
+\end{proof}
+
+\begin{theorem}\label{thm:general-t}
+Let $F$ be a quadratic permutation of $\F_2^n$ with $s_a=t$ for every $a\neq 0$ (so
+$\delta_F=2^t$ and $F$ is differentially two-valued). Suppose that the kernels form a
+Desarguesian $t$-spread, that is, there is an $\F_{2^t}$-vector space structure on $\F_2^n$ (in
+particular $t\mid n$) whose one-dimensional subspaces are the kernels: $K_x=\F_{2^t}x$ for every
+$x\neq 0$. Then $n/t$ is odd.
+\end{theorem}
+\begin{proof}
+Write $\Tr=\Tr_{\F_{2^t}/\F_2}$ and $m=n/t$. Since $\lambda x\in K_x$ for $\lambda\in\F_{2^t}$,
+$\beta(x,\lambda x)=0$; polarising gives $\beta(\lambda x,y)=\beta(x,\lambda y)$. Let
+$\{\theta_j\}$ be a basis of $\F_{2^t}/\F_2$ and $\{\theta_j^*\}$ its trace-dual basis, and put
+$\Phi(x,y)=\sum_j\beta(\theta_jx,y)\otimes\theta_j^*\in\F_2^n\otimes_{\F_2}\F_{2^t}$. Expanding
+$\theta_j\lambda=\sum_k\Tr(\theta_j\lambda\theta_k^*)\theta_k$ gives
+\[
+\Phi(\lambda x,y)=\sum_k\beta(\theta_kx,y)\otimes\sum_j\Tr(\theta_j\lambda\theta_k^*)\theta_j^*
+=\sum_k\beta(\theta_kx,y)\otimes\lambda\theta_k^*=\lambda\,\Phi(x,y),
+\]
+and $\Phi(x,\lambda y)=\Phi(\lambda x,y)$ by self-adjointness. $\Phi$ is symmetric (by
+self-adjointness and symmetry of $\beta$), $\Phi(x,x)=0$, and
+$(\mathrm{id}\otimes\Tr)\Phi(x,y)=\beta\bigl((\sum_j\Tr(\theta_j^*)\theta_j)x,y\bigr)=\beta(x,y)$.
+Hence $B_b=\Tr\circ C_b$ with $C_b=(\langle b,\cdot\rangle\otimes\mathrm{id})\circ\Phi$ an
+alternating $\F_{2^t}$-form on $\F_{2^t}^m$, and by Lemma~\ref{lem:trace-rad}
+$\dim_{\F_2}R_b=t(m-\rk_{\F_{2^t}}C_b)$ with $\rk_{\F_{2^t}}C_b$ even. If $m$ is even these
+dimensions are multiples of $2t$;
+they are nonzero because a component with $R_b=0$ would be bent, hence not balanced. Then
+Lemma~\ref{lem:count} gives $(2^n-1)(2^t-1)=\sum_b(2^{\dim R_b}-1)\ge(2^n-1)(2^{2t}-1)$, a
+contradiction.
+\end{proof}
+\begin{remark}
+For $t\ge 3$ the argument of Proposition~\ref{prop:spread}, which uses $t=2$, does not show that
+the kernels form a spread when $s_a=t$ for all $a$; this is why the spread structure is part of
+the hypothesis.
+\end{remark}
+\begin{corollary}\label{cor:general-t}
+\begin{enumerate}
+\item[(i)] Every quadratic APN permutation of $\F_2^n$ has $n$ odd.
+\item[(ii)] Let $F=\sum\nu_rx^{2^i+2^j}$ be a Dembowski--Ostrom polynomial over $\F_{2^n}$ all of
+whose exponents have $t\mid i$ and $t\mid j$, where $t\mid n$. If $F$ is a differentially
+two-valued $\{0,2^t\}$ permutation, then $n/t$ is odd.
+\end{enumerate}
+\end{corollary}
+\begin{proof}
+(i) is the case $t=1$: the kernel spread is the set of points. (ii) Here $\beta$ is
+$\F_{2^t}$-bilinear, so $\F_{2^t}a\subseteq K_a$, with equality since $s_a=t$.
+\end{proof}
+\begin{remark}
+Part (i) is classical, see e.g.\ \cite{Carlet21}; the case $t=2$ of Theorem~\ref{thm:general-t}
+is Corollary~\ref{thm:desarg} below. The binomials of \cite[Theorem~1.2]{BTT12} over
+$\F_{2^{3k}}$ (see also \cite[Theorem~9]{CP19}) are of the form in (ii), which explains the
+hypothesis there that $k/t$ is odd; for that family its necessity is proved directly in
+\cite[Lemma~2.1]{BTT12}, where $F(\gamma x)=F(x)$ for an element $\gamma$ of order $2^t+1$ when
+$k/t$ is even. The quadrinomials of \cite[Problem~5.1]{BTT12} carry the same hypothesis; Qu,
+Xiong and Li \cite{QXL13} showed, with the help of a computer, that they are differentially
+$4$-uniform but need not be permutations. The
+condition of Theorem~\ref{thm:general-t} cannot be weakened: the Gold permutations $x^{2^k+1}$
+with $\gcd(k,n)=t$ and $n/t$ odd have Desarguesian kernel spreads.
+\end{remark}
+
+\begin{corollary}[Desarguesian obstruction]\label{thm:desarg}
+Let $n\equiv 0\pmod 4$ and let $F$ be a quadratic permutation of $\F_2^n$ with
+$\delta_F=4$. Then the isotropic spread $\Sigma$ of Proposition~\ref{prop:spread} is not
+Desarguesian.
+\end{corollary}
+\begin{proof}
+By Theorem~\ref{thm:constrank}, $s_a=2$ for all $a\neq0$. If $\Sigma$ were Desarguesian,
+Theorem~\ref{thm:general-t} with $t=2$ would give that $n/2$ is odd.
+\end{proof}
+\begin{remark}\label{rem:F4form}
+For $t=2$ the form $\Phi$ of the proof of Theorem~\ref{thm:general-t} is explicit; we state this
+in the generality needed in Proposition~\ref{prop:local}. Let $X$ be an $\F_2$-space with an
+$\F_4$-structure given by $\omega\in GL(X)$ with $\omega^2+\omega+1=0$, and let $w\in\F_4$
+with $w^2=w+1$; the trace-dual basis of $\{1,w\}$ is $\{w^2,1\}$. Let $B$ be any
+alternating $\F_2$-form on $X$ with $B(x,\omega x)=0$ for all $x$. Polarising gives
+$B(\omega x,y)=B(x,\omega y)$, and
+\[
+C(x,y)=B(\omega x,y)+w^2B(x,y)\in\F_4
+\]
+satisfies $C(\omega x,y)=B(\omega^2x,y)+w^2B(\omega x,y)=wB(\omega x,y)+B(x,y)=w\,C(x,y)$ and
+$C(x,\omega y)=C(\omega x,y)$; it is symmetric with $C(x,x)=0$, hence an alternating
+$\F_4$-bilinear form, and $\Tr_{\F_4/\F_2}\circ C=B$ since $\Tr(1)=0$ and $\Tr(w^2)=1$. By
+Lemma~\ref{lem:trace-rad}, $\rk_{\F_2}B=2\rk_{\F_4}C\equiv0\pmod4$.
+\end{remark}
+
+\begin{corollary}\label{thm:f4}
+Let $n=2m$ with $m$ even and let $F$ be an $\F_4$-quadratic map on $\F_2^n$. Then no component of
+$F$ has rank $n-2$. In particular no $\F_4$-quadratic map, for instance no map
+$x^{2^k+1}+\ell(x)$ on $\F_{2^n}$ with $k$ even and $\ell$ linear, is a permutation with
+$\delta_F=4$.
+\end{corollary}
+\begin{proof}
+Every $\F_2$-linear functional on an $\F_4$-space is $\Tr_{\F_4/\F_2}\circ\lambda$ for an
+$\F_4$-linear functional $\lambda$. Hence $B_b=\Tr_{\F_4/\F_2}\circ C_b$ with $C_b=\lambda_b\circ\beta$
+alternating and $\F_4$-bilinear, and by Lemma~\ref{lem:trace-rad}
+$\rk B_b=2\rk_{\F_4}C_b\equiv0\pmod4$, whereas $n-2\equiv2\pmod4$. The last statement follows
+from Theorem~\ref{thm:constrank}.
+\end{proof}
+For power maps alone the last statement is classical: $x^{2^k+1}$ is a permutation of
+$\F_{2^n}$ only if $n/\gcd(k,n)$ is odd, which for $4\mid n$ forces $4\mid\gcd(k,n)$ and hence
+$\delta=2^{\gcd(k,n)}\ge16$ \cite{Gold68,Nyb93} (see also \cite{ACPBSN25}). What is new is that
+adding a linear map, or passing to arbitrary $\F_4$-quadratic maps or to Desarguesian kernel
+spreads, does not help.
+\begin{remark}
+For $m$ odd the obstruction disappears and $x^{5}$ on $\F_{2^{2m}}$ is an example. Two results
+in the literature are close. For $\F_q$-quadratic maps, \cite[Theorem~5]{MTX19} proves
+$\delta_F\ge q$ (and computes the boomerang uniformity when equality holds for a permutation).
+For Dembowski--Ostrom polynomials $\sum\nu_r x^{2^i+2^j}$ with $t\mid i$, $t\mid j$, $t\mid n$
+and without bent components, \cite[Theorem~8]{CP19} shows that $F$ is differentially two-valued
+$\{0,2^t\}$ if and only if every component has radical dimension exactly $t$ (their proof
+observes that radicals are $\F_{2^t}$-subspaces). Neither result contains a condition on $n/t$.
+The additional ingredient here is that the radical is the radical of an alternating
+$\F_4$-form, so its $\F_4$-codimension is even; this forces $m$ to be odd, and
+Theorem~\ref{thm:general-t} extends this from $\F_4$-bilinear $\beta$ to Desarguesian kernel
+spreads. We have not found this parity condition in the literature on differentially uniform
+functions or on constant-rank spaces of alternating forms (Section~\ref{sec:constrank} discusses
+the latter).
+\end{remark}
+\begin{remark}
+Every line spread of $PG(3,2)$ is regular (a regulus of $PG(3,2)$ has only three lines), hence
+Desarguesian by the Bruck--Bose correspondence \cite{BB64,Hir85}; so Corollary~\ref{thm:desarg}
+contains the case $n=4$ (Section~\ref{sec:constrank} gives another short argument for it). In dimension $6$ ($n\equiv 2\pmod 4$) both kinds occur: by
+the classification in Section~\ref{sec:n8search}, the component spaces of quadratic DU-4
+permutations of $\F_2^6$ form exactly two classes, that of $x^5$ (Desarguesian kernel spread) and
+one with a non-Desarguesian kernel spread. For $n=8$ non-Desarguesian kernel spreads are
+excluded as well, by Theorem~\ref{thm:n8}.
+\end{remark}
+
+\section{Non-existence for \texorpdfstring{$n=8$}{n=8}}\label{sec:n8search}
+\begin{theorem}[computer-assisted]\label{thm:n8}
+There is no quadratic differentially $4$-uniform permutation of $\F_2^8$. More precisely,
+$\Alt(8,\F_2)$ has no $8$-dimensional subspace $W$ such that
+\begin{enumerate}
+\item[(i)] every nonzero element of $W$ has rank $6$, and
+\item[(ii)] every $a\in\F_2^8\setminus\{0\}$ lies in the radicals of exactly three nonzero
+elements of $W$.
+\end{enumerate}
+Consequently every quadratic map $F:\F_2^8\to\F_2^8$ all of whose derivative kernels have
+dimension $2$ (equivalently, whose differential spectrum is $\{0,4\}$) has a bent component.
+\end{theorem}
+For a subspace $U\subseteq\Alt(n,\F_2)$ and $a\neq0$ put $P_a(U)=\{w\in U:a\in\rad w\}$, a
+subspace; (ii) says $\dim P_a(W)=2$ for all $a\neq0$.
+
+Theorem~\ref{thm:n8} does not say that $\Alt(8,\F_2)$ has no $8$-dimensional subspace of constant
+rank $6$. It excludes exactly the subspaces of constant rank $6$ that also satisfy (ii), the
+condition imposed by the derivative kernels of a quadratic map with differential spectrum
+$\{0,4\}$. Whether (i) alone can be satisfied is Conjecture~H of Section~\ref{sec:constrank},
+which remains open for $n=8$.
+
+\paragraph{Reduction.} Let $F$ be a quadratic DU-4 permutation of $\F_2^8$ with polar map
+$\beta$. By Theorem~\ref{thm:constrank} every $B_b$ ($b\neq0$) has rank $6$ and $s_a=2$ for all
+$a\neq0$. The map $b\mapsto B_b$ is linear and injective, so $W=\{B_b\}$ is $8$-dimensional and
+satisfies (i). For $a\neq0$ we have $B_b(a,\cdot)=0$ if and only if
+$b\perp\mathrm{Im}\,\beta(a,\cdot)$, so $\dim P_a(W)=8-\rk\beta(a,\cdot)=s_a=2$, which is (ii).
+For the last statement, if all $s_a=2$ and no component is bent, all ranks are at most $6$, and
+Lemma~\ref{lem:count} gives $\sum_b(2^{8-\rk B_b}-1)=3\cdot255$ with every term at least $3$, so
+every component has rank $6$ and $W=\{B_b\}$ again satisfies (i) and (ii).
+
+We call $W$ as in Theorem~\ref{thm:n8} a \emph{solution}. In the rest of this section and in
+Appendix~\ref{app:search}, a \emph{point} is a nonzero vector of $\F_2^8$; the letters $a$, $r$
+denote points and $x,y,c,u,w$ denote forms. The theorem is proved by a search over
+subspaces $U$ of a hypothetical solution, grown one dimension at a time. For a subspace $U$ all
+of whose nonzero elements have rank $6$, call a point $a$ \emph{full} for $U$ if $\dim P_a(U)=2$, and
+call a coset $x+U$ with $x\notin U$ \emph{admissible} if all its elements have rank $6$ and no
+element of $x+U$ has a full point of $U$ in its radical. Let $\mathcal C(U)$ be the set of
+admissible cosets. Counting pairs $(a,w)$ with $w\in U\setminus\{0\}$ and $a\in\rad w\setminus\{0\}$
+gives $\sum_{a\neq0}(2^{\dim P_a(U)}-1)=3(2^d-1)$ for $d=\dim U$; so if $d<8$,
+some point $a$ has $\dim P_a(U)\le1$.
+
+\begin{lemma}[radical closure]\label{lem:closure}
+Let $W$ be a solution, $U\subseteq W$ a subspace of dimension $d<8$ and $r\neq0$ a point with
+$\dim P_r(U)\le1$. Then $W$ contains an admissible coset $c+U$ that contains an element whose
+radical contains $r$. Moreover:
+\begin{enumerate}
+\item[(P1)] $\dim P_a(U)\le2$ for all $a\neq0$;
+\item[(P2)] $|\mathcal C(U)|\ge 2^{8-d}-1$;
+\item[(P3)] for every $a$ with $\dim P_a(U)=1$ (resp.\ $0$), at least one (resp.\ three)
+admissible cosets contain an element whose radical contains $a$.
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+Since $\dim P_r(W)=2>\dim P_r(U)$, there is $c\in P_r(W)\setminus U$. The coset $c+U$ lies in
+$W\setminus\{0\}$, so its elements have rank $6$; if some $c+u$ had a full point $a$ of $U$ in
+its radical, then $P_a(W)\supseteq P_a(U)+\langle c+u\rangle$ would have dimension $3$. So $c+U$
+is admissible, and $r\in\rad c$. (P1) holds as $P_a(U)\subseteq P_a(W)$. The same argument shows
+that all $2^{8-d}-1$ nonzero cosets of $W/U$ are admissible, which is (P2). For (P3), the image
+of $P_a(W)$ in $W/U$ has dimension $2-\dim P_a(U)$; its nonzero elements are admissible cosets
+containing an element of $P_a(W)$.
+\end{proof}
+
+\paragraph{The search.} All forms of rank $6$ on $\F_2^8$ are equivalent, so we may assume that
+a solution contains $J=e_0\wedge e_1+e_2\wedge e_3+e_4\wedge e_5$ (radical
+$\langle e_6,e_7\rangle$). Starting from $U_1=\langle J\rangle$, a node $U$ of dimension $d<8$ is
+discarded if (P2) fails, or, for $d\ge3$, if (P3) fails ((P1) holds for every node that is
+reached, by Lemma~\ref{lem:B-step}(b)); otherwise a point $r$ with
+$\dim P_r(U)\le1$ is chosen by a fixed rule (for $d\le2$ the first point with $\dim P_r(U)=1$,
+or with $\dim P_r(U)=0$ if there is none; for $d\ge3$ the point minimising the number of
+candidates below), and the children of $U$ are the subspaces $U+\langle c\rangle$ for the
+admissible cosets $c+U$ containing an element whose radical contains $r$ (the
+\emph{candidates}), one for each orbit of a group $H\le GL(8,2)$ that stabilises $U$ and fixes
+$r$. Here $g\in GL(8,2)$ acts by $B^g(v,v')=B(gv,gv')$; it preserves ranks and maps solutions to
+solutions, since $\rad B^g=g^{-1}\rad B$. By Lemma~\ref{lem:closure}, every solution containing
+$U$ is mapped by an element of $H$ to a solution containing one of the children, so every
+solution is equivalent to one containing a node of dimension $8$; these are tested against (ii).
+The search is small because each step prescribes a point in the radical of the new element
+and because admissibility removes many cosets once full points appear
+(Appendix~\ref{app:small}).
+
+Appendix~\ref{app:search} states the search as a procedure, proves its completeness
+(Theorem~\ref{thm:B-complete}) and describes how the programs implement each step.
+
+\paragraph{Symmetry.} For $U_1$ we use explicit generators of subgroups of the stabiliser of $J$:
+the symplectic transvections $x\mapsto x+J(v,x)v$ for $v\in\langle e_0,\dots,e_5\rangle$ of
+weight $1$ or $2$, the group $GL(2,2)$ acting on $\langle e_6,e_7\rangle$, and the maps
+$x\mapsto x+x_ie_6$, $x\mapsto x+x_ie_7$ ($i\le5$). Stabilisers of points and of cosets are
+generated by random products corrected by an orbit transversal and by random Schreier
+generators. A proper subgroup of a stabiliser only produces more children, so correctness does
+not depend on these subgroups being the full stabilisers; every generator of every group used is
+checked to stabilise $U$ (and to fix $r$). For the two top levels the program writes a
+certificate: for each of the $740{,}736$ candidates of $U_1$ and the $727{,}936$ candidates of
+the three nodes of dimension $2$, an explicit matrix of $H$ mapping an orbit representative onto
+it.
+
+\paragraph{Results.} The search has $3$ nodes of dimension $2$, $486$ of dimension $3$,
+$1{,}466{,}318$ of dimension $4$ and $244{,}686{,}904$ of dimension $5$. Every node of dimension
+$5$ fails (P2) ($244{,}668{,}896$ nodes) or (P3) ($18{,}008$ nodes), so no node of dimension $6$
+is reached and no solution exists. This proves Theorem~\ref{thm:n8}. The run consisted of two
+parallel processes, which took $2.2$ and $2.1$ hours ($4.3$ CPU-hours in total) on a two-core
+virtual machine with $2.1$\,GHz Intel Xeon processors; a second run from the archived sources
+gave the same numbers at every dimension.
+
+\paragraph{Verification.}
+\begin{itemize}
+\item \emph{A second implementation of the same search.} A second program
+(Python/\texttt{numpy}) was written separately from the mathematical specification of the
+search (including its tie-breaking rule), without access to the code of the first program. It
+belongs to the same study, so it is a separate code path rather than a third-party
+replication. It recomputes the table
+of rank-$6$ forms by Pfaffians (rank $6$ if and only if the $8\times8$ Pfaffian vanishes and one of
+the $28$ principal $6\times6$ Pfaffians does not) and obtains the same $149{,}920{,}960$ forms as
+the first program, which uses Gaussian elimination. It checks the certificate of the two top
+levels line by line: each matrix is invertible, stabilises the node, fixes $r$ and maps the
+representative onto the candidate; the listed candidates are exactly the candidates computed
+from the definitions; and the $486$ nodes of dimension $3$ are exactly those of the first
+program. It then searches the subtrees below the $486$ nodes of dimension $3$ without any
+symmetry reduction, so that no symmetry argument below dimension $3$ is used. This search has
+$8{,}604{,}140$ nodes of dimension $4$ and $1{,}381{,}518{,}812$ of dimension $5$ ($13.4$
+hours in total for two parallel processes); again every node of dimension $5$ fails (P2) or (P3), and no solution exists. So the
+certificate of the two top levels and this search verify Theorem~\ref{thm:n8} without using the
+first program (Appendix~\ref{app:depend} lists what each part of the proof depends on). On the
+subtrees of five nodes of dimension
+$3$ (from all three nodes of dimension $2$), the first program run without symmetry below
+dimension $3$ gives exactly the same numbers of nodes and of discarded nodes at every dimension.
+Agreement of the two programs tests the implementation; the pruning rules themselves are
+justified by Lemma~\ref{lem:closure}.
+\item \emph{Dimension $6$.} The same program for $n=6$ (rank $4$, dimension $6$) finds exactly
+two $GL(6,2)$-classes of solutions: the component space of $x^5$ (Desarguesian kernel spread,
+stabiliser of order $362{,}880=|\Gamma L(3,4)|$) and a class with a non-Desarguesian kernel
+spread in which $50$ of the $210$ pairs of kernel lines are closed (stabiliser of order
+$5{,}760$). Both are component spaces of DU-4 permutations. An affine equivalence
+$G=A_2\circ F\circ A_1$ changes the component space only through the linear part of $A_1$ (the
+output map $A_2$ only re-indexes the components, and affine terms do not change $\beta$), so
+each affine class of quadratic DU-4 permutations of $\F_2^6$ determines one of these two classes;
+the eight affine classes with $\delta=4$ found in \cite{DMB19} are distributed over our two
+classes, both of which occur (one component space carries several permutations, which differ in
+their linear parts). Without symmetry reduction the program finds
+$12{,}288$ solutions containing $J$; this equals
+$|GL(6,2)|\cdot63\cdot(1/362{,}880+1/5{,}760)/18{,}228=192+12{,}096$, the number predicted by the
+two stabilisers ($18{,}228$ is the number of forms of rank $4$ in $\Alt(6,\F_2)$). A plain
+enumeration that does not prescribe radical points (a depth-first search over all admissible
+cosets that reaches each subspace containing $J$ exactly once, through its greedy basis modulo
+$J$) finds the same $12{,}288$ subspaces. The same enumeration with the condition on full points
+dropped, so that a coset is only required to consist of forms of rank $4$, again finds exactly
+these $12{,}288$ subspaces. So for $n=6$ condition (ii) follows from (i), and $\Alt(6,\F_2)$ has
+exactly two $GL(6,2)$-classes of $6$-dimensional subspaces of constant rank $4$.
+\end{itemize}
+
+\section{Local structure of kernel spreads and earlier approaches}\label{sec:local}
+For kernel lines $L\neq M$ let $k(L,M)$ be the number of kernel lines contained in $L\oplus M$,
+and call $\{L,M\}$ \emph{closed} if $k(L,M)=5$, i.e.\ $L\oplus M$ is a union of kernel lines. A
+Desarguesian kernel spread has $k(L,M)=5$ for all pairs. Put $d(L,M)=\dim\langle\beta(L,M)\rangle$;
+since $\beta(L,L)=\beta(M,M)=0$, this is the dimension of $\langle\beta(U,U)\rangle$ for $U=L\oplus M$.
+\begin{proposition}\label{prop:local}
+Let $n\ge 6$ be even and let $\beta$ have $s_a=2$ for all $a\neq0$ and all components of rank
+$n-2$ (as for every quadratic DU-4 permutation, Theorem~\ref{thm:constrank}). For kernel lines
+$L\neq M$:
+\begin{enumerate}
+\item[(a)] $k(L,M)\in\{2,3,5\}$;
+\item[(b)] $d(L,M)=4,3,2$ according as $k(L,M)=2,3,5$;
+\item[(c)] if $n=8$, no pair is closed, so $k(L,M)\in\{2,3\}$.
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+(a) Let $U=L\oplus M$ and suppose $U$ contains a third kernel line $N$. Three pairwise skew lines of
+$PG(3,2)$ lie in a unique spread $\{L,M,N,P,Q\}$ of $PG(U)$; it is regular, so its lines are the
+$\F_4$-points for some $\omega\in GL(U)$ with $\omega^2+\omega+1=0$. A line of $U$ skew to $L$, $M$
+and $N$ lies in the six points of $P\cup Q$, hence contains two points of $P$ or of $Q$ and equals
+$P$ or $Q$; so the kernel lines in $U$ are among $L,M,N,P,Q$. The map $q(x)=\beta(x,\omega x)$ is
+quadratic on $U$ and satisfies $q(\omega x)=\beta(\omega x,x+\omega x)=q(x)$, so it takes one value
+$q_X$ on the nonzero points of each $\F_4$-point $X$. Every component of $q$ is a quadratic form on
+$\F_2^4$, which takes the value $1$ an even number of times; hence $\sum_{x\in U}q(x)=0$, i.e.\
+$q_L+q_M+q_N+q_P+q_Q=0$. A line $\F_4x$ of $U$ is a kernel line if and only if $\beta(x,\omega x)=0$
+(as $s_x=2$ and $\omega x\notin\{0,x\}$). So $q_L=q_M=q_N=0$, hence $q_P=q_Q$, and $P$ is a kernel
+line if and only if $Q$ is. Thus $k\neq4$.
+
+(b) Let $U=L\oplus M$ and let $N_0,N_2,N_4$ be the numbers of $b\neq0$ for which $B_b|_U$ has
+rank $0$, $2$, $4$, so that $N_0+N_2+N_4=2^n-1$; since $B_b|_U=0$ exactly when
+$b\perp\langle\beta(U,U)\rangle$, we have $N_0=2^{n-d}-1$. A point $a$ on one of the $k$ kernel
+lines inside $U$ has $K_a\subseteq U$, so $\beta(a,\cdot)|_U$ has kernel $K_a$ and
+$\dim\beta(a,U)=2$; every other point $a\in U$ has $K_a\cap U=\langle a\rangle$ and
+$\dim\beta(a,U)=3$. Remark~\ref{rem:count-general} for $U$ gives
+\begin{equation}\label{eq:local}
+15N_0+3N_2=3k(2^{n-2}-1)+(15-3k)(2^{n-3}-1).
+\end{equation}
+If $k=5$, then $\beta(x,\omega x)=0$ on $U$, so by Remark~\ref{rem:F4form}, applied to each
+$B_b|_U$, every $B_b|_U$ has rank $0$ or $4$; thus $N_2=0$, and \eqref{eq:local} gives
+$N_0=2^{n-2}-1$, i.e.\ $d=2$. If $k\in\{2,3\}$, some point of $U$ has $\dim\beta(a,U)=3$, so
+$d\in\{3,4\}$. If $k=3$, then $v:=q_P=q_Q\neq0$ by (a), since $P$ is not a kernel line; every
+$b\perp v$ has $B_b(x,\omega x)=0$ on $U$, so $B_b|_U$ has rank $0$ or $4$ by
+Remark~\ref{rem:F4form}, and therefore $N_2\le(2^n-1)-(2^{n-1}-1)=2^{n-1}$. Solving
+\eqref{eq:local} for $N_2$ gives the following table.
+\begin{center}
+\begin{tabular}{ccccc}\toprule
+$k$ & $d$ & $N_0$ & $N_2$ & $3N_0+N_2$\\\midrule
+$2$ & $3$ & $2^{n-3}-1$ & $2^{n-2}$ & $3\cdot2^{n-2}-3-2^{n-3}$\\
+$2$ & $4$ & $2^{n-4}-1$ & $9\cdot2^{n-4}$ & $3\cdot2^{n-2}-3$\\
+$3$ & $3$ & $2^{n-3}-1$ & $3\cdot2^{n-3}$ & $3\cdot2^{n-2}-3$\\
+$3$ & $4$ & $2^{n-4}-1$ & $11\cdot2^{n-4}>2^{n-1}$ & excluded\\
+$5$ & $2$ & $2^{n-2}-1$ & $0$ & $3\cdot2^{n-2}-3$\\\bottomrule
+\end{tabular}
+\end{center}
+So every pair has $3N_0+N_2\le3\cdot2^{n-2}-3$, with equality unless $(k,d)=(2,3)$. We show that
+the average of $3N_0+N_2$ over all unordered pairs of kernel lines equals $3\cdot2^{n-2}-3$;
+then no pair has $(k,d)=(2,3)$, which proves (b).
+
+Fix $b\neq0$. The ordered pairs $(x,y)\in V^2$ with $B_b(x,y)=0$ number
+$4\cdot2^n+(2^n-4)2^{n-1}$: for the $4$ vectors $x\in R_b$ every $y$ qualifies, and for the other
+$x$ the functional $B_b(x,\cdot)$ is nonzero and vanishes on $2^{n-1}$ vectors. Of these pairs,
+$2^{n+1}-1$ have $x=0$ or $y=0$, and $3(2^n-1)$ consist of nonzero vectors in a common kernel
+line ($B_b$ vanishes on $L'\times L'$ for every kernel line $L'$, and there are
+$|\Sigma|=(2^n-1)/3$ kernel lines with $9$ such ordered pairs each). This leaves
+\[
+Z=2^{2n-1}-3\cdot2^n+4
+\]
+ordered pairs of nonzero vectors in distinct kernel lines. Group them by the ordered pair
+$(L',M')$ of lines. Let $\rho\in\{0,1,2\}$ be the rank of the $2\times2$ matrix of $B_b$ on
+$L'\times M'$; the number of $(x,y)\in(L'\setminus0)\times(M'\setminus0)$ with $B_b(x,y)=0$ is
+$9$, $5$, $3$ for $\rho=0,1,2$ (for $\rho=1$, $B_b(x,y)=\lambda(x)\mu(y)$ with nonzero functionals
+$\lambda,\mu$, and there are $1\cdot3+3\cdot1-1$ zeros; for $\rho=2$ every $x$ has exactly one
+partner $y$). With $n_\rho(b)$ the number of ordered pairs of distinct kernel lines of type $\rho$, we
+get $n_0+n_1+n_2=|\Sigma|(|\Sigma|-1)$ and $9n_0+5n_1+3n_2=Z$, hence
+\[
+3n_0(b)+n_1(b)=\tfrac12\bigl(Z-3|\Sigma|(|\Sigma|-1)\bigr)=\tfrac16(2^n-4)(2^{n-1}-2).
+\]
+Since $B_b$ vanishes on $L'\times L'$ and on $M'\times M'$, its rank on $U'=L'\oplus M'$ is $2\rho$;
+so type $0$ means $B_b|_{U'}=0$ and type $1$ means that $B_b|_{U'}$ has rank $2$. Each unordered
+pair $\{L',M'\}$ gives two ordered pairs of the same type, so summing over $b\neq0$ and
+exchanging the order of summation,
+\[
+\sum_{b\neq0}\bigl(3n_0(b)+n_1(b)\bigr)=2\sum_{\{L',M'\}}\bigl(3N_0(U')+N_2(U')\bigr).
+\]
+The left side is $(2^n-1)(2^n-4)(2^{n-1}-2)/6$ and there are $\binom{|\Sigma|}{2}=(2^n-1)(2^n-4)/18$
+unordered pairs, so the average of $3N_0+N_2$ is
+$\frac{(2^n-1)(2^n-4)(2^{n-1}-2)/12}{(2^n-1)(2^n-4)/18}=\frac32(2^{n-1}-2)=3\cdot2^{n-2}-3$.
+
+(c) Let $n=8$ and $k=5$. By (b), $S=\langle\beta(U,U)\rangle$ has dimension $2$, so there are $63$
+values $b\neq0$ with $b\perp S$, i.e.\ with $B_b|_U=0$. For each of them $U\cap R_b\neq0$:
+otherwise $U\oplus R_b$ would be a totally isotropic subspace of dimension $6$ for $B_b$, whereas
+a totally isotropic subspace for a form of rank $6$ on $\F_2^8$ has dimension at most $2+3=5$
+(the radical has dimension $2$, and a totally isotropic subspace of the nondegenerate quotient
+of dimension $6$ has dimension at most $3$). So
+there are at least $63$ pairs $(a,b)$ with $a\in U\setminus\{0\}$, $b\perp S$, $b\ne0$ and $a\in R_b$.
+But every $a\neq0$ lies in exactly three radicals (those of the $b\in(\mathrm{Im}\,\beta(a,\cdot))^\perp$),
+so there are at most $3\cdot15=45$ such pairs, a contradiction.
+\end{proof}
+\begin{remark}
+For $n=6$ the argument of (c) forces $R_b\subseteq U$ for the $15$ values of $b$, i.e.\ exactly $45$
+pairs, and closed pairs do occur: by the classification for $n=6$ in Section~\ref{sec:n8search},
+$50$ or all $210$ of the pairs are closed, the other pairs having $k=2$ and $d=4$. Part (c) gives a
+second proof of Corollary~\ref{thm:desarg} for $n=8$ (it shares the $\F_4$-trace step of
+Remark~\ref{rem:F4form}). For
+$n=8$ the hypotheses of Proposition~\ref{prop:local} cannot be satisfied, by
+Theorem~\ref{thm:n8}; parts (a) and (b) hold in every even dimension $n\ge6$.
+\end{remark}
+
+
+\paragraph{Earlier approaches for $n=8$.} Before the search of Section~\ref{sec:n8search} we
+tried three other approaches; they agree with Theorem~\ref{thm:n8} but did not settle the case.
+Programs, logs and full proofs are in the repository.
+\begin{itemize}
+\item \emph{Structured classes.} Representing $\F_{2^8}$ with the modulus $X^8+X^4+X^3+X^2+1$ and
+using exponents $2^i+2^j$, no binomial $x^{d_1}+c\,x^{d_2}$ ($96{,}390$ polynomials), no
+polynomial with coefficients in $\F_2$ ($2^{28}$ polynomials) and no trinomial
+($213{,}021{,}900$ polynomials) has all $255$ components of rank $6$; the closest are $12{,}288$
+polynomials with coefficients in $\F_2$ that have three components of other ranks.
+\item \emph{SAT.} A direct encoding of quadratic DU-4 permutations (variables $\beta(e_i,e_j)$
+and $F(e_i)$, symmetry breaking by Lemma~\ref{lem:normal}) is unsatisfiable for $n=4$ (with a
+DRAT proof checked by \texttt{drat-trim} \cite{WHH14}) and satisfiable for $n=6$, but
+\texttt{kissat} \cite{Kissat} gave no verdict for $n=8$ within several hours, also after
+splitting by the local structure of Proposition~\ref{prop:local}. With the Desarguesian condition
+added, the instance is unsatisfiable within a second (a DRAT-checked consistency check of
+Corollary~\ref{thm:desarg}).
+\item \emph{Symmetries.} Call $(A,B)\neq(I,I)$ in $GL(8,2)^2$ a symmetry of $\beta$ if
+$\beta(Ax,Ay)=B\beta(x,y)$; every nontrivial affine self-equivalence of $F$ gives one. By a case
+analysis over the conjugacy classes of the possible pairs $(A,B)$ with $A$ of prime order, using
+SAT calls certified by DRAT proofs and exhaustive enumerations, we had excluded every $\beta$
+with a symmetry (the proof and the computations are in the repository). This statement is now
+contained in Theorem~\ref{thm:n8}.
+\end{itemize}
+
+\section{Constant-rank subspaces and an open problem}\label{sec:constrank}
+For $n\ge 4$, Theorem~\ref{thm:constrank} says that the component forms of a quadratic DU-4
+permutation span an $n$-dimensional subspace $W$ of $\Alt(n,\F_2)$ all of whose nonzero
+elements have rank $n-2$ (the map $b\mapsto B_b$ is injective, since a nonzero $b$ gives a
+component of rank $n-2>0$). For $n=4$ no such subspace exists: the forms of rank $\le 2$ in
+$\Alt(4,\F_2)$ form the Klein quadric $Q^+(5,2)$, whose largest totally singular subspaces
+have dimension $3$ (equivalently, the MacWilliams transform in the alternating-forms scheme
+\cite{DG75} has a negative coefficient). For $n=8$ the transform is non-negative and integral,
+so it gives no obstruction (Table~\ref{tab:macw}).
+
+Constant-rank subspaces of alternating forms have mostly been studied over larger fields.
+Gow and Quinlan \cite{GQ09} construct them from Galois extensions; as far as we can see, these
+constructions do not give $n$-dimensional subspaces of constant rank $n-2$ when $4\mid n$ (for
+instance the component space of $x^5$ on $\F_{2^8}$ contains forms of ranks $4$ and $8$). The
+extension of these constructions by Gupta and Mandal \cite{GM23} assumes that the characteristic
+is not two. Gow
+\cite{Gow18} shows that if $q\ge m+1$, the distinct radicals of the nonzero elements of an
+$n$-dimensional subspace of $\Alt(n,\F_q)$ of constant rank $m$ form a spread
+\cite[Theorem~13]{Gow18}, and he bounds the dimension of constant-rank subspaces under the same
+field-size hypothesis \cite[Theorem~11]{Gow18}. These results do not apply here, since $q=2$ and
+$m=n-2$, and over $\F_2$ the spread conclusion indeed fails: for $n=6$, the non-Desarguesian
+class of Section~\ref{sec:n8search} is a $6$-dimensional subspace of constant rank $4$ whose $63$
+nonzero elements have $61$ distinct radicals, so the radicals do not form a spread (for $x^5$
+they are the $21$ lines of the kernel spread, each occurring three times). In our setting the
+spread comes from the derivative kernels, that is, from the condition $s_a=2$, and not from the
+radicals. We are not aware of results settling the existence question over $\F_2$.
+
+In Table~\ref{tab:macw}, $W^\perp$ is taken with respect to the pairing $\langle A,A'\rangle=\sum_{i<j}A_{ij}A'_{ij}$.
+A rank-$2$ element of $\Alt(n,\F_2)$ is $u\wedge v$ (the form
+$(x,y)\mapsto\langle u,x\rangle\langle v,y\rangle+\langle v,x\rangle\langle u,y\rangle$) for a
+unique line $\langle u,v\rangle$, and $\langle A,u\wedge v\rangle=A(u,v)$. Hence the rank-$2$
+elements of $W^\perp$ correspond to the lines $\langle u,v\rangle$ with $B(u,v)=0$ for all
+$B\in W$, i.e.\ with $\beta(u,v)=0$. Counting ordered pairs $(u,v)$ with $v\in
+K_u\setminus\{0,u\}$ and using Lemma~\ref{lem:count}, the number of these lines is
+$\sum_a(2^{s_a}-2)/6=(2^n-1)/3$ for every $n$-dimensional subspace of constant rank $n-2$, in
+agreement with the
+entry $A'_1$ of Table~\ref{tab:macw}. These lines form a spread if and only if $s_a=2$ for all
+$a$. This holds for DU-4 permutations (Theorem~\ref{thm:constrank}); we do not know whether it
+follows from the constant-rank condition in general. For $n=6$ it does, by the enumeration at
+the end of Section~\ref{sec:n8search}.
+\begin{table}[h]\centering
+\begin{tabular}{cccl}\toprule
+$n$ & $d$ & verdict & dual rank distribution $A'_0,\dots,A'_{n/2}$\\\midrule
+4 & 4 & impossible & $1,\ 5,\ -2$\\
+6 & 6 & consistent & $1,\ 21,\ 210,\ 280$\\
+8 & 8 & consistent & $1,\ 85,\ 20706,\ 590920,\ 436864$\\\bottomrule
+\end{tabular}
+\caption{MacWilliams transform of the rank distribution $(1,0,\dots,0,2^d-1,0)$ of a
+$d$-dimensional subspace of $\Alt(n,\F_2)$ of constant rank $n-2$; $A'_r$ is the number of
+elements of rank $2r$ in $W^\perp$.}
+\label{tab:macw}
+\end{table}
+\begin{conjecture}[H]
+For $n\equiv 0\pmod 4$, $\Alt(n,\F_2)$ has no $n$-dimensional subspace whose nonzero
+elements all have rank $n-2$.
+\end{conjecture}
+Conjecture~H would imply that no quadratic DU-4 permutation exists when $4\mid n$, but it is a
+stronger statement: a constant-rank subspace is only a necessary ingredient. A permutation
+additionally needs $s_a=2$ for all $a$ and, for a quadratic map $Q$ with polar map $\beta$, a
+linear map $\Lambda$ with $Q(a)+\Lambda(a)\notin\mathrm{Im}\,\beta(a,\cdot)$ for all $a\neq 0$. A
+counterexample to Conjecture~H would therefore not by itself produce a permutation.
+For $n=8$, Theorem~\ref{thm:n8} proves Conjecture~H for subspaces with $s_a=2$ for all $a$
+(in the notation of Section~\ref{sec:n8search}, $\dim P_a(W)=2$). For a general $8$-dimensional
+subspace of constant rank $6$ the counting argument above gives
+$\sum_{a\neq0}(2^{\dim P_a(W)}-1)=3\cdot255$ with $\dim P_a(W)\ge1$, so either all
+$\dim P_a(W)=2$, which is excluded, or some point lies in the radicals of at least seven
+elements; the second case is not covered by our search, and Conjecture~H remains open for
+$n=8$. (For $n=6$ the analogous second case does not occur, as noted above.)
+
+\section{Conclusion}
+By \cite{CP19}, a quadratic differentially 4-uniform permutation of $\F_2^n$ has all components
+of rank $n-2$ and all derivative kernels of dimension $2$. We observed that these kernels form a
+line spread that is totally isotropic for every component, and showed that when $4\mid n$ this
+spread cannot be Desarguesian; the same argument shows in general that a Desarguesian kernel
+$t$-spread forces $n/t$ to be odd. This explains why no $\F_4$-quadratic construction, for
+instance a Gold map with an added linear part, works when $4\mid n$, gives a uniform reason for the parity
+hypothesis in the binomial family of \cite{BTT12}, and places the classical non-existence of
+quadratic APN permutations in even dimension in the same framework. For $n=8$ we showed, by an
+exhaustive search over the possible spaces of components, that no quadratic DU-4 permutation
+exists (DU-4 permutations of higher degree do exist, the inverse map being the best-known
+example); in fact the search never gets beyond five of the eight dimensions. Together with $n=4$,
+this suggests that quadratic DU-4 permutations of $\F_2^n$, $n$ even, exist only for
+$n\equiv2\pmod4$, where the Gold maps provide them for every $n\ge6$. The next open case is $n=12$, which is far out of reach of the same search. Theorem~\ref{thm:n8}
+excludes only the constant-rank subspaces that satisfy the radical condition (ii);
+Conjecture~H, which drops this condition, is open already for $n=8$.
+
+\section*{Reproducibility}
+The programs, logs and certificates are available in the repository
+\begin{center}\url{https://github.com/AlexGuseinov/quadratic-perm-4n}.\end{center}
+Its file \texttt{ARTIFACT.md} lists, for each computational statement of this paper, the command
+that reproduces it, the expected output and what has to be trusted;
+\texttt{expected\_counts.json} contains the numbers of nodes of both programs in
+machine-readable form, and the checking scripts compare their logs with it.
+
+\emph{First program} (directory \texttt{search\_n8/}). The search of
+Section~\ref{sec:n8search} is \texttt{crsub\_enum.c} (C,
+compiled with \texttt{gcc 13.3 -O3 -march=native}; it needs an x86-64 processor with the BMI2
+instructions). The script \texttt{run\_n8.sh} runs it in two parallel parts and records the
+compiler, the command lines and the SHA-256 hashes of the sources, the binary and the table of
+rank-$6$ forms; \texttt{check\_n8\_logs.py} checks that all $486$ nodes of dimension $3$ were
+processed, that no node of dimension $6$ occurred and that the numbers of nodes are the expected
+ones. All random choices in the computation of stabilisers are derived from a fixed seed and the
+path from the root, so the program is deterministic and a rerun reproduces the same tree and the
+same numbers. The reported run used Ubuntu 24.04 on a two-core virtual machine with Intel Xeon
+processors at $2.1$\,GHz: two parallel processes of $2.2$ and $2.1$ hours ($4.3$ CPU-hours), at
+most $0.3$\,GB of memory per process. The second run, from the archived sources, took $3.4$ and
+$3.3$ hours because it shared the machine with the second program.
+
+\emph{Second program.} The directory \texttt{second\_impl/} contains the second implementation
+(Python 3.11 with NumPy 2.4), the certificate of the two top levels (\texttt{cert8.txt.xz},
+$1{,}468{,}672$ lines, with its SHA-256 hash), its checker and the logs of the complete run over
+the $486$ nodes of dimension $3$ (two parallel processes of $6.8$ and $6.7$ hours, $13.4$ hours
+in total, partly on the shared machine; at most $0.6$\,GB of memory per process). One command,
+\texttt{sh second\_impl/run\_all.sh}, carries out the verification of Theorem~\ref{thm:n8} that
+does not use the first program: it computes the table of rank-$6$ forms by Pfaffians, checks the
+certificate, searches the $486$ subtrees and compares the result with the expected numbers. The
+only data it takes from the first program are the certificate and the list of the $486$ nodes of
+dimension $3$, and it checks both against the definitions; the checker shares no code with the
+program that wrote the certificate.
+
+\emph{Small computations.} The script \texttt{check\_all.sh} re-checks, in about a minute, the
+small computations only (rank counts, the MacWilliams table, the SAT model for $n=4$ and $n=6$,
+the Desarguesian instance for $n=8$, and the examples for $x^5$); it does not run the search for
+$n=8$. The enumerations for $n=6$ of Section~\ref{sec:n8search}, the searches over structured
+classes, the symmetric-case computations and the long solver runs mentioned in
+Section~\ref{sec:local} are documented in the repository by their commands, logs and
+certificates.
+
+
+\appendix
+\section{The computation in mathematical terms}\label{app:search}
+This appendix describes the search of Section~\ref{sec:n8search} in mathematical terms: the
+objects it works with, the procedure and a proof that it is complete, how each quantity is
+computed, how the symmetry reduction is certified, and what each part of the proof of
+Theorem~\ref{thm:n8} depends on. Throughout $n=8$, $V=\F_2^8$, and forms are elements of
+$\Alt(8,\F_2)$.
+
+\subsection{The objects}
+A form $B$ is determined by its $28$ values $B(e_i,e_j)$, $i<j$; this identifies
+$\Alt(8,\F_2)$ with $\F_2^{28}$, and subspaces of forms with subspaces of $\F_2^{28}$. In the
+programs and their logs the pairs are ordered lexicographically, $(0,1),(0,2),\dots,(6,7)$, a
+form is written as the integer whose $k$-th binary digit is its $k$-th coordinate, and a point
+$a$ as the integer $\sum_ia_i2^i$; thus $J=2^0+2^{13}+2^{22}=4{,}202{,}497$. A table
+of all $2^{28}$ forms records which of them have rank $6$. The first program computes ranks by
+Gaussian elimination; the second uses Pfaffians: $\rk B=8$ if and only if the Pfaffian of $B$ is
+nonzero, and $\rk B\ge6$ if and only if one of the $28$ principal $6\times6$ Pfaffians is
+nonzero. Both give the same $149{,}920{,}960$ forms of rank $6$, the number given by the classical
+formula for the number of alternating forms of given rank (see \cite{DG75}).
+
+If the basis of a subspace $U$ is in reduced echelon form (each basis vector has a pivot
+coordinate in which the other basis vectors vanish), every coset $y+U$ contains exactly one
+vector that vanishes in all pivot coordinates; it is obtained from $y$ by adding the basis
+vectors whose pivot coordinate is $1$ in $y$. Sets of cosets are stored as sets of these
+representatives.
+
+For $a\in V$ let $\varphi_a:\Alt(8,\F_2)\to V^*$, $\varphi_a(B)=B(a,\cdot)$, that is,
+$\varphi_a(B)(e_k)=\sum_ia_iB(e_i,e_k)$; it is linear (an $8\times28$ matrix over $\F_2$), and
+$a\in\rad B$ if and only if $\varphi_a(B)=0$. For a subspace $U$ we have
+$P_a(U)=U\cap\ker\varphi_a$, so
+\[
+\dim P_a(U)=\dim U-\dim\varphi_a(U).
+\]
+A \emph{node} is a subspace $U$ all of whose nonzero elements have rank $6$ and with
+$\dim P_a(U)\le2$ for all $a\neq0$. For a node $U$ let $\mathcal F(U)=\{a\neq0:\dim P_a(U)=2\}$ (the
+full points). A coset $x+U$, $x\notin U$, is admissible if all its elements have rank $6$ and
+$\varphi_a(x)\notin\varphi_a(U)$ for every $a\in\mathcal F(U)$ (by the display, this says that no
+element of $x+U$ has $a$ in its radical); $\mathcal C(U)$ is the set of admissible cosets. For
+a point $r$ put
+$\mathrm{Cand}(U,r)=\{x+U\in\mathcal C(U):\varphi_r(x)\in\varphi_r(U)\}$.
+For $g\in GL(V)$ and a form $B$ put $B^g(v,v')=B(gv,gv')$ for $v,v'\in V$, and
+$U^g=\{u^g:u\in U\}$.
+
+
+\subsection{Two lemmas}
+\begin{lemma}[group action]\label{lem:B-action}
+Let $g,h\in GL(V)$, $B$ a form, $U$ a subspace and $a\in V$.
+\begin{enumerate}
+\item[(a)] $B\mapsto B^g$ is linear and bijective, $(B^g)^h=B^{gh}$ and $\rk B^g=\rk B$.
+\item[(b)] $a\in\rad B^g$ if and only if $ga\in\rad B$; hence $P_a(U^g)=P_{ga}(U)^g$.
+\item[(c)] $U^g$ is a node if and only if $U$ is, and then $\mathcal F(U^g)=g^{-1}\mathcal F(U)$.
+If $W$ is a solution, so is $W^g$.
+\item[(d)] If $U$ is a node, $U^g=U$ and $gr=r$, then $x+U\mapsto x^g+U$ is a permutation of
+$\mathcal C(U)$ and of $\mathrm{Cand}(U,r)$.
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+(a) In matrix form $B^g=g^{\mathsf T}Bg$. (b) $B^g(a,v)=B(ga,gv)$ vanishes for all $v\in V$ if and
+only if $B(ga,\cdot)=0$. Hence $w^g\in P_a(U^g)$ if and only if $w\in P_{ga}(U)$. (c) follows from
+(a) and (b), since $\dim P_a(U^g)=\dim P_{ga}(U)$. (d) By (c), $g\mathcal F(U)=\mathcal F(U)$.
+For $y\in x+U$, $y^g$ has rank $6$ if and only if $y$ has, and by (b) $y^g$ has a point $a$ of
+$\mathcal F(U)$ in its radical if and only if $y$ has the point $ga\in\mathcal F(U)$ in its
+radical; likewise $r\in\rad y^g$ if and only if $r=gr\in\rad y$. So $x+U$ and $x^g+U=(x+U)^g$
+are admissible (resp.\ candidates) together; the inverse map is given by $g^{-1}$.
+\end{proof}
+
+\begin{lemma}[one step]\label{lem:B-step}
+Let $U$ be a node of dimension $d$, $x+U\in\mathcal C(U)$ and $U'=U+\langle x\rangle$. For
+$a\neq0$ put $\varepsilon_a=1$ if $\varphi_a(x)\in\varphi_a(U)$ and $\varepsilon_a=0$ otherwise.
+\begin{enumerate}
+\item[(a)] $\dim P_a(U')=\dim P_a(U)+\varepsilon_a$ for all $a\neq0$.
+\item[(b)] $\varepsilon_a=0$ for $a\in\mathcal F(U)$. Hence $U'$ is a node and
+$\mathcal F(U)\subseteq\mathcal F(U')$.
+\item[(c)] For $y\notin U'$, the coset $y+U'$ is admissible for $U'$ if and only if $y+U$ and
+$y+x+U$ are admissible for $U$ and $\varphi_a(y)\notin\varphi_a(U')$ for all
+$a\in\mathcal F(U')\setminus\mathcal F(U)$.
+\item[(d)] $x+U$ contains an element with $r$ in its radical if and only if
+$\varphi_r(x)\in\varphi_r(U)$.
+\item[(e)] If $d<8$, some $a$ has $\dim P_a(U)\le1$.
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+(a) $\varphi_a(U')=\varphi_a(U)+\langle\varphi_a(x)\rangle$ has dimension
+$\dim\varphi_a(U)+1-\varepsilon_a$, and $\dim U'=d+1$. (b) The first statement is the
+definition of admissibility. So $\dim P_a(U')$ stays $2$ on $\mathcal F(U)$ and is at most
+$1+1$ elsewhere; the elements of $U'\setminus U=x+U$ have rank $6$. (c) $y+U'$ is the union of
+the two cosets $y+U$ and $y+x+U$, both different from $U$. All elements of $y+U'$ have rank $6$
+if and only if this holds for both cosets. For $a\in\mathcal F(U)$ the condition
+$0\notin\varphi_a(y+U')$ holds if and only if it holds for both cosets, and for
+$a\in\mathcal F(U')\setminus\mathcal F(U)$ it is the condition in the statement; by (b) this
+covers $\mathcal F(U')$. (d) $\varphi_r(x+u)=\varphi_r(x)+\varphi_r(u)$. (e) Each nonzero
+element of $U$ has exactly three nonzero points in its radical, so
+$\sum_{a\neq0}(2^{\dim P_a(U)}-1)=3(2^d-1)<3\cdot255$; if all $\dim P_a(U)$ were $2$, the sum
+would be $3\cdot255$.
+\end{proof}
+
+
+\subsection{The procedure and its completeness}
+$\mathrm{Search}(U,H)$ takes a node $U$ of dimension $d$ and a group
+$H\le GL(V)$ with $U^h=U$ for all $h\in H$.
+\begin{enumerate}
+\item If $d=8$: report $U$ if $\dim P_a(U)=2$ for all $a\neq0$, and return.
+\item If $|\mathcal C(U)|<2^{8-d}-1$, return. (P2)
+\item If $d\ge3$ and some $a$ with $\dim P_a(U)=1$ (resp.\ $0$) has fewer than one (resp.\ three)
+cosets in $\mathrm{Cand}(U,a)$, return. (P3)
+\item Choose $r$ with $\dim P_r(U)\le1$ (it exists by Lemma~\ref{lem:B-step}(e)). For $d\le2$, $r$
+is the smallest point, as an integer $\sum_ia_i2^i$, with $\dim P_r(U)=1$, or with
+$\dim P_r(U)=0$ if there is none; for $d\ge3$, $r$ minimises
+$4\,|\mathrm{Cand}(U,a)|+[\dim P_a(U)=0]$ over the points with $\dim P_a(U)\le1$, ties going to
+the smallest point. Let $H_r$ be a subgroup of $\{h\in H:hr=r\}$.
+\item Let $c_1+U,\dots,c_m+U$ be representatives of the $H_r$-orbits on $\mathrm{Cand}(U,r)$
+(Lemma~\ref{lem:B-action}(d)). For each $i$ let $H_i$ be a subgroup of the stabiliser of
+$c_i+U$ in $H_r$, and call $\mathrm{Search}(U+\langle c_i\rangle,H_i)$.
+\end{enumerate}
+The search is $\mathrm{Search}(\langle J\rangle,H_1)$, where $H_1$ is the group generated by the
+elements listed in Section~\ref{sec:n8search}, each of which fixes $J$. By
+Lemma~\ref{lem:B-step}(b) every call is made with a node, and $H_i$ stabilises
+$U+\langle c_i\rangle$ because it stabilises $U$ and $c_i+U$. The choice of $r$ and of the
+subgroups $H_r,H_i$ does not affect correctness; only the orbits and the tree size depend on
+them.
+
+\begin{theorem}\label{thm:B-complete}
+If a solution $W$ exists, then the search reports a node $U$ with $U=W^g$ for some
+$g\in GL(V)$.
+\end{theorem}
+\begin{proof}
+We show by induction on $d$ that there is a call $\mathrm{Search}(U_d,H_d)$ with
+$\dim U_d=d$ and an element $g_d$ with $U_d\subseteq W^{g_d}$. For $d=1$, $W$ contains a form
+of rank $6$, which is $J^{g}$ for some $g$ (all forms of rank $6$ are equivalent); then
+$J\in W^{g^{-1}}$. Let $d<8$, $U=U_d$ and $W'=W^{g_d}$, a solution by
+Lemma~\ref{lem:B-action}(c). By Lemma~\ref{lem:closure}, steps 2 and 3 do not return, and it
+gives $c\in W'$ with $c+U\in\mathrm{Cand}(U,r)$. Let $c_i+U$ be the representative of its
+$H_r$-orbit and $h\in H_r$ with $(c+U)^h=c_i+U$. As $U^h=U$,
+$U+\langle c_i\rangle=(U+\langle c\rangle)^h\subseteq W'^h=W^{g_dh}$, so $U_{d+1}=U+\langle c_i\rangle$
+and $g_{d+1}=g_dh$ satisfy the claim. For $d=8$, $U_8\subseteq W^{g_8}$ and both have dimension
+$8$, so $U_8=W^{g_8}$, which satisfies (ii) and is reported in step 1.
+\end{proof}
+Since the search reports nothing, Theorem~\ref{thm:n8} follows. Of the programs, the proof
+needs only that they carry out steps 1--5 as stated: that $\mathcal C(U)$, the dimensions
+$\dim P_a(U)$ and $\mathrm{Cand}(U,r)$ are computed correctly, that every group element used
+stabilises $U$ and fixes $r$, and that the representatives meet every orbit.
+
+
+\subsection{How each step is computed}\label{app:compute}
+\begin{enumerate}
+\item \emph{Start.} $\mathcal C(U_1)$, $U_1=\langle J\rangle$, is obtained by testing all $2^{27}$
+cosets of $\langle J\rangle$ (both elements must have rank $6$; there are no full points yet). It
+has $41{,}891{,}328$ elements.
+\item \emph{Children.} When $x+U$ is added, Lemma~\ref{lem:B-step}(a) updates $\dim P_a$ for
+all $255$ points: for each $a$ one tests whether $\varphi_a(x)\in\varphi_a(U)$, using an echelon
+basis of $\varphi_a(U)\subseteq V^*$ that is kept for every point. Then $\mathcal C(U')$ is
+computed by Lemma~\ref{lem:B-step}(c): for each representative $y$ of a coset in $\mathcal C(U)$,
+the representative of $y+x+U$ is looked up in $\mathcal C(U)$; if it is there, $y+U'$ is
+admissible unless $\varphi_a(y)\in\varphi_a(U')$ for a new full point $a$.
+\item \emph{Steps 2--4.} $|\mathcal C(U)|$ is the size of this set, and for each point $a$ with
+$\dim P_a(U)\le1$ the number $|\mathrm{Cand}(U,a)|$ is the number of representatives $y$ with
+$\varphi_a(y)\in\varphi_a(U)$ (Lemma~\ref{lem:B-step}(d)).
+\item \emph{Step 5.} The orbits of $H_r$ on $\mathrm{Cand}(U,r)$ are found by breadth-first
+search: the generators of $H_r$ act linearly on $\F_2^{28}$ ($B^g=g^{\mathsf T}Bg$), and for each
+candidate the search records a product $u$ of generators mapping the orbit representative onto
+it; the representative of an orbit is its first element in the order in which the candidates
+are stored. Generators of $H_r$ and of $H_i$ are obtained by composing a random product $g$ of
+generators of $H$ with the inverse of the recorded element $u$ that has the same image as $g$,
+and as Schreier generators. Every generator is checked to stabilise $U$ and to fix $r$ (for $H_r$) or
+the coset $c_i+U$ (for $H_i$); then so does every element of the group they generate.
+\item \emph{Order of work.} The tree is traversed depth first. The random choices in step 5 are
+determined by the path from the root, so the $486$ subtrees below the nodes of dimension $3$
+can be processed separately and distributed over several processes. The numbers of nodes of
+the first program at dimensions $4$ and $5$ depend on the subgroups found in step 5, hence on
+these choices; those of the second program depend only on the $486$ nodes of dimension $3$.
+\end{enumerate}
+In the first program (the file \texttt{crsub\_enum.c} in the directory \texttt{search\_n8/}), the
+function \texttt{points\_child} implements Lemma~\ref{lem:B-step}(a),(b), the function
+\texttt{make\_child} implements (c), the function \texttt{choose\_point} implements steps 1--4,
+and the function \texttt{expand} implements step 5. The second program carries out the same steps in Python with \texttt{numpy}; it was
+written separately, from a specification of steps 1--5, and shares no code with the first.
+
+\subsection{Symmetry and the certificate}
+The symmetry reduction matters most at the top: the $740{,}736$ candidates of $U_1$ fall into
+$3$ orbits, and the $727{,}936$ candidates of the three nodes of dimension $2$ into $486$ orbits.
+For these four nodes the first program writes a certificate: for every candidate $x+U$, the
+index $o$ of its orbit representative $c_o$ and a matrix $u\in GL(8,2)$ with $U^u=U$, $ur=r$ and
+$(c_o+U)^u=x+U$. Checking it requires only linear algebra: check that $r$ is the point prescribed by step 4 (in
+particular $\dim P_r(U)\le1$); compute $\mathrm{Cand}(U,r)$ from the definitions and compare
+it with the listed cosets; for each line, check that $u$ is invertible, maps a basis of $U$
+into $U$, fixes $r$ and maps $c_o$ into $x+U$; and check that every $c_o+U$ is a candidate and
+that the nodes of the next dimension are the subspaces $U+\langle c_o\rangle$. Then, as in the proof of
+Theorem~\ref{thm:B-complete}, every solution containing $U$ is equivalent to one containing
+some $U+\langle c_o\rangle$. Below dimension $3$ the second program uses no symmetry at all.
+
+\subsection{What the proof depends on}\label{app:depend}
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.36\textwidth}>{\raggedright\arraybackslash}p{0.56\textwidth}}\toprule
+Ingredient & How it is established\\\midrule
+Reduction to (i) and (ii) & Theorem~\ref{thm:constrank} and Section~\ref{sec:n8search} (proved)\\
+Lemmas~\ref{lem:closure}, \ref{lem:B-action}, \ref{lem:B-step} and Theorem~\ref{thm:B-complete} & proved\\
+Table of forms of rank $6$ & computed twice (Gaussian elimination, Pfaffians), identical; the
+count agrees with the closed formula\\
+Reduction to the $486$ nodes of dimension~$3$ & certificate of $1{,}468{,}672$ matrices, checked
+by the second program\\
+No node of dimension $6$ below them & first program (with symmetry; two complete runs
+from the archived sources) and second program (without symmetry; one complete run)\\\bottomrule
+\end{tabular}
+\end{center}
+To verify Theorem~\ref{thm:n8} without the first program, one needs the proved statements, one
+of the two rank tables, the certificate check and the search of the second program. The last
+item cannot be replaced by a short certificate: it visits more than $10^9$ nodes.
+
+\subsection{A small example}
+For $n=6$ the same procedure (rank $4$, dimension $6$, $J=e_0\wedge e_1+e_2\wedge e_3$ with
+radical $\langle e_4,e_5\rangle$) gives a tree that can be followed by hand. $\mathcal C(U_1)$ has
+$5{,}086$ elements. Step 4 chooses $r=e_4$, the smallest point with $\dim P_r(U_1)=1$; $366$
+cosets are candidates and fall into $2$ orbits, giving $2$ nodes of dimension $2$. These have
+$144$ candidates in $6$ orbits. Of the $6$ nodes of dimension $3$, two fail (P3) and the others
+have $32$ candidates in $15$ orbits. Of the $15$ nodes of dimension $4$, six fail (P2) and the
+others have $27$ candidates, each forming its own orbit. Each of the $27$ nodes of dimension $5$
+has exactly one candidate, and the $27$ nodes of dimension $6$ all satisfy (ii). They are $9$
+distinct subspaces, in the two $GL(6,2)$-classes of Section~\ref{sec:n8search}. Without symmetry
+reduction the procedure gives $12{,}288$ subspaces containing $J$, the same set as the plain
+enumeration of Section~\ref{sec:n8search}, which does not prescribe radical points.
+
+\subsection{Why the search is small}\label{app:small}
+Let $p=149{,}920{,}960/2^{28}\approx0.5585$ be the proportion of forms of rank $6$. If the ranks of
+the $2^d$ elements of a coset of a $d$-dimensional subspace behaved independently, there would be
+about $2^{28-d}p^{2^d}$ cosets consisting of forms of rank $6$: about $4.2\cdot10^7$,
+$6.5\cdot10^6$, $3.2\cdot10^5$, $1.5\cdot10^3$ and $0.07$ for $d=1,\dots,5$. For four random
+subspaces of constant rank $6$ of each dimension the exact numbers are within $2\%$ of this for
+$d\le3$, about twice as large for $d=4$ (about $3{,}200$), and between $6$ and $8$ for $d=5$; no
+random $6$-dimensional subspace had any such coset. A candidate must moreover contain an element with
+the chosen point $r$ in its radical: $\varphi_r(x)$ must lie in the subspace $\varphi_r(U)$, of
+dimension $d-\dim P_r(U)$, of the $7$-dimensional space of linear forms vanishing at $r$, a
+condition of probability about $2^{d-\dim P_r(U)-7}$; and admissibility removes further cosets
+once full points appear. In the search of the second program, which uses no symmetry there, the nodes of dimension $3$
+have about $17{,}700$
+candidates on average and the nodes of dimension $4$ about $160$, and every node of dimension
+$5$ has fewer than $7$ admissible cosets or fails (P3). This explains why the search ends at
+dimension $5$; it is an explanation, not part of the proof.
+
+\subsection{Counts}
+Numbers of nodes by dimension; in parentheses the nodes returned in step 2
+and in step 3. The second program takes the nodes of dimension at most $3$ from the certificate
+and uses no symmetry reduction below them. In both programs no node of dimension at most $4$ is
+returned in step 2 or 3.
+\begin{center}
+\begin{tabular}{crr}\toprule
+dimension & first program & second program\\\midrule
+$1$ & $1$ & $1$ (certificate)\\
+$2$ & $3$ & $3$ (certificate)\\
+$3$ & $486$ & $486$\\
+$4$ & $1{,}466{,}318$ & $8{,}604{,}140$\\
+$5$ & $244{,}686{,}904$ ($244{,}668{,}896$; $18{,}008$) & $1{,}381{,}518{,}812$ ($1{,}381{,}416{,}881$; $101{,}931$)\\
+$6$ & $0$ & $0$\\\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{thebibliography}{99}
+\bibitem{ACPBSN25} S.~Andreoli, E.~Piccione, L.~Budaghyan, P.~St\u{a}nic\u{a}, S.~Nikova.
+On decompositions of permutations in quadratic functions. J.\ Cryptology 38, 22 (2025).
+\bibitem{BNNRS15} B.~Bilgin, S.~Nikova, V.~Nikov, V.~Rijmen, N.~Tokareva, V.~Vitkup. Threshold
+implementations of small S-boxes. Cryptogr.\ Commun.\ 7(1), 3--33 (2015).
+\bibitem{BL10} C.~Bracken, G.~Leander. A highly nonlinear differentially 4 uniform power
+mapping that permutes fields of even degree. Finite Fields Appl.\ 16(4), 231--242 (2010).
+\bibitem{BTT12} C.~Bracken, C.H.~Tan, Y.~Tan. Binomial differentially 4 uniform permutations with
+high nonlinearity. Finite Fields Appl.\ 18(3), 537--546 (2012).
+\bibitem{BB64} R.H.~Bruck, R.C.~Bose. The construction of translation planes from projective
+spaces. J.\ Algebra 1, 85--102 (1964).
+\bibitem{Carlet21} C.~Carlet. Boolean Functions for Cryptography and Coding Theory. Cambridge
+University Press (2021).
+\bibitem{CP19} P.~Charpin, J.~Peng. New links between nonlinearity and differential uniformity.
+Finite Fields Appl.\ 56, 188--208 (2019). doi:10.1016/j.ffa.2018.12.001.
+\bibitem{DMB19} L.~De Meyer, B.~Bilgin. Classification of balanced quadratic functions. IACR
+Trans.\ Symmetric Cryptol.\ 2019(2), 169--192 (2019). doi:10.13154/tosc.v2019.i2.169-192.
+\bibitem{DG75} P.~Delsarte, J.-M.~Goethals. Alternating bilinear forms over GF(q). J.\ Combin.\
+Theory Ser.\ A 19, 26--50 (1975).
+\bibitem{Gold68} R.~Gold. Maximal recursive sequences with 3-valued recursive cross-correlation
+functions. IEEE Trans.\ Inf.\ Theory 14, 154--156 (1968).
+\bibitem{Gow18} R.~Gow. Connections between rank and dimension for subspaces of bilinear forms.
+arXiv:1801.07529 (2018).
+\bibitem{GQ09} R.~Gow, R.~Quinlan. Galois extensions and subspaces of alternating bilinear forms
+with special rank properties. Linear Algebra Appl.\ 430(8--9), 2212--2224 (2009).
+\bibitem{GM23} A.~Gupta, S.~Mandal. Constant rank subspaces of alternating bilinear forms from
+Galois theory. arXiv:2310.03340 (2023).
+\bibitem{Hir85} J.W.P.~Hirschfeld. Finite Projective Spaces of Three Dimensions. Oxford University
+Press (1985).
+\bibitem{Kissat} A.~Biere et al. Kissat SAT solver. \url{https://github.com/arminbiere/kissat}.
+\bibitem{KMCLLJ22} K.H.~Kim, S.~Mesnager, J.H.~Choe, D.N.~Lee, S.~Lee, M.C.~Jo. On permutation
+quadrinomials with boomerang uniformity 4 and the best-known nonlinearity. Des.\ Codes Cryptogr.\
+90, 1437--1461 (2022).
+\bibitem{KP} L.~K\"olsch, A.~Polujan. The combinatorial structure and value distributions of
+plateaued functions. J.\ Cryptology 39, 21 (2026).
+\bibitem{MTX19} S.~Mesnager, C.~Tang, M.~Xiong. On the boomerang uniformity of quadratic
+permutations. Des.\ Codes Cryptogr.\ 88, 2233--2246 (2020).
+\bibitem{NNR19} S.~Nikova, V.~Nikov, V.~Rijmen. Decomposition of permutations in a finite field.
+Cryptogr.\ Commun.\ 11, 379--384 (2019).
+\bibitem{NRR06} S.~Nikova, C.~Rechberger, V.~Rijmen. Threshold implementations against side-channel
+attacks and glitches. ICICS 2006, LNCS 4307 (2006). doi:10.1007/11935308\_38.
+\bibitem{Nyb93} K.~Nyberg. Differentially uniform mappings for cryptography. EUROCRYPT '93, LNCS 765,
+55--64 (1994).
+\bibitem{QXL13} L.~Qu, H.~Xiong, C.~Li. A negative answer to Bracken--Tan--Tan's problem on
+differentially 4-uniform permutations over $\F_{2^n}$. Finite Fields Appl.\ 24, 55--65 (2013).
+\bibitem{WHH14} N.~Wetzler, M.J.H.~Heule, W.A.~Hunt Jr. DRAT-trim: efficient checking and trimming
+using expressive clausal proofs. SAT 2014, LNCS 8561 (2014). doi:10.1007/978-3-319-09284-3\_31.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,6 @@
+n=6 rank=4 k=2: vars=2809 clauses=9255 -> s SATISFIABLE
+n=6 rank=4 k=3: vars=4387 clauses=15842 -> s SATISFIABLE
+n=6 rank=6 k=2: vars=2793 clauses=9287 -> s SATISFIABLE
+n=6 rank=6 k=3: vars=4419 clauses=16050 -> s SATISFIABLE
+6 6 4 timeout
+6 6 5 timeout

@@ -1,0 +1,102 @@
+# sym_search.py      sha256 4d8cc056bd55ec9f
+# sym_runner.py      sha256 f4fa603184775374
+# sym_twostage.py    sha256 3180db278d0537d1
+# sym_case32.py      sha256 54605de10da51380
+# sym_case44.py      sha256 582c8b33b386c4d0
+# sym_p2.py          sha256 9ab92c449572562b
+# beta_enum.c        sha256 cf40e5083c423923
+# du4perm_sat.py     sha256 f297b4d5310c0abb
+  0  p=2   A=J2^1         B=J2^1         Lemma N7: dim V1 = 7 > (n+2)/2 while B != I
+  1  p=2   A=J2^1         B=J2^2         Lemma N7: dim V1 = 7 > (n+2)/2 while B != I
+  2  p=2   A=J2^1         B=J2^3         Lemma N7: dim V1 = 7 > (n+2)/2 while B != I
+  3  p=2   A=J2^1         B=J2^4         Lemma N7: dim V1 = 7 > (n+2)/2 while B != I
+  4  p=2   A=J2^1         B=I            Lemma N4': B = I with A an involution
+  5  p=2   A=J2^2         B=J2^1         Lemma N7: dim V1 = 6 > (n+2)/2 while B != I
+  6  p=2   A=J2^2         B=J2^2         Lemma N7: dim V1 = 6 > (n+2)/2 while B != I
+  7  p=2   A=J2^2         B=J2^3         Lemma N7: dim V1 = 6 > (n+2)/2 while B != I
+  8  p=2   A=J2^2         B=J2^4         Lemma N7: dim V1 = 6 > (n+2)/2 while B != I
+  9  p=2   A=J2^2         B=I            Lemma N4': B = I with A an involution
+ 10  p=2   A=J2^3         B=J2^1         Lemma N10: involution with k = 3 blocks needs kB >= k - 1 (kB = 1)
+ 11  p=2   A=J2^3         B=J2^2         2 alternative(s), kissat UNSAT + DRAT (sym_p2.py)
+ 12  p=2   A=J2^3         B=J2^3         2 alternative(s), kissat UNSAT + DRAT (sym_p2.py)
+ 13  p=2   A=J2^3         B=J2^4         kissat UNSAT + DRAT (2.5 s)
+ 14  p=2   A=J2^3         B=I            Lemma N4': B = I with A an involution
+ 15  p=2   A=J2^4         B=J2^1         Lemma N10: k = n/2 needs kB >= 2 (kB = 1)
+ 16  p=2   A=J2^4         B=J2^2         1 alternative(s), kissat UNSAT + DRAT (sym_p2.py)
+ 17  p=2   A=J2^4         B=J2^3         kissat UNSAT + DRAT (37.9 s)
+ 18  p=2   A=J2^4         B=J2^4         kissat UNSAT + DRAT (15.7 s)
+ 19  p=2   A=J2^4         B=I            Lemma N4': B = I with A an involution
+ 20  p=3   A=f0           B=f0           Lemma N7: dim V1 = 6 > (n+2)/2 while B != I
+ 21  p=3   A=f0           B=f0+f0        Lemma N7: dim V1 = 6 > (n+2)/2 while B != I
+ 22  p=3   A=f0           B=f0+f0+f0     Lemma N7: dim V1 = 6 > (n+2)/2 while B != I
+ 23  p=3   A=f0           B=f0+f0+f0+f0  Lemma N7: dim V1 = 6 > (n+2)/2 while B != I
+ 24  p=3   A=f0           B=I            Lemma N5: A-module f0 does not embed in B-module I
+ 25  p=3   A=f0+f0        B=f0           Lemma N8: f = 4 forces fB = 2 (fB = 6)
+ 26  p=3   A=f0+f0        B=f0+f0        Lemma N8: f = 4 forces fB = 2 (fB = 4)
+ 27  p=3   A=f0+f0        B=f0+f0+f0     kissat UNSAT + DRAT (1.5 s)
+ 28  p=3   A=f0+f0        B=f0+f0+f0+f0  Lemma N3: f - 2 = 2 > fB = 0
+ 29  p=3   A=f0+f0        B=I            Lemma N8: f = 4 forces fB = 2 (fB = 8)
+ 30  p=3   A=f0+f0+f0     B=f0           Lemma N5: A-module f0+f0+f0 does not embed in B-module f0
+ 31  p=3   A=f0+f0+f0     B=f0+f0        Lemma N5: A-module f0+f0+f0 does not embed in B-module f0+f0
+ 32  p=3   A=f0+f0+f0     B=f0+f0+f0     42 classes, kissat UNSAT + DRAT (sym_case32.py)
+ 33  p=3   A=f0+f0+f0     B=f0+f0+f0+f0  Lemma N9: p = 3, B fixed-point-free, m_A = 3
+ 34  p=3   A=f0+f0+f0     B=I            Lemma N5: A-module f0+f0+f0 does not embed in B-module I
+ 35  p=3   A=f0+f0+f0+f0  B=f0           Lemma N6: p = 3, A fixed-point-free, B != I, 4 | n
+ 36  p=3   A=f0+f0+f0+f0  B=f0+f0        Lemma N6: p = 3, A fixed-point-free, B != I, 4 | n
+ 37  p=3   A=f0+f0+f0+f0  B=f0+f0+f0     Lemma N6: p = 3, A fixed-point-free, B != I, 4 | n
+ 38  p=3   A=f0+f0+f0+f0  B=f0+f0+f0+f0  Lemma N6: p = 3, A fixed-point-free, B != I, 4 | n
+ 39  p=3   A=f0+f0+f0+f0  B=I            kissat UNSAT + DRAT (1.6 s)
+ 40  p=5   A=f0           B=f0           Lemma N8: f = 4 forces fB = 2 (fB = 4)
+ 41  p=5   A=f0           B=f0+f0        Lemma N2: dim fixed spaces 4 != 0
+ 42  p=5   A=f0           B=I            Lemma N2: dim fixed spaces 4 != 8
+ 43  p=5   A=f0+f0        B=f0           Lemma N2: dim fixed spaces 0 != 4
+ 44  p=5   A=f0+f0        B=f0+f0        8 alternatives, exact enumeration / inconsistent (sym_case44.py)
+ 45  p=5   A=f0+f0        B=I            Lemma N2: dim fixed spaces 0 != 8
+ 46  p=7   A=f0           B=f0           Lemma N1: fixed space of A has odd dimension 5
+ 47  p=7   A=f0           B=f1           Lemma N1: fixed space of A has odd dimension 5
+ 48  p=7   A=f0           B=f0+f0        Lemma N1: fixed space of A has odd dimension 5
+ 49  p=7   A=f0           B=f0+f1        Lemma N1: fixed space of A has odd dimension 5
+ 50  p=7   A=f0           B=f1+f1        Lemma N1: fixed space of A has odd dimension 5
+ 51  p=7   A=f0           B=I            Lemma N1: fixed space of A has odd dimension 5
+ 52  p=7   A=f0+f0        B=f0           Lemma N2: dim fixed spaces 2 != 5
+ 53  p=7   A=f0+f0        B=f1           Lemma N2: dim fixed spaces 2 != 5
+ 54  p=7   A=f0+f0        B=f0+f0        exact enumeration: 0 admissible beta
+ 55  p=7   A=f0+f0        B=f0+f1        Lemma N5: A-module f0+f0 does not embed in B-module f0+f1
+ 56  p=7   A=f0+f0        B=f1+f1        Lemma N5: A-module f0+f0 does not embed in B-module f1+f1
+ 57  p=7   A=f0+f0        B=I            Lemma N2: dim fixed spaces 2 != 8
+ 58  p=7   A=f0+f1        B=f0           Lemma N2: dim fixed spaces 2 != 5
+ 59  p=7   A=f0+f1        B=f1           Lemma N2: dim fixed spaces 2 != 5
+ 60  p=7   A=f0+f1        B=f0+f0        Lemma N5: A-module f0+f1 does not embed in B-module f0+f0
+ 61  p=7   A=f0+f1        B=f0+f1        kissat UNSAT + DRAT (107.6 s)
+ 62  p=7   A=f0+f1        B=f1+f1        Lemma N5: A-module f0+f1 does not embed in B-module f1+f1
+ 63  p=7   A=f0+f1        B=I            Lemma N2: dim fixed spaces 2 != 8
+ 64  p=17  A=f0           B=f0           kissat UNSAT + DRAT (9.9 s)
+ 65  p=17  A=f0           B=f1           exact enumeration: 0 admissible beta
+ 66  p=17  A=f0           B=I            Lemma N2: dim fixed spaces 0 != 8
+ 67  p=31  A=f0           B=f0           Lemma N1: fixed space of A has odd dimension 3
+ 68  p=31  A=f0           B=f1           Lemma N1: fixed space of A has odd dimension 3
+ 69  p=31  A=f0           B=f2           Lemma N1: fixed space of A has odd dimension 3
+ 70  p=31  A=f0           B=f3           Lemma N1: fixed space of A has odd dimension 3
+ 71  p=31  A=f0           B=f4           Lemma N1: fixed space of A has odd dimension 3
+ 72  p=31  A=f0           B=f5           Lemma N1: fixed space of A has odd dimension 3
+ 73  p=31  A=f0           B=I            Lemma N1: fixed space of A has odd dimension 3
+ 74  p=127 A=f0           B=f0           Lemma N1: fixed space of A has odd dimension 1
+ 75  p=127 A=f0           B=f1           Lemma N1: fixed space of A has odd dimension 1
+ 76  p=127 A=f0           B=f2           Lemma N1: fixed space of A has odd dimension 1
+ 77  p=127 A=f0           B=f3           Lemma N1: fixed space of A has odd dimension 1
+ 78  p=127 A=f0           B=f4           Lemma N1: fixed space of A has odd dimension 1
+ 79  p=127 A=f0           B=f5           Lemma N1: fixed space of A has odd dimension 1
+ 80  p=127 A=f0           B=f6           Lemma N1: fixed space of A has odd dimension 1
+ 81  p=127 A=f0           B=f7           Lemma N1: fixed space of A has odd dimension 1
+ 82  p=127 A=f0           B=f8           Lemma N1: fixed space of A has odd dimension 1
+ 83  p=127 A=f0           B=f9           Lemma N1: fixed space of A has odd dimension 1
+ 84  p=127 A=f0           B=f10          Lemma N1: fixed space of A has odd dimension 1
+ 85  p=127 A=f0           B=f11          Lemma N1: fixed space of A has odd dimension 1
+ 86  p=127 A=f0           B=f12          Lemma N1: fixed space of A has odd dimension 1
+ 87  p=127 A=f0           B=f13          Lemma N1: fixed space of A has odd dimension 1
+ 88  p=127 A=f0           B=f14          Lemma N1: fixed space of A has odd dimension 1
+ 89  p=127 A=f0           B=f15          Lemma N1: fixed space of A has odd dimension 1
+ 90  p=127 A=f0           B=f16          Lemma N1: fixed space of A has odd dimension 1
+ 91  p=127 A=f0           B=f17          Lemma N1: fixed space of A has odd dimension 1
+ 92  p=127 A=f0           B=I            Lemma N1: fixed space of A has odd dimension 1
+open: none

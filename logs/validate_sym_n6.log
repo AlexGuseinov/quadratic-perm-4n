@@ -1,0 +1,52 @@
+  0 p=2 A=J2^1       B=J2^1       PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N7: dim V1 = 5 > (n+2)/2 while B != I
+  1 p=2 A=J2^1       B=J2^2       PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N7: dim V1 = 5 > (n+2)/2 while B != I
+  2 p=2 A=J2^1       B=J2^3       PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N7: dim V1 = 5 > (n+2)/2 while B != I
+  3 p=2 A=J2^1       B=I          UNDECIDED {'plain': 'TIMEOUT', 'normal_form': 'UNSAT'} N4': B = I with A an involution
+  4 p=2 A=J2^2       B=J2^1       PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT', 'alternatives': 'UNSAT'} 
+  5 p=2 A=J2^2       B=J2^2       PASS      {'plain': 'SAT', 'normal_form': 'SAT', 'alternatives': 'SAT', 'output_norm': 'SAT'} 
+  6 p=2 A=J2^2       B=J2^3       PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT', 'alternatives': 'UNSAT'} 
+  7 p=2 A=J2^2       B=I          PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N4': B = I with A an involution
+  8 p=2 A=J2^3       B=J2^1       PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N10: k = n/2 needs kB >= 2 (kB = 1)
+  9 p=2 A=J2^3       B=J2^2       PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT', 'alternatives': 'UNSAT'} 
+ 10 p=2 A=J2^3       B=J2^3       PASS      {'plain': 'SAT', 'normal_form': 'SAT', 'alternatives': 'SAT'} 
+ 11 p=2 A=J2^3       B=I          PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N4': B = I with A an involution
+ 12 p=3 A=f0         B=f0         PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N8: f = 4 forces fB = 2 (fB = 4)
+ 13 p=3 A=f0         B=f0+f0      PASS      {'plain': 'SAT', 'normal_form': 'SAT'} 
+ 14 p=3 A=f0         B=f0+f0+f0   PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N3: f - 2 = 2 > fB = 0
+ 15 p=3 A=f0         B=I          PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N8: f = 4 forces fB = 2 (fB = 6)
+ 16 p=3 A=f0+f0      B=f0         PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N5: A-module f0+f0 does not embed in B-module f0
+ 17 p=3 A=f0+f0      B=f0+f0      PASS      {'plain': 'SAT', 'normal_form': 'SAT'} 
+ 18 p=3 A=f0+f0      B=f0+f0+f0   PASS      {'plain': 'SAT', 'normal_form': 'SAT'} 
+ 19 p=3 A=f0+f0      B=I          PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N5: A-module f0+f0 does not embed in B-module I
+ 20 p=3 A=f0+f0+f0   B=f0         PASS      {'plain': 'SAT', 'normal_form': 'SAT'} 
+ 21 p=3 A=f0+f0+f0   B=f0+f0      PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} 
+ 22 p=3 A=f0+f0+f0   B=f0+f0+f0   PASS      {'plain': 'SAT', 'normal_form': 'SAT'} 
+ 23 p=3 A=f0+f0+f0   B=I          UNDECIDED {'plain': 'TIMEOUT', 'normal_form': 'UNKNOWN'} 
+ 24 p=5 A=f0         B=f0         PASS      {'plain': 'SAT', 'normal_form': 'SAT'} 
+ 25 p=5 A=f0         B=I          PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N2: dim fixed spaces 2 != 6
+ 26 p=7 A=f0         B=f0         PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N1: fixed space of A has odd dimension 3
+ 27 p=7 A=f0         B=f1         PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N1: fixed space of A has odd dimension 3
+ 28 p=7 A=f0         B=f0+f0      PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N1: fixed space of A has odd dimension 3
+ 29 p=7 A=f0         B=f0+f1      PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N1: fixed space of A has odd dimension 3
+ 30 p=7 A=f0         B=f1+f1      PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N1: fixed space of A has odd dimension 3
+ 31 p=7 A=f0         B=I          PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N1: fixed space of A has odd dimension 3
+ 32 p=7 A=f0+f0      B=f0         PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N2: dim fixed spaces 0 != 3
+ 33 p=7 A=f0+f0      B=f1         PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N2: dim fixed spaces 0 != 3
+ 34 p=7 A=f0+f0      B=f0+f0      PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} 
+ 35 p=7 A=f0+f0      B=f0+f1      PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} 
+ 36 p=7 A=f0+f0      B=f1+f1      PASS      {'plain': 'SAT', 'normal_form': 'SAT'} 
+ 37 p=7 A=f0+f0      B=I          PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N2: dim fixed spaces 0 != 6
+ 38 p=7 A=f0+f1      B=f0         PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N2: dim fixed spaces 0 != 3
+ 39 p=7 A=f0+f1      B=f1         PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N2: dim fixed spaces 0 != 3
+ 40 p=7 A=f0+f1      B=f0+f0      PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} 
+ 41 p=7 A=f0+f1      B=f0+f1      PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} 
+ 42 p=7 A=f0+f1      B=f1+f1      PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} 
+ 43 p=7 A=f0+f1      B=I          PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N2: dim fixed spaces 0 != 6
+ 44 p=31 A=f0         B=f0         PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N1: fixed space of A has odd dimension 1
+ 45 p=31 A=f0         B=f1         PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N1: fixed space of A has odd dimension 1
+ 46 p=31 A=f0         B=f2         PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N1: fixed space of A has odd dimension 1
+ 47 p=31 A=f0         B=f3         PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N1: fixed space of A has odd dimension 1
+ 48 p=31 A=f0         B=f4         PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N1: fixed space of A has odd dimension 1
+ 49 p=31 A=f0         B=f5         PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N1: fixed space of A has odd dimension 1
+ 50 p=31 A=f0         B=I          PASS      {'plain': 'UNSAT', 'normal_form': 'UNSAT'} N1: fixed space of A has odd dimension 1
+pairs: 51, FAIL: 0, UNDECIDED: 2

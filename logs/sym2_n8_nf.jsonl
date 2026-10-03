@@ -1,0 +1,5 @@
+{"n": 8, "case": 61, "p": 7, "A": "f0+f1", "B": "f0+f1", "free_beta_bits": 24, "stage1_betas": 0, "stage1_seconds": 15.6, "stage2_seconds": 0.0, "status": "UNSAT", "when": "2026-09-28 01:19:43"}
+{"n": 8, "case": 54, "p": 7, "A": "f0+f0", "B": "f0+f0", "free_beta_bits": 18, "stage1_betas": 0, "stage1_seconds": 0.0, "stage2_seconds": 0.0, "status": "UNSAT", "when": "2026-09-28 01:19:43"}
+{"n": 8, "case": 40, "p": 5, "A": "f0", "B": "f0", "free_beta_bits": 24, "stage1_betas": 0, "stage1_seconds": 19.3, "stage2_seconds": 0.0, "status": "UNSAT", "when": "2026-09-28 01:20:02"}
+{"n": 8, "case": 64, "p": 17, "A": "f0", "B": "f0", "free_beta_bits": 8, "stage1_betas": 0, "stage1_seconds": 0.0, "stage2_seconds": 0.0, "status": "UNSAT", "when": "2026-09-28 01:20:02"}
+{"n": 8, "case": 65, "p": 17, "A": "f0", "B": "f1", "free_beta_bits": 16, "stage1_betas": 0, "stage1_seconds": 0.1, "stage2_seconds": 0.0, "status": "UNSAT", "when": "2026-09-28 01:20:02"}

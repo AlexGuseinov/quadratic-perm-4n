@@ -1,0 +1,2 @@
+case   3 p=2   A=J2^1         B=I            bits= 66 TIMEOUT   3000.0s
+case  23 p=3   A=f0+f0+f0     B=I            bits= 54 TIMEOUT   3000.0s

@@ -1,0 +1,6 @@
+# ./crsub_brute3 6 > list (2026-10-02); list identical to logs/crsub_brute2_n6_list.txt after sorting (cmp)
+constant-rank subspaces containing J: 12288; with dim P_a = 2 for all a: 12288; by max dim P_a (0..4): 0 0 12288 0 0; nodes by dimension: 1 5086 1344240 14232960 3251712 12288
+
+real	5m30.998s
+user	5m26.888s
+sys	0m0.024s

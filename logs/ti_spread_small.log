@@ -1,0 +1,12 @@
+n=4 rank=2: t.i. lines=19 vars=61 clauses=126
+  s UNSATISFIABLE
+n=4 rank=4: t.i. lines=15 vars=45 clauses=90
+  s SATISFIABLE
+  spread with 5 lines; independent check: True
+n=6 rank=2: t.i. lines=395 vars=1517 clauses=3366
+n=6 rank=4: t.i. lines=331 vars=1261 clauses=2790
+  s SATISFIABLE
+  spread with 21 lines; independent check: True
+n=6 rank=6: t.i. lines=315 vars=1197 clauses=2646
+  s SATISFIABLE
+  spread with 21 lines; independent check: True

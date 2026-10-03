@@ -1,0 +1,1 @@
+{"n": 8, "case": 41, "p": 5, "A": "f0", "B": "f0+f0", "free_beta_bits": 40, "perm": false, "reduce": true, "vars": 38465, "clauses": 135863, "seconds": 560.0, "time_limit": 560, "kissat": "4.0.4", "when": "2026-09-28 00:53:59", "status": "TIMEOUT"}
